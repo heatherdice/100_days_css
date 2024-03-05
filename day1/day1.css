@@ -50,13 +50,13 @@
 }
 
 .circle {
-	left: 20px;
+	left: 10px;
 	z-index: 3;
 }
 
 .circle-two {
 	z-index: 2;
-	left: 10px;
+	left: -5px;
 }
 
 .circle, .circle-two {
