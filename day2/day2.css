@@ -40,7 +40,7 @@
 
 /* line transformation on click */
 .hamburger.close .line:nth-child(1) {
-	transform: rotate(45deg) translate(5px, 5px);
+	transform: rotate(45deg) translate(28px, 16px);
 }
 
 .hamburger.close .line:nth-child(2) {
@@ -48,7 +48,7 @@
 }
 
 .hamburger.close .line:nth-child(3) {
-	transform: rotate(-45deg) translate(7px, -6px);
+	transform: rotate(-45deg) translate(20px, -10px);
 }
 
 /* horizontal lines that make up hamburger */
