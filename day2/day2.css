@@ -1,20 +1,40 @@
 /* Day 2 Styles */
 
+/* green box container, hamburger menu */
+.container, .hamburger {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 /* green box container */
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    left: 50%;
-    width: 400px;
-    height: 400px;
-    margin: 20px -200px;
-    border-radius: 5px;
-    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
-    overflow: hidden;
-    background: #3FAF82;
-    -webkit-font-smoothing: antialiased;
+	/* display: flex;
+	align-items: center;
+	justify-content: center; */
+	position: relative;
+	z-index: 1;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	margin: 20px -200px;
+	border-radius: 5px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+	background: #3FAF82;
+	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+.hamburger {
+	flex-direction: column;
+}
+
+.line1, .line2, .line3 {
+	background-color: white;
+	width: 80px;
+	height: 8px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+	margin-bottom: 15px;
+	border-radius: 5px;
 }
