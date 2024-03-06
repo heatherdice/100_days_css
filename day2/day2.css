@@ -33,6 +33,10 @@
 	cursor: pointer;
 }
 
+.hamburger.close {
+	transform: rotate(90deg);
+}
+
 .line {
 	background-color: white;
 	width: 80px;
