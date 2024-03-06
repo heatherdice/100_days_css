@@ -23,6 +23,7 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+/* hamburger menu */
 .hamburger {
 	flex-direction: column;
 	justify-content: space-between;
@@ -34,9 +35,23 @@
 }
 
 .hamburger.close {
-	transform: rotate(90deg);
+	transform: rotate(180deg);
 }
 
+/* line transformation on click */
+.hamburger.close .line:nth-child(1) {
+	transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.close .line:nth-child(2) {
+	opacity: 0;
+}
+
+.hamburger.close .line:nth-child(3) {
+	transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* horizontal lines that make up hamburger */
 .line {
 	background-color: white;
 	width: 80px;
