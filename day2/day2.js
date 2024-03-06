@@ -9,11 +9,11 @@ hamburger.addEventListener("click", toggleX);
 
 // toggle function
 function toggleX() {
-    if (!hamburgerClicked) {
-        hamburger.classList.add("close");
-        hamburgerClicked = true;
-    } else {
-        hamburger.classList.remove("close");
-        hamburgerClicked = false;
-    }
+	if (!hamburgerClicked) {
+		hamburger.classList.add("close");
+		hamburgerClicked = true;
+	} else {
+		hamburger.classList.remove("close");
+		hamburgerClicked = false;
+	}
 }
