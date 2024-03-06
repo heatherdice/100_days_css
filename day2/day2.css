@@ -9,9 +9,6 @@
 
 /* green box container */
 .container {
-	/* display: flex;
-	align-items: center;
-	justify-content: center; */
 	position: relative;
 	z-index: 1;
 	left: 50%;
@@ -28,13 +25,18 @@
 
 .hamburger {
 	flex-direction: column;
+	justify-content: space-between;
+	height: 60px;
 }
 
-.line1, .line2, .line3 {
+.hamburger:hover {
+	cursor: pointer;
+}
+
+.line {
 	background-color: white;
 	width: 80px;
 	height: 8px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
-	margin-bottom: 15px;
 	border-radius: 5px;
 }
