@@ -39,29 +39,30 @@
 }
 
 /* line transformation on click */
-/* .hamburger, .line {
-	transition: all 0.5s ease-out;
-} */
-
 .hamburger.close .line:nth-child(1) {
 	transform: translate(0, 20px);
+	transition-duration: 0.5s;
 }
 
 .hamburger.close .line:nth-child(2) {
 	opacity: 0;
+	transition-duration: 0.5s;
 }
 
 .hamburger.close .line:nth-child(3) {
 	transform: translate(0, -20px);
+	transition-duration: 0.5s;
 }
 
-/* .hamburger.cross .line:nth-child(1) {
+.hamburger.cross .line:nth-child(1) {
 	transform: rotate(45deg) translate(28px, 16px);
+	transition-duration: 0.5s;
 }
 
 .hamburger.cross .line:nth-child(3) {
 	transform: rotate(-45deg) translate(20px, -10px);
-} */
+	transition-duration: 0.5s;
+}
 
 /* horizontal lines that make up hamburger */
 .line {
