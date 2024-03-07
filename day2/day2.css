@@ -41,20 +41,20 @@
 /* line transformation on click */
 .hamburger.close .line:nth-child(1) {
 	transform: translate(0, 27px);
-	transition-duration: 0.5s;
+	animation: 1s linear; // playing around w/ animation property to separate out 2 animations
 }
 
 .hamburger.close .line:nth-child(2) {
 	opacity: 0;
-	transition-duration: 0.5s;
+	transition-duration: 0.5s; // does not show up as its own thing if hamburger.cross CSS is commented out
 }
 
-.hamburger.close .line:nth-child(3) {
+.hamburger.close .line:nth-child(3) { // negates previous transition of the menu closing
 	transform: translate(0, -27px);
 	transition-duration: 0.5s;
 }
 
-/* .hamburger.cross .line:nth-child(1) {
+.hamburger.cross .line:nth-child(1) {
 	transform: rotate(45deg) translate(28px, 16px);
 	transition-duration: 1s;
 }
@@ -62,7 +62,7 @@
 .hamburger.cross .line:nth-child(3) {
 	transform: rotate(-45deg) translate(20px, -10px);
 	transition-duration: 1s;
-} */
+}
 
 /* horizontal lines that make up hamburger */
 .line {
