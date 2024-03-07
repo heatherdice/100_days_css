@@ -40,7 +40,7 @@
 
 /* line transformation on click */
 .hamburger.close .line:nth-child(1) {
-	transform: translate(0, 20px);
+	transform: translate(0, 27px);
 	transition-duration: 0.5s;
 }
 
@@ -50,19 +50,19 @@
 }
 
 .hamburger.close .line:nth-child(3) {
-	transform: translate(0, -20px);
+	transform: translate(0, -27px);
 	transition-duration: 0.5s;
 }
 
-.hamburger.cross .line:nth-child(1) {
+/* .hamburger.cross .line:nth-child(1) {
 	transform: rotate(45deg) translate(28px, 16px);
-	transition-duration: 0.5s;
+	transition-duration: 1s;
 }
 
 .hamburger.cross .line:nth-child(3) {
 	transform: rotate(-45deg) translate(20px, -10px);
-	transition-duration: 0.5s;
-}
+	transition-duration: 1s;
+} */
 
 /* horizontal lines that make up hamburger */
 .line {

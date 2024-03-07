@@ -14,8 +14,8 @@ function toggleX() {
 		hamburger.classList.add("cross");
 		hamburgerClicked = true;
 	} else {
-		hamburger.classList.remove("close");
 		hamburger.classList.remove("cross");
+		hamburger.classList.remove("close");
 		hamburgerClicked = false;
 	}
 }
