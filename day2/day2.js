@@ -11,9 +11,11 @@ hamburger.addEventListener("click", toggleX);
 function toggleX() {
 	if (!hamburgerClicked) {
 		hamburger.classList.add("close");
+		hamburger.classList.add("cross");
 		hamburgerClicked = true;
 	} else {
 		hamburger.classList.remove("close");
+		hamburger.classList.remove("cross");
 		hamburgerClicked = false;
 	}
 }
