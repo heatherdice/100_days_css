@@ -41,10 +41,6 @@
     background: #F0DE75;
 }
 
-.pyramid-container {
-    /* transform: rotate(180deg); */
-}
-
 .pyramid {
     z-index: 3;
     width: 0;
