@@ -19,15 +19,24 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.outer-circle {
+.outer-circle, .middle-circle {
     background: white;
     border-radius: 50%;
     box-shadow: 4px 4px 8px 3px rgba(0, 0, 0, 0.4);
+    position: relative;
 }
 
 .outer-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 2;
-    position: relative;
-    height: 175px;
-    width: 175px;
+    height: 100px;
+    width: 100px;
+}
+
+.middle-circle {
+    z-index: 3;
+    height: 75px;
+    width: 75px;
 }
