@@ -1,0 +1,33 @@
+/* Day 4 Styles */
+
+/* red box container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin: 20px -200px;
+    border-radius: 5px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+	background: #E56262;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.outer-circle {
+    background: white;
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px 3px rgba(0, 0, 0, 0.4);
+}
+
+.outer-circle {
+    z-index: 2;
+    position: relative;
+    height: 175px;
+    width: 175px;
+}
