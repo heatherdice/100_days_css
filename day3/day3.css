@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
     position: relative;
     left: 50%;
     width: 400px;
@@ -16,4 +17,13 @@
 	background: #272C34;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: #7DDFFD;
+    z-index: 2;
+    position: relative;
+    height: 175px;
+    width: 175px;
 }

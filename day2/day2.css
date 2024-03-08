@@ -40,7 +40,7 @@
 
 /* line transformation on click */
 .hamburger.close .line:nth-child(1) {
-	transform: translate(0, 27px);
+	transform: translateY(27px);
 	animation: 1s linear; // playing around w/ animation property to separate out 2 animations
 }
 
@@ -50,7 +50,7 @@
 }
 
 .hamburger.close .line:nth-child(3) { // negates previous transition of the menu closing
-	transform: translate(0, -27px);
+	transform: translateY(-27px);
 	transition-duration: 0.5s;
 }
 
