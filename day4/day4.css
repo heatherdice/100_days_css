@@ -24,6 +24,8 @@
     border-radius: 50%;
     box-shadow: 4px 4px 8px 3px rgba(0, 0, 0, 0.4);
     position: relative;
+    animation: grow-shrink 3s infinite alternate linear;
+    animation-play-state: running;
 }
 
 .outer-circle, .middle-circle {
@@ -48,4 +50,16 @@
     z-index: 4;
     height: 50px;
     width: 50px;
+}
+
+@keyframes grow-shrink {
+    0% {
+        transform: scale (1);
+    }
+    50% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
