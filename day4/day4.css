@@ -2,94 +2,86 @@
 
 /* red box container */
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    position: absolute;
-    left: 50%;
-    width: 400px;
-    height: 400px;
-    margin: 20px -200px;
-    border-radius: 5px;
-    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	position: absolute;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	margin: 20px -200px;
+	border-radius: 5px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
 	overflow: hidden;
 	background: #E56262;
 }
 
 /* circle styles */
 .outer-circle, .middle-circle, .inner-circle {
-    background: white;
-    border-radius: 50%;
-    box-shadow: 4px 4px 8px 3px rgba(0, 0, 0, 0.4);
-    position: absolute;
-    animation-play-state: running;
-    animation-fill-mode: both;
+	background: white;
+	border-radius: 50%;
+	box-shadow: 4px 4px 8px 3px rgba(0, 0, 0, 0.4);
+	position: absolute;
+	animation-play-state: running;
+	animation-fill-mode: both;
 }
 
 /* large & medium circle styles */
 .outer-circle, .middle-circle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /* small circle, including animation */
 .inner-circle {
-    z-index: 4;
-    height: 30px;
-    width: 30px;
-    animation: grow-shrink-1 2s infinite alternate cubic-bezier(.21,.98,.6,.99);
-    /* animation-delay: 2.6s; */
+	z-index: 4;
+	height: 30px;
+	width: 30px;
+	animation: grow-shrink-1 2s infinite alternate cubic-bezier(.21,.98,.6,.99);
 }
 
 /* medium circle, including animation */
 .middle-circle {
-    z-index: 2;
-    height: 60px;
-    width: 60px;
-    animation: grow-shrink-2 2s infinite alternate cubic-bezier(.21,.98,.6,.99);
-    /* animation-delay: 1.3s; */
+	z-index: 2;
+	height: 60px;
+	width: 60px;
+	animation: grow-shrink-2 2s infinite alternate cubic-bezier(.21,.98,.6,.99);
 }
 
 /* large circle, including animation */
 .outer-circle {
-    z-index: 2;
-    height: 90px;
-    width: 90px;
-    animation: grow-shrink-3 2s infinite alternate cubic-bezier(.21,.98,.6,.99);
+	z-index: 2;
+	height: 90px;
+	width: 90px;
+	animation: grow-shrink-3 2s infinite alternate cubic-bezier(.21,.98,.6,.99);
 }
 
 /* animations for growing & shrinking */
 @keyframes grow-shrink-1 {
-    0%, 70% {
-        transform: scale(0);
-        /* animation-delay: 0.5s; */
-    }
-    100% {
-        transform: scale(1);
-        /* animation-delay: 6s; */
-    }
+	0%, 70% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
 @keyframes grow-shrink-2 {
-    0%, 40% {
-        transform: scale(0);
-        /* animation-delay: 1s; */
-    }
-    100% {
-        transform: scale(1);
-        /* animation-delay: 4s; */
-    }
+	0%, 40% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
 @keyframes grow-shrink-3 {
-    0%, 10% {
-        transform: scale(0);
-        /* animtaion-delay: 2s; */
-    }
-    100% {
-        transform: scale(1);
-        /* animation-delay: 2s; */
-    }
+	0%, 10% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
