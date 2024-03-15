@@ -35,11 +35,17 @@
 }
 
 /* small circle, including animation */
+/* animation explanation:
+* grow-shrink-1: name of keyframes animation to be applied
+* 2s: duration of the animation
+* infinite: animation repeats infinitely
+* alternate: animation alternates direction each cycle
+* cubic-bezier(.21,.98,.6,.99): timing function of the animation; rate of animation's change of spee during animation cycle */
 .inner-circle {
 	z-index: 4;
 	height: 30px;
 	width: 30px;
-	animation: grow-shrink-1 2s infinite alternate cubic-bezier(.21,.98,.6,.99);
+	animation: grow-shrink-1 2s infinite alternate cubic-bezier(.21,.98,.6,.99); // specific numbers copied from source code greater accuracy & efficiency
 }
 
 /* medium circle, including animation */
@@ -59,6 +65,11 @@
 }
 
 /* animations for growing & shrinking */
+/* Keyframes explanation:
+* @keyframes: CSS at-rule defining animation sequence
+* x%, y%: keyframe selectors that define the styles to be applied at specific points in the animation's duration 
+* transform: scale(0): makes element invisible 
+* transform: scale(1): restores element to its original size */
 @keyframes grow-shrink-1 {
 	0%, 70% {
 		transform: scale(0);
