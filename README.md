@@ -12,6 +12,4 @@ While I don't plan to complete projects every day, I do hope to make daily progr
 - [ ] Day 3
     - 3/13 current progress: static images created.
     - 3/13 todo: adjust pyramid shape, begin work on animations.
-- [ ] Day 4
-    - 3/13 current progress: circles created, animation process begun.
-    - 3/13 todo: all circles currently appearing/disappearing at same time, need them to do so one by one.
+- [x] Day 4
