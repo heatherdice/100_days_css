@@ -10,8 +10,8 @@ While I don't plan to complete projects every day, I do hope to make daily progr
     - 3/13 current progress: Clicking hamburger dissolves middle line, rotates outer line to form X shape.
     - 3/13 todo: animate outer lines to come together before forming X, be able to do this animation in reverse.
 - [ ] Day 3
-    - 3/13 current progress: static images created.
-    - 3/13 todo: adjust pyramid shape, begin work on animations.
+    - 3/16 current progress: static images created.
+    - 3/16 todo: begin work on animations.
 - [x] Day 4
 - [ ] Day 5
     - 3/16 current progress: created background, chart card & header, and began key
