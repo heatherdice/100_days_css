@@ -26,11 +26,11 @@
     overflow: hidden;
     z-index: 2;
     position: relative;
-    height: 175px;
-    width: 175px;
+    height: 180px;
+    width: 180px;
 }
 
-/* style bottom 3rd of circle for "sand" in image */
+/* bottom 3rd of circle for "sand" in image */
 .circle::before {
     content: 0;
     position: absolute;
@@ -41,15 +41,17 @@
     background: #F0DE75;
 }
 
+/* pyramid shape */
 .pyramid {
-    z-index: 3;
-    width: 0;
-    height: 0;
-    border-left: 60px solid transparent;
-    border-right: 60px solid #E1DFDF;
-    border-bottom: 60px solid #F3F3F3;
     position: absolute;
     bottom: 0;
+    height: 60px;
+    width: 115px;
+    background-image: 
+        linear-gradient(to bottom right, transparent 50%, #F4F4F4 0), linear-gradient(to top right, #E1DFDF 50%, transparent 0);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: left, right;
     left: 50%;
     transform: translate(-50%, -98%);
 }
