@@ -1,18 +1,22 @@
 /* Day 4 Styles */
 
-/* red box container */
-.container {
+/* common styles */
+.container, .outer-circle, .middle-circle, .inner-circle {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	z-index: 1;
 	position: absolute;
+	box-shadow: 4px 4px 8px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* red box container */
+.container {
+	z-index: 1;
 	left: 50%;
 	width: 400px;
 	height: 400px;
 	margin: 20px -200px;
 	border-radius: 5px;
-	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
 	overflow: hidden;
 	background: #E56262;
 }
@@ -21,17 +25,8 @@
 .outer-circle, .middle-circle, .inner-circle {
 	background: white;
 	border-radius: 50%;
-	box-shadow: 4px 4px 8px 3px rgba(0, 0, 0, 0.4);
-	position: absolute;
 	animation-play-state: running;
 	animation-fill-mode: both;
-}
-
-/* large & medium circle styles */
-.outer-circle, .middle-circle {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 /* small circle, including animation */
