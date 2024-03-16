@@ -25,24 +25,32 @@
 	height: 200px;
 	border-radius: 5px;
 	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
-	background: linear-gradient(to top, #FFFFFF 0%, #FFFFFF 75%, #F1BA64 75%, #F1BA64 100%);
+	background: linear-gradient(to top, #FFFFFF 0%, #FFFFFF 70%, #F1BA64 70%, #F1BA64 100%);
 }
 
 .chart-header {
 	color: #FFFFFF;
 	font-family: 'Open Sans', Helvetica, sans-serif;
+	background: #F1BA64;
 }
 
 h2, h4 {
-	margin: 3px 0;
+	padding: 3px 0;
+	margin: 0;
 }
 
 h2 {
 	font-size: 15px;
-	font-weight: 8;
+	font-weight: 400;
 }
 
 h4 {
-	font-size: 10px;
+	font-size: 12px;
 	font-weight: 8;
+}
+
+.top-row, .bottom-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
