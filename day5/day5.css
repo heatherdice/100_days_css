@@ -17,3 +17,12 @@
 	background: #42A7A1;
 }
 
+.chart-container {
+	z-index: 2;
+	position: relative;
+	width: 275px;
+	height: 200px;
+	border-radius: 5px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	background: linear-gradient(to top, #FFFFFF 0%, #FFFFFF 75%, #F1BA64 75%, #F1BA64 100%);
+}
