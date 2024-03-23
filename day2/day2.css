@@ -34,41 +34,52 @@
 	cursor: pointer;
 }
 
-.hamburger.close {
-	transform: rotate(180deg);
-}
-
-/* line transformation on click */
-.hamburger.close .line:nth-child(1) {
-	transform: translateY(27px);
-	animation: 1s linear; // playing around w/ animation property to separate out 2 animations
-}
-
-.hamburger.close .line:nth-child(2) {
-	opacity: 0;
-	transition-duration: 0.5s; // does not show up as its own thing if hamburger.cross CSS is commented out
-}
-
-.hamburger.close .line:nth-child(3) { // negates previous transition of the menu closing
-	transform: translateY(-27px);
-	transition-duration: 0.5s;
-}
-
-.hamburger.cross .line:nth-child(1) {
-	transform: rotate(45deg) translate(28px, 16px);
-	transition-duration: 1s;
-}
-
-.hamburger.cross .line:nth-child(3) {
-	transform: rotate(-45deg) translate(20px, -10px);
-	transition-duration: 1s;
-}
-
 /* horizontal lines that make up hamburger */
-.line {
+.top-line, .middle-line, .bottom-line {
 	background-color: white;
 	width: 80px;
 	height: 8px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 	border-radius: 5px;
 }
+
+@keyframes animate-top-line {
+	0% {
+		transform: translate3d(0, 0, 0) rotate(0deg);
+	}
+	50% {
+		transform: translate3d(0,26, 0)
+	}
+}
+
+
+// Moved previous animation attempts aside in favor of trying different approach
+/* .hamburger.close {
+	transform: rotate(180deg);
+} */
+
+/* line transformation on click */
+/* .hamburger.close .top-line {
+	transform: translateY(27px);
+	animation: 1s linear; // playing around w/ animation property to separate out 2 animations
+} */
+
+/* .hamburger.close .middle-line {
+	opacity: 0;
+	transition-duration: 0.5s; // does not show up as its own thing if hamburger.cross CSS is commented out
+} */
+
+/* .hamburger.close .bottom-line { // negates previous transition of the menu closing
+	transform: translateY(-27px);
+	transition-duration: 0.5s;
+} */
+
+/* .hamburger.cross .top-line {
+	transform: rotate(45deg) translate(28px, 16px);
+	transition-duration: 1s;
+} */
+
+/* .hamburger.cross .bottom-line {
+	transform: rotate(-45deg) translate(20px, -10px);
+	transition-duration: 1s;
+} */
