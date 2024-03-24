@@ -1,21 +1,17 @@
 // Day 2 animations
 
 // select DOM elements
-const hamburger = document.querySelector(".hamburger");
+const hamburger = document.querySelectorAll(".hamburger");
 
-// set initial state
 let hamburgerClicked = false;
-hamburger.addEventListener("click", toggleX);
+hamburger.addEventListener('click', toggleX);
 
-// toggle function
 function toggleX() {
 	if (!hamburgerClicked) {
-		hamburger.classList.add("close");
-		hamburger.classList.add("cross");
+		hamburger.classList.add('clicked');
 		hamburgerClicked = true;
 	} else {
-		hamburger.classList.remove("cross");
-		hamburger.classList.remove("close");
+		hamburger.classList.remove('clicked');
 		hamburgerClicked = false;
 	}
 }
