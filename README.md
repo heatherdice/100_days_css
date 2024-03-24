@@ -7,8 +7,8 @@ While I don't plan to complete projects every day, I do hope to make daily progr
 ## Project Checklist and Progress Notes ##
 - [x] Day 1
 - [ ] Day 2
-    - 3/13 current progress: Clicking hamburger dissolves middle line, rotates outer line to form X shape.
-    - 3/13 todo: animate outer lines to come together before forming X, be able to do this animation in reverse.
+    - 3/23 current progress: Added keyframes to specify animations, edited JavaScript to work alongside keyframes.
+    - 3/23 todo: animate outer lines to come together before forming X, be able to do this animation in reverse.
 - [ ] Day 3
     - 3/16 current progress: static images created.
     - 3/16 todo: begin work on animations.
