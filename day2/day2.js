@@ -1,17 +1,20 @@
 // Day 2 animations
 
 // select DOM elements
-const hamburger = document.querySelectorAll(".hamburger");
+const menu = document.querySelectorAll(".hamburger");
 
 let hamburgerClicked = false;
-hamburger.addEventListener('click', toggleX);
+
+menu.forEach(hamburger => {
+	hamburger.addEventListener('click', toggleX);
+})
 
 function toggleX() {
 	if (!hamburgerClicked) {
-		hamburger.classList.add('clicked');
+		this.classList.add('clicked');
 		hamburgerClicked = true;
 	} else {
-		hamburger.classList.remove('clicked');
+		this.classList.remove('clicked');
 		hamburgerClicked = false;
 	}
 }
