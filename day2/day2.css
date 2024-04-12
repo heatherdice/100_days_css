@@ -74,19 +74,13 @@
 	100% { transform: translateY(26px) rotate(45deg); }
 }
 @keyframes middle-hamburger-to-x {
-	0% {
-		transform: scale(1);
-		/* opacity: 1; */
-	}
-	100% {
-		transform: scale(0);
-		/* opacity: 0; */
-	}
+	0% { transform: scale(1); }
+	100% { transform: scale(0); }
 }
 @keyframes bottom-hamburger-to-x {
 	0% { transform: none; }
-	30% { transform: translateY(-26); }
-	100% { transform: translateY(-26) rotate(135deg); }
+	30% { transform: translateY(-26px); }
+	100% { transform: translateY(-26px) rotate(135deg); }
 }
 
 /* animation from the X shape to the hamburger menu, line by line */
