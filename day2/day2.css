@@ -28,77 +28,65 @@
 	flex-direction: column;
 	justify-content: space-between;
 	height: 60px;
-	
-	/* horizontal lines that make up hamburger */
-	.top-line, .middle-line, .bottom-line {
-		background-color: white;
-		width: 80px;
-		height: 8px;
-		box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
-		border-radius: 5px;
-		transition: background-color .5s ease-in-out;
-	}
-	.top-line {
-		animation: top-x-to-hamburger 1s ease-in-out;
-	}
-	.middle-line {
-		animation: middle-x-to-hamburger 1s ease-in-out;
-	}
-	.middle-line {
-		animation: bottom-x-to-hamburger 1s ease-in-out;
-	}
+}
 
-	/* pointer cursor */
-	&:hover {
-		cursor: pointer;
-	}
+/* horizontal lines that make up hamburger */
+.top-line, .middle-line, .bottom-line {
+	background-color: white;
+	width: 80px;
+	height: 8px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+	transition: background-color .5s ease-in-out;
+}
 
-	/* adds clicked class to activate animations */
-	&.clicked {
-		.top-line {
-			animation: top-hamburger-to-x 1s cubic-bezier(0.30,1,0.70,1) forwards;
-		}
-		.middle-line {
-			animation: middle-hamburger-to-x 1s cubic-bezier(0.30,1,0.70,1) forwards;
-		}
-		.bottom-line {
-			animation: bottom-hamburger-to-x 1s cubic-bezier(0.30,1,0.70,1) forwards;
-		}	
-	}
+.top-line {
+	animation: top-x-to-hamburger 1s ease-in-out;
+}
+.middle-line {
+	animation: middle-x-to-hamburger 1s ease-in-out;
+}
+.middle-line {
+	animation: bottom-x-to-hamburger 1s ease-in-out;
+}
+
+/* pointer cursor */
+&:hover {
+	cursor: pointer;
+}
+
+/* animation attributes */
+.hamburger:not(.static) {
+	.top-line { animation: top-x-to-hamburger 0.6s ease-in forwards; }
+	.middle-line { animation: middle-x-to-hamburger 0.6s ease-in forwards; }
+	.bottom-line { animation: bottom-x-to-hamburger 0.6s ease-in forwards; }
+}
+.hamburger.animation {
+	.top-line { animation: top-hamburger-to-x 0.6s ease-in-out forwards; }
+	.middle-line { animation: middle-hamburger-to-x 0.6s ease-in-out forwards; }
+	.bottom-line { animation: bottom-hamburger-to-x 0.6s ease-in-out forwards; }
 }
 
 /* animation from the hamburger menu to the X shape, line by line */
 @keyframes top-hamburger-to-x {
-	0% {
-		transform: translate3d(0, 0, 0) rotate(0deg);
-	}
-	50% {
-		transform: translate3d(0, 26, 0) rotate(0deg);
-	}
-	100% {
-		transform: translate3d(0, 26, 0) rotate(45deg);
-	}
+	0% { transform: none; }
+	30% { transform: translateY(26px); }
+	100% { transform: translateY(26px) rotate(45deg); }
 }
 @keyframes middle-hamburger-to-x {
 	0% {
 		transform: scale(1);
-		opacity: 1;
+		/* opacity: 1; */
 	}
 	100% {
-		transform: scale(2);
-		opacity: 0;
+		transform: scale(0);
+		/* opacity: 0; */
 	}
 }
 @keyframes bottom-hamburger-to-x {
-	0% {
-		transform: translate3d(0, 0, 0) rotate(0deg);
-	}
-	50% {
-		transform: translate3d(0, -26, 0) rotate(0deg);
-	}
-	100% {
-		transform: translate3d(0, -26, 0) rotate(135deg);
-	}
+	0% { transform: none; }
+	30% { transform: translateY(-26); }
+	100% { transform: translateY(-26) rotate(135deg); }
 }
 
 /* animation from the X shape to the hamburger menu, line by line */
@@ -134,34 +122,3 @@
 		transform: translate3d(0, 0, 0) rotate(0deg);
 	}
 }
-
-// Moved previous animation attempts aside in favor of trying different approach
-/* .hamburger.close {
-	transform: rotate(180deg);
-} */
-
-/* line transformation on click */
-/* .hamburger.close .top-line {
-	transform: translateY(27px);
-	animation: 1s linear; // playing around w/ animation property to separate out 2 animations
-} */
-
-/* .hamburger.close .middle-line {
-	opacity: 0;
-	transition-duration: 0.5s; // does not show up as its own thing if hamburger.cross CSS is commented out
-} */
-
-/* .hamburger.close .bottom-line { // negates previous transition of the menu closing
-	transform: translateY(-27px);
-	transition-duration: 0.5s;
-} */
-
-/* .hamburger.cross .top-line {
-	transform: rotate(45deg) translate(28px, 16px);
-	transition-duration: 1s;
-} */
-
-/* .hamburger.cross .bottom-line {
-	transform: rotate(-45deg) translate(20px, -10px);
-	transition-duration: 1s;
-} */
