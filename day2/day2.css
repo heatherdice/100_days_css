@@ -85,34 +85,16 @@
 
 /* animation from the X shape to the hamburger menu, line by line */
 @keyframes top-x-to-hamburger {
-	0% {
-		transform: translate3d(0, 26, 0) rotate(45deg);
-	}
-	50% {
-		transform: translate3d(0, 26, 0) rotate(0deg);
-	}
-	100% {
-		transform: translate3d(0, 0, 0) rotate(0deg);
-	}
+	0% {transform: translateY(26px) rotate(45deg); }
+	50% {transform: translateY(26px); }
+	100% { transform: none; }
 }
 @keyframes middle-x-to-hamburger {
-	0% {
-		transform: scale(0);
-		opacity: 0;
-	}
-	100% {
-		transform: scale(1);
-		opacity: 1;
-	}
+	0% { transform: scale(0); }
+	100% { transform: scale(1); }
 }
 @keyframes bottom-x-to-hamburger {
-	0% {
-		transform: translate3d(0, -26, 0) rotate(135deg);
-	}
-	50% {
-		transform: translate3d(0, -26, 0) rotate(0deg);
-	}
-	100% {
-		transform: translate3d(0, 0, 0) rotate(0deg);
-	}
+	0% { transform: translateY(-26px) rotate(135deg); }
+	50% { transform: translateY(-26px); }
+	100% { transform: none; }
 }
