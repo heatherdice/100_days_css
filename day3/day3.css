@@ -51,6 +51,7 @@
     height: 35px;
     width: 35px;
     background-color: #FEEF01;
+    transform-origin: 50% 400%;
     animation: sun-orbit 5s ease-in-out infinite;
 }
 
@@ -70,6 +71,7 @@
 }
 
 @keyframes sun-orbit {
-    0% { left: 0; };
-    100% { left: calc(100% - 35px - 180px) };
+    0% { transform: rotate(-75deg); };
+    50% { transform: rotate(-28deg); }
+    100% { transform: rotate(75deg); };
 }
