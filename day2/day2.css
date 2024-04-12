@@ -40,16 +40,6 @@
 	transition: background-color .5s ease-in-out;
 }
 
-.top-line {
-	animation: top-x-to-hamburger 1s ease-in-out;
-}
-.middle-line {
-	animation: middle-x-to-hamburger 1s ease-in-out;
-}
-.middle-line {
-	animation: bottom-x-to-hamburger 1s ease-in-out;
-}
-
 /* pointer cursor */
 &:hover {
 	cursor: pointer;
