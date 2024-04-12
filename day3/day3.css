@@ -51,6 +51,7 @@
     height: 35px;
     width: 35px;
     background-color: #FEEF01;
+    animation: sun-orbit 5s ease-in-out infinite;
 }
 
 /* pyramid shape */
@@ -66,4 +67,9 @@
     background-position: left, right;
     left: 50%;
     transform: translate(-50%, -98%);
+}
+
+@keyframes sun-orbit {
+    0% { left: 0; };
+    100% { left: calc(100% - 35px - 180px) };
 }
