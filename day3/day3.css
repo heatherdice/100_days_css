@@ -41,6 +41,18 @@
     background: #F0DE75;
 }
 
+/* sun circle */
+.sun {
+    position: absolute;
+    z-index: 3;
+    top: 10px;
+    left: 70px;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    background-color: #FEEF01;
+}
+
 /* pyramid shape */
 .pyramid {
     position: absolute;
