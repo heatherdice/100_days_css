@@ -29,9 +29,11 @@
     height: 180px;
     width: 180px;
     animation: fade-in-out 5s ease-in-out infinite;
+    animation-fill-mode: forwards;
 }
 
 /* bottom 3rd of circle for "sand" in image */
+/* ::before inserts something before the selected element */
 .circle::before {
     content: 0;
     position: absolute;
@@ -74,7 +76,8 @@
 /* fade-in/fade-out animation applied to main circle */
 @keyframes fade-in-out {
     0% { opacity: 0; };
-    50% { opacity: 1; };
+    25% { opacity: 1; };
+    50% { opacity: 0.75; };
     100% { opacity: 0; };
 }
 
