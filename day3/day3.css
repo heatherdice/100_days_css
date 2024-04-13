@@ -28,6 +28,7 @@
     position: relative;
     height: 180px;
     width: 180px;
+    animation: fade-in-out 5s ease-in-out infinite;
 }
 
 /* bottom 3rd of circle for "sand" in image */
@@ -50,7 +51,7 @@
     border-radius: 50%;
     height: 35px;
     width: 35px;
-    background-color: #FEEF01;
+    background: #FEEF01;
     transform-origin: 50% 400%;
     animation: sun-orbit 5s ease-in-out infinite;
 }
@@ -68,6 +69,13 @@
     background-position: left, right;
     left: 50%;
     transform: translate(-50%, -98%);
+}
+
+/* fade-in/fade-out animation applied to main circle */
+@keyframes fade-in-out {
+    0% { opacity: 0; };
+    50% { opacity: 1; };
+    100% { opacity: 0; };
 }
 
 /* sunrise/sunset animation */
