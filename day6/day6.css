@@ -69,10 +69,12 @@ img {
     margin-top: 20px;
 }
 
+/* title styling */
 .title {
     margin-bottom: 30px;
 }
 
+/* button styling */
 button {
     width: 120px;
     height: 30px;
@@ -84,7 +86,6 @@ button {
     font-size: 12px;
     font-weight: 600;
 }
-
 button:hover {
     cursor: pointer;
     background-color: #786450;
@@ -97,12 +98,10 @@ button:hover {
     height: 100px;
     text-align: center;
 }
-
 .row:hover {
     cursor: pointer;
     background: #E1CFC2;
 }
-
 .row:not(:nth-child(3)) {
     border-bottom: 2px solid #FFFFFF;
 }
