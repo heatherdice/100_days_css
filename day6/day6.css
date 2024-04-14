@@ -33,6 +33,7 @@
     border-radius: 5px;
     box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
     background: #FFFFFF;
+    overflow: hidden;
 }
 
 /* left column: profile picture, buttons */
@@ -45,24 +46,32 @@
 .right-column {
     width: 40%;
     z-index: 2;
-    background: #F5E7DF;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: #F5E7DF;
+}
+
+hr {
+    color: #FFFFFF;
+    height: 2px;
+    z-index: 3;
 }
 
 .row {
     display: flex;
     flex-direction: column;
-    padding: 30px;
-    overflow: hidden;
+    padding: 25px;
+    text-align: center;
+    gap: 3px;
 }
 
 .numbers {
     font-size: 20px;
+    font-weight: 500;
 }
 
 .categories {
-    font-size: 15px;
+    font-size: 12px;
 }
