@@ -5,7 +5,7 @@
     color: #786450;
 }
 
-.container, .card, .right-column, .row {
+.container, .card, .left-column, .right-column, .row {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,6 +52,14 @@
     width: 40%;
     z-index: 2;
     background: #F5E7DF;
+}
+
+/* profile photo */
+img {
+    height: 82px;
+    width: 82px;
+    border-radius: 50%;
+    filter: sepia(20%);
 }
 
 /* rows within right column */
