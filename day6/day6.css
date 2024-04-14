@@ -53,25 +53,31 @@
     background: #F5E7DF;
 }
 
-hr {
-    color: #FFFFFF;
-    height: 2px;
-    z-index: 3;
-}
-
+/* rows within right column */
 .row {
     display: flex;
     flex-direction: column;
-    padding: 25px;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 100px;
+    /* padding: 25px; */
     text-align: center;
     gap: 3px;
 }
 
+.row:hover {
+    cursor: pointer;
+    background: #E1CFC2;
+}
+
+/* numbers in right column */
 .numbers {
     font-size: 20px;
     font-weight: 500;
 }
 
+/* categories under numbers in right column */
 .categories {
     font-size: 12px;
 }
