@@ -56,16 +56,19 @@
 
 /* circles around profile image */
 .outer-circle, .inner-circle {
-    border: 1px solid #786450;
+    border: 1px solid;
     border-radius: 50%;
 }
 .outer-circle {
     width: 82px;
     height: 82px;
+    border-color: #786450 transparent #786450 #786450;
 }
 .inner-circle {
     width: 76px;
     height: 76px;
+    border-color: #786450 #786450 #786450 transparent;
+
 }
 
 /* profile photo */
