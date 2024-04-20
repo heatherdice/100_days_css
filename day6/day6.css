@@ -5,7 +5,7 @@
     color: #786450;
 }
 
-.container, .card, .left-column, .outer-circle, .inner-circle, .right-column, .row {
+.container, .card, .left-column, .circle-container, .inner-circle, .outer-circle, .right-column, .row {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,16 +41,19 @@
     overflow: hidden;
 }
 
+/* left & right column */
+.left-column, .right-column {
+    z-index: 2;
+}
+
 /* left column: profile picture, buttons */
 .left-column {
     width: 60%;
-    z-index: 2;
 }
 
 /* right column: posts, likes, follows */
 .right-column {
     width: 40%;
-    z-index: 2;
     background: #F5E7DF;
 }
 
@@ -58,12 +61,12 @@
 .outer-circle, .inner-circle {
     border: 1px solid;
     border-radius: 50%;
+    transition: transform 1.5s ease-in-out;
 }
 .outer-circle {
     width: 82px;
     height: 82px;
     border-color: #786450 transparent #786450 #786450;
-    transition: border 1.5s ease-in-out;
 }
 .inner-circle {
     width: 76px;
@@ -72,10 +75,10 @@
 }
 
 /* circle animations */
-.outer-circle:not(.inner-circle, img):hover {
+.circle-container:hover .outer-circle {
     transform: rotate(360deg);
 }
-.inner-circle:not(img):hover {
+.circle-container:hover .inner-circle {
     transform: rotate(-360deg);
 }
 
