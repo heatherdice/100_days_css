@@ -5,7 +5,7 @@
     color: #786450;
 }
 
-.container, .card, .left-column, .circle-container, .inner-circle, .outer-circle, .right-column, .row {
+.container, .card, .left-column, .circle-container, .outer-circle, .inner-circle, .under-photo, .right-column, .row {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@
     border-radius: 5px;
 }
 
-.right-column, .left-column, .row {
+.right-column, .left-column, .under-photo, .row {
     flex-direction: column;
 }
 
@@ -58,7 +58,10 @@
 }
 
 /* circles around profile image */
-.outer-circle, .inner-circle, img {
+.circle-container {
+    top: 110px;
+}
+.circle-container, .outer-circle, .inner-circle, img, .under-photo {
     position: absolute;
 }
 .outer-circle, .inner-circle {
@@ -97,11 +100,16 @@ img {
     z-index: 5;
 }
 
+.under-photo {
+    top: 150px;
+}
+
 /* name styling */
 .name {
     font-size: 15px;
     font-weight: 600;
     margin-top: 20px;
+    z-index: 5;
 }
 
 /* title styling */
