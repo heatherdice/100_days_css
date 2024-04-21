@@ -58,6 +58,9 @@
 }
 
 /* circles around profile image */
+.outer-circle, .inner-circle, img {
+    position: absolute;
+}
 .outer-circle, .inner-circle {
     border: 1px solid;
     border-radius: 50%;
@@ -67,11 +70,13 @@
     width: 82px;
     height: 82px;
     border-color: #786450 transparent #786450 #786450;
+    z-index: 3;
 }
 .inner-circle {
     width: 76px;
     height: 76px;
     border-color: #786450 #786450 #786450 transparent;
+    z-index: 4;
 }
 
 /* circle animations */
@@ -89,6 +94,7 @@ img {
     width: 70px;
     border-radius: 50%;
     filter: sepia(20%);
+    z-index: 5;
 }
 
 /* name styling */
