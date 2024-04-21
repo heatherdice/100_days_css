@@ -1,29 +1,30 @@
 /* Day 6 Styles */
 
+/* general styling */
 * {
     font-family: "Open Sans", Helvetica, sans-serif;
     color: #786450;
 }
-
 .container, .card, .left-column, .circle-container, .outer-circle, .inner-circle, .under-photo, .right-column, .row {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .container, .card {
 	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
     border-radius: 5px;
 }
-
 .right-column, .left-column, .under-photo, .row {
     flex-direction: column;
+}
+
+.container, .circle-container, .outer-circle, .inner-circle, img, .under-photo {
+    position: absolute;
 }
 
 /* tan box container */
 .container {
 	z-index: 0;
-	position: absolute;
 	left: 50%;
 	width: 400px;
 	height: 400px;
@@ -41,7 +42,7 @@
     overflow: hidden;
 }
 
-/* left & right column */
+/* left & right column in card */
 .left-column, .right-column {
     z-index: 2;
 }
@@ -57,13 +58,12 @@
     background: #F5E7DF;
 }
 
-/* circles around profile image */
+/* positioning profile image */
 .circle-container {
     top: 110px;
 }
-.circle-container, .outer-circle, .inner-circle, img, .under-photo {
-    position: absolute;
-}
+
+/* circles around profile image */
 .outer-circle, .inner-circle {
     border: 1px solid;
     border-radius: 50%;
@@ -100,24 +100,19 @@ img {
     z-index: 5;
 }
 
+/* section under photo: name, title, & buttons */
 .under-photo {
     top: 150px;
 }
-
-/* name styling */
 .name {
     font-size: 15px;
     font-weight: 600;
     margin-top: 20px;
     z-index: 5;
 }
-
-/* title styling */
 .title {
     margin-bottom: 30px;
 }
-
-/* button styling */
 button {
     width: 120px;
     height: 30px;
