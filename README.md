@@ -14,6 +14,4 @@ While I don't plan to complete projects every day, I do hope to make daily progr
 - [ ] Day 5
     - 3/16 current progress: created background, chart card & header, and began key
     - 3/16 todo: fix hr in key, begin work on chart
-- [ ] Day 6
-    - 4/14 current progress: finished all but circle animation.
-    - 4/14 todo: circle animation around photo
+- [x] Day 6
