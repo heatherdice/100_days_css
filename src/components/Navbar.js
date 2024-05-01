@@ -1,9 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 import cssLogo from "../assets/images/cssLogo.ico";
+import Hamburger from "./Hamburger";
 
 export default function Navbar() {
+    // determine current screen size, set to variable name
+    const [screenType, setScreenType] = useState(window.innerWidth <= 600 ? 'mobile' : 'desktop');
+
+    useEffect(() => {
+        const handleResize= () => {
+            setScreenType(window.innerWidth <= 600 ? 'mobile' : 'desktop');
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    useEffect(() => {
+        console.log(screenType);
+    }, [screenType]);
+
     const navLinks = [
         {
             link:'/about',
@@ -67,15 +87,19 @@ export default function Navbar() {
                 <img src={cssLogo} alt="css logo" />
                 <span className="navbar-title">100 Days of CSS</span>
             </div>
-            <ul>
-                {navLinks.map((navbar) =>
-                    <li key={navbar.title}>
-                        <a to={navbar.link}>
-                            {navbar.title}
-                        </a>
-                    </li>
-                )}
-            </ul>
+            {screenType === 'desktop' ? (
+                <ul>
+                    {navLinks.map((navbar) =>
+                        <li key={navbar.title}>
+                            <a to={navbar.link}>
+                                {navbar.title}
+                            </a>
+                        </li>
+                    )}
+                </ul>
+            ) : (
+                <Hamburger />
+            )}
         </nav>
     )
 }

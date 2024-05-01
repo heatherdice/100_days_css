@@ -1,0 +1,69 @@
+/* hamburger menu */
+.hamburger {
+	flex-direction: column;
+	justify-content: space-between;
+	height: 60px;
+}
+
+/* horizontal lines that make up hamburger */
+.top-line, .middle-line, .bottom-line {
+	background-color: black;
+	width: 80px;
+	height: 8px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+	transition: background-color .5s ease-in-out;
+}
+
+/* pointer cursor */
+.hamburger:hover {
+	cursor: pointer;
+}
+
+/* animation attributes */
+/* select elements w/ hamburger class but not static class */
+.hamburger:not(.static) {
+	/* animation: uses @keyframes animation, specifies duration, ease-in starts slowly then increase speed of animation */
+	.top-line { animation: top-x-to-hamburger 0.6s ease-in forwards; }
+	.middle-line { animation: middle-x-to-hamburger 0.6s ease-in forwards; }
+	.bottom-line { animation: bottom-x-to-hamburger 0.6s ease-in forwards; }
+}
+/* ease-in-out starts slow, speeds up, ends slow */
+.hamburger.animation {
+	.top-line { animation: top-hamburger-to-x 0.6s ease-in-out forwards; }
+	.middle-line { animation: middle-hamburger-to-x 0.6s ease-in-out forwards; }
+	.bottom-line { animation: bottom-hamburger-to-x 0.6s ease-in-out forwards; }
+}
+
+/* animation from the hamburger menu to the X shape, line by line */
+/* translateY reponsitions element vertically along 2D plane */
+@keyframes top-hamburger-to-x {
+	0% { transform: none; }
+	30% { transform: translateY(26px); }
+	100% { transform: translateY(26px) rotate(45deg); }
+}
+@keyframes middle-hamburger-to-x {
+	0% { transform: scale(1); }
+	100% { transform: scale(0); }
+}
+@keyframes bottom-hamburger-to-x {
+	0% { transform: none; }
+	30% { transform: translateY(-26px); }
+	100% { transform: translateY(-26px) rotate(135deg); }
+}
+
+/* animation from the X shape to the hamburger menu, line by line */
+@keyframes top-x-to-hamburger {
+	0% {transform: translateY(26px) rotate(45deg); }
+	50% {transform: translateY(26px); }
+	100% { transform: none; }
+}
+@keyframes middle-x-to-hamburger {
+	0% { transform: scale(0); }
+	100% { transform: scale(1); }
+}
+@keyframes bottom-x-to-hamburger {
+	0% { transform: translateY(-26px) rotate(135deg); }
+	50% { transform: translateY(-26px); }
+	100% { transform: none; }
+}
