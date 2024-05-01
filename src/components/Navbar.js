@@ -1,6 +1,7 @@
 import React from "react";
 // import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
+import cssLogo from "../assets/images/cssLogo.ico";
 
 export default function Navbar() {
     const navLinks = [
@@ -62,6 +63,9 @@ export default function Navbar() {
 
     return (
         <nav>
+            <div className="logo">
+                <img src={cssLogo} alt="css logo" height="35" width="35" />
+            </div>
             <ul>
                 {navLinks.map((navbar) =>
                     <li key={navbar.title}>
