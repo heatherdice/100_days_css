@@ -64,7 +64,7 @@ export default function Navbar() {
         <nav>
             <ul>
                 {navLinks.map((navbar) =>
-                    <li key={navbar.link}>
+                    <li key={navbar.title}>
                         <a to={navbar.link}>
                             {navbar.title}
                         </a>
