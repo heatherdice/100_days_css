@@ -1,4 +1,4 @@
-nav, ul {
+nav, ul, .logo {
     display: flex;
 }
 
@@ -7,11 +7,20 @@ nav {
     justify-content: flex-end;
     border-bottom: 1px solid #D3D3D3;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* align-items: center; */
+}
+
+nav, .logo {
     align-items: center;
 }
 
 img {
     padding: 1em;
+}
+
+.navbar-title {
+    font-family: "Courrier New", "Lucinda Console", monospace;
+    font-size: 1.25em;
 }
 
 ul {

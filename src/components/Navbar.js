@@ -65,6 +65,7 @@ export default function Navbar() {
         <nav>
             <div className="logo">
                 <img src={cssLogo} alt="css logo" height="35" width="35" />
+                <span className="navbar-title">100 Days of CSS</span>
             </div>
             <ul>
                 {navLinks.map((navbar) =>
