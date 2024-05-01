@@ -23,9 +23,9 @@ h1 {
     margin-top: 0;
     padding: 2em 2em .5em;
     font-size: 3em;
-    background: -webkit-linear-gradient(#FFFFFF, #D3D3D3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to bottom, #FFFFFF, #A9A9A9);
+    background-clip: text;
+    color: transparent;
 }
 
 @media (max-width: 600px) {
