@@ -1,15 +1,19 @@
 /* hamburger menu */
 .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 60px;
+	height: 20px;
+    margin-right: 1em;
 }
 
 /* horizontal lines that make up hamburger */
 .top-line, .middle-line, .bottom-line {
 	background-color: black;
-	width: 80px;
-	height: 8px;
+	width: 30px;
+	height: 3px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 	border-radius: 5px;
 	transition: background-color .5s ease-in-out;
