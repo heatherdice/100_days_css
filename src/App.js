@@ -9,9 +9,9 @@ export default function App() {
             <Navbar />
             <Hero />
             <footer>
-            <p>
-                <a href="https://github.com/heatherdice/100_days_css">Code</a> by Heather Dice
-            </p>
+                <p>
+                    <a href="https://github.com/heatherdice/100_days_css">Code</a> by Heather Dice
+                </p>
             </footer>
         </div>
     );

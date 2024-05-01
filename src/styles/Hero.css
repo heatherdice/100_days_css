@@ -27,3 +27,16 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@media (max-width: 600px) {
+    header::after {
+        bottom: -60px;
+        border-left: 300px solid transparent;
+        border-right: 300px solid transparent;
+        border-top: 60px solid #2164AB;
+    }
+    h1 {
+        padding: 1em 1em .5em;
+        font-size: 1.5em;
+    }
+}

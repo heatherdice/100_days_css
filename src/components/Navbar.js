@@ -64,7 +64,7 @@ export default function Navbar() {
     return (
         <nav>
             <div className="logo">
-                <img src={cssLogo} alt="css logo" height="35" width="35" />
+                <img src={cssLogo} alt="css logo" />
                 <span className="navbar-title">100 Days of CSS</span>
             </div>
             <ul>
