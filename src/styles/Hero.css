@@ -23,7 +23,7 @@ h1 {
     margin-top: 0;
     padding: 2em 2em .5em;
     font-size: 3em;
-    background: linear-gradient(to bottom, #FFFFFF, #A9A9A9);
+    background: linear-gradient(#FFFFFF 60%, #808080 100%);
     background-clip: text;
     color: transparent;
 }
