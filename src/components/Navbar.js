@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 
 export default function Navbar() {
@@ -62,7 +62,15 @@ export default function Navbar() {
 
     return (
         <nav>
-
+            <ul>
+                {navLinks.map((navbar) =>
+                    <li key={navbar.link}>
+                        <a to={navbar.link}>
+                            {navbar.title}
+                        </a>
+                    </li>
+                )}
+            </ul>
         </nav>
     )
 }
