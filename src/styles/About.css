@@ -1,0 +1,27 @@
+.about-title {
+    font-family: "Courrier New", "Lucinda Console", monospace;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 4em;
+    margin-bottom: 0;
+}
+
+.about-info {
+    text-align: start;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding: 2em 0;
+    margin: 0 1em;
+}
+
+.css-logo {
+    height: 15em;
+    width: 16em;
+    margin: 0 4em;
+}
