@@ -11,6 +11,7 @@ export default function Navbar() {
     // mobile menu open state, initial value set to false
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
+
     // determine whether screen is mobile or desktop view
     useEffect(() => {
         const handleResize= () => {
@@ -33,6 +34,7 @@ export default function Navbar() {
     const toggleDropdown = () => {
         // toggle dropdown open
         setDropdownOpen(prevState => !prevState);
+
         // test
         console.log(dropdownOpen);
     };
@@ -116,7 +118,9 @@ export default function Navbar() {
                 )}
             </nav>
             {dropdownOpen && (
-                <Dropdown props={navLinks} />
+                <div className={`dropdown ${dropdownOpen ? 'animation' : 'static'}`}>
+                    <Dropdown props={navLinks} />
+                </div>
             )}
         </>
     )

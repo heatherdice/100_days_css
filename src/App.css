@@ -6,7 +6,7 @@ body {
     margin: 0;
 }
 
-p {
+.footer-text {
     text-align: start;
     font-size: 1.25em;
 }
@@ -16,4 +16,5 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+    padding: 1em;
 }

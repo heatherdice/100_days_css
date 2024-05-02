@@ -11,7 +11,7 @@ export default function App() {
             <Hero />
             <About />
             <footer>
-                <p>
+                <p className="footer-text">
                     <a href="https://github.com/heatherdice/100_days_css">Code</a> by Heather Dice
                 </p>
             </footer>

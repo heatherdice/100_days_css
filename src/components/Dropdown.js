@@ -23,7 +23,7 @@ export default function Dropdown({ props }) {
     }, [dropdown]);
 
     return (
-        <div className="dropdown">
+        // <div className="dropdown static">
             <ul className="dropdown-links">
                 {props.map((link, index) => (
                     <li key={index} className="link-items">
@@ -33,6 +33,6 @@ export default function Dropdown({ props }) {
                     </li>
                 ))}
             </ul>
-        </div>
+        // </div>
     );
 };
