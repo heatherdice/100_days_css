@@ -1,11 +1,11 @@
-header {
+.hero {
     background-image: linear-gradient(to bottom, #2A86E3, #2164AB);
     z-index: 0;
     text-align: center;
     position: relative;
 }
 
-header::after{
+.hero::after{
     content: '';
     position: absolute;
     bottom: -100px;
@@ -16,6 +16,7 @@ header::after{
     border-left: 1000px solid transparent;
     border-right: 1000px solid transparent;
     border-top: 115px solid #2164AB;
+    z-index: 0;
 }
 
 h1 {
@@ -29,7 +30,7 @@ h1 {
 }
 
 @media (max-width: 600px) {
-    header::after {
+    .hero::after {
         bottom: -60px;
         border-left: 300px solid transparent;
         border-right: 300px solid transparent;

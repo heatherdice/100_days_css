@@ -95,27 +95,29 @@ export default function Navbar() {
     ]
 
     return (
-        <nav className="navbar">
-            <div className="logo">
-                <img src={cssLogo} alt="css logo" />
-                <span className="navbar-title">100 Days of CSS</span>
-            </div>
-            {screenType === 'desktop' ? (
-                <ul className="desktop-nav">
-                    {navLinks.map((navbar) =>
-                        <li key={navbar.title}>
-                            <a to={navbar.link}>
-                                {navbar.title}
-                            </a>
-                        </li>
-                    )}
-                </ul>
-            ) : (
-                <Hamburger props={toggleDropdown} />
-            )}
+        <>
+            <nav className="navbar">
+                <div className="logo">
+                    <img src={cssLogo} alt="css logo" />
+                    <span className="navbar-title">100 Days of CSS</span>
+                </div>
+                {screenType === 'desktop' ? (
+                    <ul className="desktop-nav">
+                        {navLinks.map((navbar) =>
+                            <li key={navbar.title}>
+                                <a to={navbar.link}>
+                                    {navbar.title}
+                                </a>
+                            </li>
+                        )}
+                    </ul>
+                ) : (
+                    <Hamburger props={toggleDropdown} />
+                )}
+            </nav>
             {dropdownOpen && (
                 <Dropdown props={navLinks} />
             )}
-        </nav>
+        </>
     )
 }
