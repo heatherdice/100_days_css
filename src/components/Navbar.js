@@ -98,7 +98,7 @@ export default function Navbar() {
         <>
             <nav className="navbar">
                 <div className="logo">
-                    <img src={cssLogo} alt="css logo" />
+                    <img src={cssLogo} alt="css logo" class="css-logo-navbar" />
                     <span className="navbar-title">100 Days of CSS</span>
                 </div>
                 {screenType === 'desktop' ? (
