@@ -1,0 +1,29 @@
+.dropdown {
+    position: absolute;
+    top: 70%;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 0;
+    margin-top: 0;
+}
+
+.dropdown-links {
+    list-style: none;
+    width: 40%;
+    text-align: right;
+    background-color: #FFFFFF;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    padding-left: 0.75rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    
+}
+
+.link-items {
+    display: inline-block;
+    cursor: pointer;
+    padding-right: 0.75rem;
+}

@@ -1,17 +1,17 @@
-nav, ul, .logo {
+.navbar, .desktop-nav, .logo {
     display: flex;
 }
 
-nav {
+.navbar {
     width: 100%;
     position: sticky;
     border-bottom: 1px solid #D3D3D3;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    
     justify-content: space-between;
-    z-index: 1;
+    z-index: 2;
 }
 
-nav, .logo {
+.navbar, .logo {
     align-items: center;
 }
 
@@ -26,7 +26,7 @@ img {
     font-size: 1.25em;
 }
 
-ul {
+.desktop-nav {
     list-style: none;
     flex-direction: row;
 }

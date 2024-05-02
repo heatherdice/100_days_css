@@ -1,7 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Hamburger.css";
+import Dropdown from "./Dropdown";
 
-export default function Hamburger() {
+export default function Hamburger({ props }) {
+
     // toggle classes for animations on hamburger click
     useEffect(() => {
         // select DOM element
@@ -23,10 +25,12 @@ export default function Hamburger() {
     }, []);
 
     return (
-        <div class="hamburger static">
-			<div class="top-line"></div>
-			<div class="middle-line"></div>
-			<div class="bottom-line"></div>
-		</div>
+        <>
+            <div className="hamburger static" onClick={props}>
+                <div className="top-line" />
+                <div className="middle-line" />
+                <div className="bottom-line" />
+            </div>
+        </>
     )
 }

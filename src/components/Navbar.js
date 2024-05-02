@@ -3,11 +3,15 @@ import React, { useState, useEffect } from "react";
 import "../styles/Navbar.css";
 import cssLogo from "../assets/images/cssLogo.ico";
 import Hamburger from "./Hamburger";
+import Dropdown from "./Dropdown";
 
 export default function Navbar() {
     // determine current screen size, set to variable name
     const [screenType, setScreenType] = useState(window.innerWidth <= 600 ? 'mobile' : 'desktop');
+    // mobile menu open state, initial value set to false
+    const [dropdownOpen, setDropdownOpen] = useState(false);
 
+    // determine whether screen is mobile or desktop view
     useEffect(() => {
         const handleResize= () => {
             setScreenType(window.innerWidth <= 600 ? 'mobile' : 'desktop');
@@ -20,9 +24,18 @@ export default function Navbar() {
         };
     }, []);
 
+    // test screen type
     useEffect(() => {
         console.log(screenType);
     }, [screenType]);
+    
+    // open/close mobile menu
+    const toggleDropdown = () => {
+        // toggle dropdown open
+        setDropdownOpen(prevState => !prevState);
+        // test
+        console.log(dropdownOpen);
+    };
 
     const navLinks = [
         {
@@ -82,13 +95,13 @@ export default function Navbar() {
     ]
 
     return (
-        <nav>
+        <nav className="navbar">
             <div className="logo">
                 <img src={cssLogo} alt="css logo" />
                 <span className="navbar-title">100 Days of CSS</span>
             </div>
             {screenType === 'desktop' ? (
-                <ul>
+                <ul className="desktop-nav">
                     {navLinks.map((navbar) =>
                         <li key={navbar.title}>
                             <a to={navbar.link}>
@@ -98,7 +111,10 @@ export default function Navbar() {
                     )}
                 </ul>
             ) : (
-                <Hamburger />
+                <Hamburger props={toggleDropdown} />
+            )}
+            {dropdownOpen && (
+                <Dropdown props={navLinks} />
             )}
         </nav>
     )
