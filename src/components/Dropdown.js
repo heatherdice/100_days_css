@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Dropdown.css";
 
+// @TODO: dropdown needs to open up below navbar
+
 export default function Dropdown({ props }) {
     // set initial dropdown state to false
     const [dropdown, setDropdown] = useState(false);

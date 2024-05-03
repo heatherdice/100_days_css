@@ -16,6 +16,7 @@
 
 /* dropdown content */
 .dropdown-links {
+    z-index: 1;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -31,6 +32,7 @@
 
 /* individual links */
 .link-items {
+    z-index: 1;
     display: inline-block;
     cursor: pointer;
     padding: 0 0.75rem;
@@ -38,22 +40,22 @@
 
 @keyframes slideDown {
     from {
-        transform: translateY(-100%);
+        transform: translateY(8em);
         max-height: 0;
     }
     to {
         transform: translateY(0);
-        max-height: 150px;
+        max-height: 200px;
     }
 }
 
 @keyframes slideUp {
     from {
         transform: translateY(0);
-        max-height: 150px;
+        max-height: 200px;
     }
     to {
-        transform: translateY(-100%);
+        transform: translateY(8em);
         max-height: 0;
     }
 }
