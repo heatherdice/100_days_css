@@ -1,6 +1,5 @@
 .about-title {
-    font-family: "Courrier New", "Lucinda Console", monospace;
-    text-align: center;
+    /* text-align: center; */
     font-size: 2em;
     padding-top: 5em;
     margin-bottom: 0;
@@ -10,6 +9,7 @@
     text-align: start;
     width: 50%;
     font-size: 1.25em;
+    margin: 1em;
 }
 
 .about {
@@ -31,7 +31,8 @@
 @media (max-width: 900px) {
     .about-info {
         text-align: center;
-        width: 100vw;
+        width: 90vw;
+        /* margin: 1em; */
     }
     .about {
         flex-direction: column;

@@ -1,4 +1,13 @@
-* {
+/* * {
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+h1, h2, h3 {
+    font-family: "Courrier New", "Lucinda Console", monospace;
+    text-align: center;
+}
+
+li, p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
