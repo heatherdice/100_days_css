@@ -4,25 +4,25 @@
     text-align: center;
     position: relative;
     top: 4em;
+    width: 100vw
 }
 
 .hero::after{
     content: '';
     position: absolute;
-    bottom: -100px;
     left: 50%;
     transform: translateX(-50%);
     width: 0;
     height: 0;
-    border-left: 1000px solid transparent;
-    border-right: 1000px solid transparent;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
     border-top: 115px solid #2164AB;
     z-index: 0;
 }
 
 h1 {
     font-family: "Courrier New", "Lucinda Console", monospace;
-    margin-top: 0;
+    margin: 0;
     padding: 2em 2em .5em;
     font-size: 3em;
     background: linear-gradient(#FFFFFF 60%, #808080 100%);
@@ -33,12 +33,9 @@ h1 {
 @media (max-width: 600px) {
     .hero::after {
         bottom: -60px;
-        border-left: 300px solid transparent;
-        border-right: 300px solid transparent;
         border-top: 60px solid #2164AB;
     }
     h1 {
-        /* padding: 1em 1em .5em; */
         font-size: 1.5em;
     }
 }

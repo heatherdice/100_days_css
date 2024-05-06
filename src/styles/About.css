@@ -31,7 +31,7 @@
 @media (max-width: 900px) {
     .about-info {
         text-align: center;
-        width: 100%;
+        width: 100vw;
     }
     .about {
         flex-direction: column;
