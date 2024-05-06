@@ -1,0 +1,29 @@
+.days-title {
+    font-family: "Courrier New", "Lucinda Console", monospace;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.days-columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding: 2em 0;
+    margin: 0 1em;
+}
+
+.col-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+@media (max-width: 900px) {
+    .days {
+        flex-direction: column;
+    }
+}
