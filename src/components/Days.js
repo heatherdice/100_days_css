@@ -7,8 +7,8 @@ export default function Days() {
         <>
             <h2 className="days-title">Days</h2>
             <div className="days-columns">
+                <h3 className="day-heading">Day 1</h3>
                 <div className="col-1">
-                    <h3>Day 1</h3>
                     <Day1 />
                 </div>
                 <div className="col-2">
