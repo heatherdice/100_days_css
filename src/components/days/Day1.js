@@ -4,12 +4,12 @@ import "../../styles/dayStyles/Day1.css";
 export default function Day1() {
     return (
         // blue box container
-        <div className="container">
+        <div className="day1-container">
 
             {/* 100 */}
             <div className="numbers">
                 <div className="one-flag" />
-                <div className="one-stem" />
+                <div className="one-stem" />.
                 <div className="circle" />
                 <div className="circle-two" />
             </div>

@@ -1,11 +1,11 @@
 /* Day 1 Styles */
 
 /* blue box container, numbers, centered text */
-.container, .numbers, .center {
+.day1-container, .numbers, .center {
 	display: flex;
 }
 
-.container, .center {
+.day1-container, .center {
 	align-items: center;
 	justify-content: center;
 }
@@ -16,7 +16,7 @@
 }
 
 /* blue box container */
-.container {
+.day1-container {
 	flex-direction: column;
 	z-index: 1;
 	left: 50%;

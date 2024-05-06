@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Days.css";
 import Day1 from "./days/Day1";
+import Day2 from "./days/Day2";
 
 export default function Days() {
     return (
@@ -12,7 +13,7 @@ export default function Days() {
                     <Day1 />
                 </div>
                 <div className="col-2">
-
+                    <Day2 />
                 </div>
             </div>
         </>

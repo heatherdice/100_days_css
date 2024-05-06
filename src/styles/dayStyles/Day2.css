@@ -1,0 +1,94 @@
+/* Day 2 Styles */
+
+/* green box container, hamburger menu */
+.day2-container, .day2-hamburger {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* green box container */
+.day2-container {
+	position: relative;
+	z-index: 1;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	margin: 20px -200px;
+	border-radius: 5px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+	background: #3FAF82;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* hamburger menu */
+.day2-hamburger {
+	flex-direction: column;
+	justify-content: space-between;
+	height: 60px;
+}
+
+/* horizontal lines that make up hamburger */
+.day2-top-line, .day2-middle-line, .day2-bottom-line {
+	background-color: white;
+	width: 80px;
+	height: 8px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+	transition: background-color .5s ease-in-out;
+}
+
+/* pointer cursor */
+.day2-hamburger:hover {
+	cursor: pointer;
+}
+
+/* animation attributes */
+/* select elements w/ hamburger class but not static class */
+.day2-hamburger:not(.static) {
+	/* animation: uses @keyframes animation, specifies duration, ease-in starts slowly then increase speed of animation */
+	.top-line { animation: top-x-to-hamburger 0.6s ease-in forwards; }
+	.middle-line { animation: middle-x-to-hamburger 0.6s ease-in forwards; }
+	.bottom-line { animation: bottom-x-to-hamburger 0.6s ease-in forwards; }
+}
+/* ease-in-out starts slow, speeds up, ends slow */
+.day2-hamburger.animation {
+	.top-line { animation: top-hamburger-to-x 0.6s ease-in-out forwards; }
+	.middle-line { animation: middle-hamburger-to-x 0.6s ease-in-out forwards; }
+	.bottom-line { animation: bottom-hamburger-to-x 0.6s ease-in-out forwards; }
+}
+
+/* animation from the hamburger menu to the X shape, line by line */
+/* translateY reponsitions element vertically along 2D plane */
+@keyframes top-hamburger-to-x {
+	0% { transform: none; }
+	30% { transform: translateY(26px); }
+	100% { transform: translateY(26px) rotate(45deg); }
+}
+@keyframes middle-hamburger-to-x {
+	0% { transform: scale(1); }
+	100% { transform: scale(0); }
+}
+@keyframes bottom-hamburger-to-x {
+	0% { transform: none; }
+	30% { transform: translateY(-26px); }
+	100% { transform: translateY(-26px) rotate(135deg); }
+}
+
+/* animation from the X shape to the hamburger menu, line by line */
+@keyframes top-x-to-hamburger {
+	0% {transform: translateY(26px) rotate(45deg); }
+	50% {transform: translateY(26px); }
+	100% { transform: none; }
+}
+@keyframes middle-x-to-hamburger {
+	0% { transform: scale(0); }
+	100% { transform: scale(1); }
+}
+@keyframes bottom-x-to-hamburger {
+	0% { transform: translateY(-26px) rotate(135deg); }
+	50% { transform: translateY(-26px); }
+	100% { transform: none; }
+}
