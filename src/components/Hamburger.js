@@ -3,7 +3,6 @@ import "../styles/Hamburger.css";
 import Dropdown from "./Dropdown";
 
 export default function Hamburger({ props }) {
-
     // toggle classes for animations on hamburger click
     useEffect(() => {
         // select DOM element
