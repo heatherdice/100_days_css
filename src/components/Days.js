@@ -12,6 +12,7 @@ export default function Days() {
                 <div className="col-1">
                     <Day1 />
                 </div>
+                <h3 className="day-heading">Day 2</h3>
                 <div className="col-2">
                     <Day2 />
                 </div>
