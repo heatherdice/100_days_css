@@ -2,17 +2,19 @@ import React, { useState } from "react";
 import "../../styles/dayStyles/Day2.css";
 
 export default function Day2() {
+    // set state variables for X shape
     const [isX, setIsX] = useState(false);
 
-    const toggleX = () => {
+    // change state of X shape from true to false or vice versa
+    const toggleX = (e) => {
+        // prevent event from bubbling up to parent elements
+        e.stopPropagation();
         setIsX(!isX);
+        
+        // test
         console.log("Clicked");
         console.log(isX);
     };
-
-    const toggleHamburger = () => {
-        setIsX(false);
-    }
     
     return (
         // green box container
