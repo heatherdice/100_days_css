@@ -10,25 +10,9 @@ export default function Day2() {
         console.log(isX);
     };
 
-    // toggle classes for animations on hamburger click
-    // useEffect(() => {
-    //     // select DOM element
-    //     const hamburger = document.querySelector(".day2-hamburger");
-
-    //     // onclick, remove static class & add animation class; if animation class is already present, remove it
-    //     const handleHamburgerClick = () => {
-    //         hamburger.classList.remove("static-hamburger");
-    //         hamburger.classList.toggle("animate-X");
-    //     };
-
-    //     // add event listener when component mounts
-    //     hamburger.addEventListener("click", handleHamburgerClick);
-
-    //     // remove event listener when component unmounts
-    //     return () => {
-    //         hamburger.removeEventListener("click", handleHamburgerClick);
-    //     }
-    // }, []);
+    const toggleHamburger = () => {
+        setIsX(false);
+    }
     
     return (
         // green box container

@@ -4,12 +4,6 @@ import Day1 from "./days/Day1";
 import Day2 from "./days/Day2";
 
 export default function Days() {
-    // const [day2X, setDay2X] = useState(false);
-
-    // const toggleX = () => {
-    //     setDay2X(prevState => !prevState);
-    // }
-
     return (
         <>
             <h2 className="days-title">Days</h2>

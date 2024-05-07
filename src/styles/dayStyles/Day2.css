@@ -46,7 +46,7 @@
 }
 
 /* animation attributes */
-/* select elements w/ hamburger class but not static class */
+/* select elements w/ day2-hamburger class but not static-hamburger class */
 .day2-hamburger:not(.static-hamburger) {
 	/* animation: uses @keyframes animation, specifies duration, ease-in starts slowly then increase speed of animation */
 	.day2-top-line { animation: top-x-to-hamburger2 0.6s ease-in forwards; }
