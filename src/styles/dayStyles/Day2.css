@@ -9,7 +9,6 @@
 
 /* green box container */
 .day2-container {
-	position: relative;
 	z-index: 1;
 	left: 50%;
 	width: 400px;
