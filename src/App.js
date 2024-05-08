@@ -6,6 +6,8 @@ import About from "./components/About";
 import Days from "./components/Days";
 
 export default function App() {
+    alert("Welcome! Please note that this page is currently under construction. As a result, you might experience some bugs. Rest assured, they're being squashed! Thanks for your patience!");
+    
     return (
         <div className="App">
             <Navbar />
