@@ -60,6 +60,10 @@
     }
 }
 
+.dropdown {
+    display: none;
+}
+
 .dropdown.animation {
     display: block;
     animation-name: slideDown;

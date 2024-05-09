@@ -8,14 +8,18 @@ import Dropdown from "./Dropdown";
 export default function Navbar() {
     // determine current screen size, set to variable name
     const [screenType, setScreenType] = useState(window.innerWidth <= 600 ? 'mobile' : 'desktop');
+
     // mobile menu open state, initial value set to false
     const [dropdownOpen, setDropdownOpen] = useState(false);
-
 
     // determine whether screen is mobile or desktop view
     useEffect(() => {
         const handleResize= () => {
             setScreenType(window.innerWidth <= 600 ? 'mobile' : 'desktop');
+
+            if(dropdownOpen) {
+                setDropdownOpen(false);
+            }
         };
 
         window.addEventListener('resize', handleResize);
@@ -119,7 +123,7 @@ export default function Navbar() {
             </nav>
             {dropdownOpen && (
                 <div className={`dropdown ${dropdownOpen ? 'animation' : 'static'}`}>
-                    <Dropdown props={navLinks} />
+                    <Dropdown navLinks={navLinks} />
                 </div>
             )}
         </>
