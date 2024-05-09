@@ -70,7 +70,8 @@
     margin-top: 4em;
 }
 
-.dropdown.static {
+.dropdown:not(.animation) {
+    display: block;
     animation-name: slideUp;
     margin-top: 0;
 }
