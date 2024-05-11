@@ -2,16 +2,16 @@ import React, { useEffect, useState } from "react";
 import "../styles/Hamburger.css";
 import Dropdown from "./Dropdown";
 
-export default function Hamburger({ props }) {
+export default function Hamburger({ onClick }) {
     // toggle classes for animations on hamburger click
     useEffect(() => {
         // select DOM element
         const menu = document.querySelector(".hamburger");
 
-        // onclick, remove static class & add animation class; if animation class is already present, remove it
+        // change shape from hamburger to x or vice versa
         const handleClick = () => {
-            menu.classList.remove("static");
-            menu.classList.toggle("animation");
+            menu.classList.remove("menu");
+            menu.classList.toggle("animation-to-x");
         };
 
         // add event listener when component mounts
@@ -25,7 +25,7 @@ export default function Hamburger({ props }) {
 
     return (
         <>
-            <div className="hamburger static" onClick={props}>
+            <div className="hamburger menu" onClick={onClick}>
                 <div className="top-line" />
                 <div className="middle-line" />
                 <div className="bottom-line" />

@@ -25,15 +25,15 @@
 }
 
 /* animation attributes */
-/* select elements w/ hamburger class but not static class */
-.hamburger:not(.static) {
+/* select elements w/ hamburger class but not menu class */
+.hamburger:not(.menu) {
 	/* animation: uses @keyframes animation, specifies duration, ease-in starts slowly then increase speed of animation */
 	.top-line { animation: top-x-to-hamburger 0.6s ease-in forwards; }
 	.middle-line { animation: middle-x-to-hamburger 0.6s ease-in forwards; }
 	.bottom-line { animation: bottom-x-to-hamburger 0.6s ease-in forwards; }
 }
 /* ease-in-out starts slow, speeds up, ends slow */
-.hamburger.animation {
+.hamburger.animation-to-x {
 	.top-line { animation: top-hamburger-to-x 0.6s ease-in-out forwards; }
 	.middle-line { animation: middle-hamburger-to-x 0.6s ease-in-out forwards; }
 	.bottom-line { animation: bottom-hamburger-to-x 0.6s ease-in-out forwards; }
