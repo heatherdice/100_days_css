@@ -11,6 +11,7 @@ export default function Navbar() {
 
     // mobile menu open state, initial value set to false
     const [dropdownOpen, setDropdownOpen] = useState("closed");
+    console.log("Initial state: ", dropdownOpen);
 
     // determine whether screen is mobile or desktop view
     useEffect(() => {
@@ -18,9 +19,9 @@ export default function Navbar() {
             setScreenType(window.innerWidth <= 600 ? 'mobile' : 'desktop');
 
             // close dropdown on resize
-            // if(dropdownOpen != "closed") {
-            // setDropdownOpen("closed");
-            // }
+            if(dropdownOpen != "closed") {
+                setDropdownOpen("closed");
+            }
         };
 
         window.addEventListener('resize', handleResize);
@@ -29,11 +30,6 @@ export default function Navbar() {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-
-    // test screen type
-    useEffect(() => {
-        console.log(screenType);
-    }, [screenType]);
     
     // open/close mobile menu
     const toggleDropdown = () => {
@@ -122,10 +118,10 @@ export default function Navbar() {
                         )}
                     </ul>
                 ) : (
-                    <Hamburger props={toggleDropdown} />
+                    <Hamburger onClick={toggleDropdown} />
                 )}
             </nav>
-            {dropdownOpen === "open" && (
+            {toggleDropdown && (
                 <div className={`dropdown ${dropdownOpen === "closed" ? '' : 'animation'}`}>
                     <Dropdown navLinks={navLinks} />
                 </div>

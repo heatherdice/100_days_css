@@ -38,6 +38,7 @@
     padding: 0 0.75rem;
 }
 
+/* open/close animations */
 @keyframes slideDown {
     from {
         transform: translateY(-8em);
@@ -48,7 +49,6 @@
         max-height: 200px;
     }
 }
-
 @keyframes slideUp {
     from {
         transform: translateY(0);
@@ -60,10 +60,7 @@
     }
 }
 
-.dropdown {
-    display: none;
-}
-
+/* animation calls */
 .dropdown.animation {
     display: block;
     animation-name: slideDown;
