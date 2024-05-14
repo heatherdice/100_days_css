@@ -33,9 +33,19 @@
     height: 28em;
 }
 
+/* mobile styling */
 @media (max-width: 600px) {
     .col-1, .col-2 {
         width: 18.75em;
-        height: 18.75em;
+        height: 21em;
+    }
+    .days-columns {
+        flex-direction: column;
+    }
+    .col-1 {
+        order: 1;
+    }
+    .col-2 {
+        order: 2;
     }
 }
