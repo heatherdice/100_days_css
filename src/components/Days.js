@@ -14,7 +14,7 @@ export default function Days() {
                 </div>
                 <div className="col-2">
                     <h3 className="day-heading">Day 2</h3>
-                    {/* <Day2 /> */}
+                    <Day2 />
                 </div>
             </div>
         </>
