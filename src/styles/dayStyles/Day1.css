@@ -103,6 +103,29 @@
 	font-size: 1.8em;
 }
 
+/* tablet styling */
+@media (max-width: 945px) {
+	.one-flag {
+		width: .8em;
+		height: 1.75em;
+	}
+	.one-stem {
+		width: 1em;
+		height: 4.5em;
+	}
+	.circle, .circle-two {
+		border: 1em solid white;
+		height: 2.5em;
+		width: 2.5em;
+	}
+	.days {
+		font-size: 3.75em;
+	}
+	.css-challenge {
+		font-size: 1.25em;
+	}
+}
+
 /* mobile styling */
 @media (max-width: 600px) {
 	.day1-container {
