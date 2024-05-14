@@ -64,7 +64,7 @@
 	/* position: absolute; */
 	left: 1em;
 	z-index: 4;
-	width: 25px;
+	width: 1.56em;
 	height: 6.75em;
 }
 
@@ -108,7 +108,23 @@
 	.day1-container {
 		margin: .25em -11em;
 	}
+	.one-flag {
+		width: 1em;
+		height: 2em;
+	}	
+	.one-stem {
+		width: 1.17em;
+		height: 5em;
+	}	
+	.circle, .circle-two {
+		border: 1.2em solid white;
+		height: 2.8em;
+		width: 2.8em;
+	}	
 	.days {
-		font-size: 3em;
+		font-size: 4.5em;
+	}
+	.css-challenge {
+		font-size: 1.35em;
 	}
 }
