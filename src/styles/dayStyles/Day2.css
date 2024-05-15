@@ -92,3 +92,9 @@
 	50% { transform: translateY(-1.625em); }
 	100% { transform: none; }
 }
+
+@media (max-width: 600px) {
+	.day2-container {
+		margin: .25em -11em;
+	}
+}
