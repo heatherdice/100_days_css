@@ -7,15 +7,18 @@
 	justify-content: center;
 }
 
+.day2-container, .day2-top-line, .day2-middle-line, .day2-bottom-line {
+	border-radius: 5px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+}
+
 /* green box container */
 .day2-container {
 	z-index: 1;
 	left: 50%;
 	width: 100%;
 	height: 100%;
-	margin: 20px -200px;
-	border-radius: 5px;
-	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	margin: 1.25em -12.5em;
 	overflow: hidden;
 	background: #3FAF82;
 	-webkit-font-smoothing: antialiased;
@@ -26,16 +29,14 @@
 .day2-hamburger {
 	flex-direction: column;
 	justify-content: space-between;
-	height: 60px;
+	height: 3.75em;
 }
 
 /* horizontal lines that make up hamburger */
 .day2-top-line, .day2-middle-line, .day2-bottom-line {
 	background-color: white;
-	width: 80px;
-	height: 8px;
-	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
-	border-radius: 5px;
+	width: 5em;
+	height: 0.5em;
 	transition: background-color .5s ease-in-out;
 }
 
@@ -63,8 +64,8 @@
 /* translateY reponsitions element vertically along 2D plane */
 @keyframes top-hamburger-to-x2 {
 	0% { transform: none; }
-	30% { transform: translateY(26px); }
-	100% { transform: translateY(26px) rotate(45deg); }
+	30% { transform: translateY(1.625em); }
+	100% { transform: translateY(1.625em) rotate(45deg); }
 }
 @keyframes middle-hamburger-to-x2 {
 	0% { transform: scale(1); }
@@ -72,14 +73,14 @@
 }
 @keyframes bottom-hamburger-to-x2 {
 	0% { transform: none; }
-	30% { transform: translateY(-26px); }
-	100% { transform: translateY(-26px) rotate(135deg); }
+	30% { transform: translateY(-1.625em); }
+	100% { transform: translateY(-1.625em) rotate(135deg); }
 }
 
 /* animation from the X shape to the hamburger menu, line by line */
 @keyframes top-x-to-hamburger2 {
-	0% {transform: translateY(26px) rotate(45deg); }
-	50% {transform: translateY(26px); }
+	0% {transform: translateY(1.625em) rotate(45deg); }
+	50% {transform: translateY(1.625em); }
 	100% { transform: none; }
 }
 @keyframes middle-x-to-hamburger2 {
@@ -87,7 +88,7 @@
 	100% { transform: scale(1); }
 }
 @keyframes bottom-x-to-hamburger2 {
-	0% { transform: translateY(-26px) rotate(135deg); }
-	50% { transform: translateY(-26px); }
+	0% { transform: translateY(-1.625em) rotate(135deg); }
+	50% { transform: translateY(-1.625em); }
 	100% { transform: none; }
 }
