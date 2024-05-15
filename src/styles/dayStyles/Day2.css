@@ -93,10 +93,17 @@
 	100% { transform: none; }
 }
 
+/* tablet styling */
+@media (max-width: 945px) {
+    .day2-container {
+        height: 16em;
+    }
+}
+
 /* mobile styling */
 @media (max-width: 600px) {
 	.day2-container {
 		margin: .25em -11em;
-		height: 25em;
+		height: 18em;
 	}
 }

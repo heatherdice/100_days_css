@@ -1,12 +1,21 @@
+import React, { useEffect, useState } from "react";
 import "./App.css";
-import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Days from "./components/Days";
 
 export default function App() {
-    alert("Welcome! Please note that this page is currently under construction. As a result, you might experience some bugs. Rest assured, they're being squashed! Thanks for your patience!");
+    // set initial alert state to true
+    const [showAlert, setShowAlert] = useState(true);
+
+    // only run alert on component mount
+    useEffect(() => {
+        if(showAlert) {
+            alert("Welcome! Please note that this page is currently under construction. As a result, you might experience some bugs. Rest assured, they're being squashed! Thanks for your patience!");
+            setShowAlert(false);
+        }
+    }, []);
     
     return (
         <div className="App">

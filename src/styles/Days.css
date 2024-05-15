@@ -43,7 +43,7 @@
 @media (max-width: 600px) {
     .col-1, .col-2 {
         width: 18.75em;
-        height: 21em;
+        /* height: 21em; */
     }
     .days-containers {
         flex-direction: column;

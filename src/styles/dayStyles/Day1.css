@@ -105,7 +105,7 @@
 /* tablet styling */
 @media (max-width: 945px) {
 	.day1-container {
-		height: 17em;
+		height: 16em;
 	}
 	.one-flag {
 		width: .8em;
@@ -132,7 +132,7 @@
 @media (max-width: 600px) {
 	.day1-container {
 		margin: .25em -11em;
-		height: 25em;
+		height: 18em;
 	}
 	.one-flag {
 		width: 1em;
