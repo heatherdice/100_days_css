@@ -1,0 +1,94 @@
+/* Day 4 Styles */
+
+/* common styles */
+.day4-container, .outer-circle, .middle-circle, .inner-circle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	box-shadow: 4px 4px 8px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* red box container */
+.day4-container {
+	z-index: 1;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	margin: 20px -200px;
+	border-radius: 5px;
+	overflow: hidden;
+	background: #E56262;
+}
+
+/* circle styles */
+.outer-circle, .middle-circle, .inner-circle {
+	background: white;
+	border-radius: 50%;
+	animation-play-state: running;
+	animation-fill-mode: both;
+}
+
+/* small circle, including animation */
+/* animation explanation:
+* grow-shrink-1: name of keyframes animation to be applied
+* 2s: duration of the animation
+* infinite: animation repeats infinitely
+* alternate: animation alternates direction each cycle
+* cubic-bezier(.21,.98,.6,.99): timing function of the animation; rate of animation's change of spee during animation cycle
+* specific numbers for cubic-bezier copied from source code greater accuracy & efficiency */
+.inner-circle {
+	z-index: 4;
+	height: 30px;
+	width: 30px;
+	animation: grow-shrink-1 2s infinite alternate cubic-bezier(.21,.98,.6,.99);
+}
+
+/* medium circle, including animation */
+.middle-circle {
+	z-index: 2;
+	height: 60px;
+	width: 60px;
+	animation: grow-shrink-2 2s infinite alternate cubic-bezier(.21,.98,.6,.99);
+}
+
+/* large circle, including animation */
+.outer-circle {
+	z-index: 2;
+	height: 90px;
+	width: 90px;
+	animation: grow-shrink-3 2s infinite alternate cubic-bezier(.21,.98,.6,.99);
+}
+
+/* animations for growing & shrinking */
+/* Keyframes explanation:
+* @keyframes: CSS at-rule defining animation sequence
+* x%, y%: keyframe selectors that define the styles to be applied at specific points in the animation's duration 
+* transform: scale(0): makes element invisible 
+* transform: scale(1): restores element to its original size */
+@keyframes grow-shrink-1 {
+	0%, 70% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes grow-shrink-2 {
+	0%, 40% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes grow-shrink-3 {
+	0%, 10% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

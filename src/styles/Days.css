@@ -1,4 +1,4 @@
-.days-columns, .col-1, .col-2 {
+.days-containers, .col-1, .col-2 {
     display: flex;
     justify-content: center;
 }
@@ -12,7 +12,7 @@
 }
 
 /* columns for displaying projects */
-.days-columns {
+.days-containers {
     align-items: center;
     gap: 10%;
     padding: 2em 0;
@@ -30,14 +30,12 @@
     flex-direction: column;
     align-items: center;
     width: 25em;
-    height: 28em;
 }
 
 /* tablet styling */
 @media (max-width: 945px) {
     .col-1, .col-2 {
         width: 16em;
-        height: 20em;
     }
 }
 
@@ -47,7 +45,7 @@
         width: 18.75em;
         height: 21em;
     }
-    .days-columns {
+    .days-containers {
         flex-direction: column;
     }
     .col-1 {
