@@ -10,7 +10,7 @@ export default function Days() {
         <>
             <h2 className="days-title">Days</h2>
             <div className="page-container">
-                <div className="grid-rows">
+                <div className="grid-columns">
                     <div className="grid-blocks">
                         <h3 className="day-heading">Day 1</h3>
                         <Day1 />
@@ -20,7 +20,7 @@ export default function Days() {
                         <Day2 />
                     </div>
                 </div>
-                <div className="grid-rows">
+                <div className="grid-columns">
                     <div className="grid-blocks">
                         <h3 className="day-heading">Day 3</h3>
                         <Day3 />
