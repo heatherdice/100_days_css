@@ -98,6 +98,14 @@
     .day2-container {
         height: 16em;
     }
+	.day2-hamburger {
+		height: 1.8em;
+	}
+	.day2-top-line, .day2-middle-line, .day2-bottom-line {
+		width: 3em;
+		height: 0.25em;
+	}
+	
 }
 
 /* mobile styling */

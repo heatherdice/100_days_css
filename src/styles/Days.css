@@ -1,4 +1,4 @@
-.days-containers, .col-1, .col-2 {
+.page-container, .grid-rows, .grid-blocks {
     display: flex;
     justify-content: center;
 }
@@ -11,12 +11,18 @@
     margin-bottom: 0;
 }
 
-/* columns for displaying projects */
-.days-containers {
+/* container for columns */
+.page-container {
     align-items: center;
+    /* flex-direction: column; */
     gap: 10%;
     padding: 2em 0;
     margin: 0 1em;
+}
+
+/* columns for displaying projects */
+.grid-rows {
+    flex-direction: row;
 }
 
 /* headings of projects */
@@ -26,7 +32,7 @@
 }
 
 /* styling for individual columns */
-.col-1, .col-2 {
+.grid-blocks {
     flex-direction: column;
     align-items: center;
     width: 25em;
@@ -34,24 +40,18 @@
 
 /* tablet styling */
 @media (max-width: 945px) {
-    .col-1, .col-2 {
+    .grid-blocks {
         width: 16em;
     }
 }
 
 /* mobile styling */
 @media (max-width: 600px) {
-    .col-1, .col-2 {
+    .grid-blocks {
         width: 18.75em;
         /* height: 21em; */
     }
-    .days-containers {
+    .page-container {
         flex-direction: column;
-    }
-    .col-1 {
-        order: 1;
-    }
-    .col-2 {
-        order: 2;
     }
 }
