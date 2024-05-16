@@ -31,24 +31,24 @@
 * specific numbers for cubic-bezier copied from source code greater accuracy & efficiency */
 .inner-circle {
 	z-index: 4;
-	height: 30px;
-	width: 30px;
+	height: 1.875em;
+	width: 1.875em;
 	animation: grow-shrink-1 2s infinite alternate cubic-bezier(.21,.98,.6,.99);
 }
 
 /* medium circle, including animation */
 .middle-circle {
 	z-index: 2;
-	height: 60px;
-	width: 60px;
+	height: 3.75em;
+	width: 3.75em;
 	animation: grow-shrink-2 2s infinite alternate cubic-bezier(.21,.98,.6,.99);
 }
 
 /* large circle, including animation */
 .outer-circle {
 	z-index: 2;
-	height: 90px;
-	width: 90px;
+	height: 5.625em;
+	width: 5.625em;
 	animation: grow-shrink-3 2s infinite alternate cubic-bezier(.21,.98,.6,.99);
 }
 
