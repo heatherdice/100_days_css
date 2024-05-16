@@ -10,24 +10,26 @@ export default function Days() {
         <>
             <h2 className="days-title">Days</h2>
             <div className="page-container">
-                <div className="grid-columns">
-                    <div className="grid-blocks">
-                        <h3 className="day-heading">Day 1</h3>
-                        <Day1 />
+                <div className="grid-wrapper">
+                    <div className="grid-rows">
+                        <div className="grid-blocks">
+                            <h3 className="day-heading">Day 1</h3>
+                            <Day1 />
+                        </div>
+                        <div className="grid-blocks">
+                            <h3 className="day-heading">Day 2</h3>
+                            <Day2 />
+                        </div>
                     </div>
-                    <div className="grid-blocks">
-                    <h3 className="day-heading">Day 3</h3>
-                        <Day3 />
-                    </div>
-                </div>
-                <div className="grid-columns">
-                    <div className="grid-blocks">
-                    <h3 className="day-heading">Day 2</h3>
-                        <Day2 />
-                    </div>
-                    <div className="grid-blocks">
-                        <h3 className="day-heading">Day 4</h3>
-                        <Day4 />
+                    <div className="grid-rows">
+                        <div className="grid-blocks">
+                            <h3 className="day-heading">Day 3</h3>
+                            <Day3 />
+                        </div>
+                        <div className="grid-blocks">
+                            <h3 className="day-heading">Day 4</h3>
+                            <Day4 />
+                        </div>
                     </div>
                 </div>
             </div>

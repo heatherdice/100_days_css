@@ -15,7 +15,7 @@
 
 /* container for columns */
 .page-container {
-    /* flex-direction: column; */
+    flex-direction: column;
     gap: 10%;
     padding: 2em 0;
     margin: 0 1em;
@@ -24,6 +24,7 @@
 /* columns for displaying projects */
 .grid-rows {
     flex-direction: row;
+    gap: 4em;
 }
 
 /* headings of projects */
@@ -63,11 +64,17 @@
 /* mobile styling */
 @media (max-width: 600px) {
     .page-container {
+        padding: 0;
+    }
+    .grid-rows {
         flex-direction: column;
+        gap: 0;
     }
     .grid-blocks {
         width: 18.75em;
-        /* height: 21em; */
+    }
+    .day-heading {
+        padding-top: 1em;
     }
     .day-container {
         margin: .25em -11em;
