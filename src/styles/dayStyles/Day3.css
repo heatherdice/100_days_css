@@ -1,21 +1,11 @@
 /* Day 3 styles */
 
 /* black box container */
-.day3-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
+.day-container {
     position: relative;
-    width: 100%;
-    height: 25em;
-    margin: 1.25em -12.5em;
-    border-radius: 5px;
-    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
-	overflow: hidden;
+}
+.container-color3 {
 	background: #272C34;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
 
 /* centered circle in box container */
@@ -91,20 +81,5 @@
 @media (max-width: 945px) {
     .day3-container {
         height: 16em;
-    }
-}
-
-/* tablet styling */
-@media (max-width: 945px) {
-    .day3-container {
-        height: 17em;
-    }
-}
-
-/* mobile styling */
-@media (max-width: 600px) {
-    .day3-container {
-        margin: .25em -11em;
-		height: 18em;
     }
 }

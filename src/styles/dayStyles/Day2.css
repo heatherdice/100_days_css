@@ -1,32 +1,20 @@
 /* Day 2 Styles */
 
-/* green box container, hamburger menu */
-.day2-container, .day2-hamburger {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.day2-container, .day2-top-line, .day2-middle-line, .day2-bottom-line {
+/* hamburger menu lines */
+.day2-top-line, .day2-middle-line, .day2-bottom-line {
 	border-radius: 5px;
 	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
 }
 
 /* green box container */
-.day2-container {
-	z-index: 1;
-	left: 50%;
-	width: 100%;
-	height: 25em;
-	/* margin: 1.25em -12.5em; */
-	overflow: hidden;
+.container-color2 {
 	background: #3FAF82;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
 
 /* hamburger menu */
 .day2-hamburger {
+	display: flex;
+	align-items: center;
 	flex-direction: column;
 	justify-content: space-between;
 	height: 3.75em;
@@ -95,9 +83,6 @@
 
 /* tablet styling */
 @media (max-width: 945px) {
-    .day2-container {
-        height: 16em;
-    }
 	.day2-hamburger {
 		height: 1.8em;
 	}
@@ -106,12 +91,4 @@
 		height: 0.25em;
 	}
 	
-}
-
-/* mobile styling */
-@media (max-width: 600px) {
-	.day2-container {
-		margin: .25em -11em;
-		height: 18em;
-	}
 }

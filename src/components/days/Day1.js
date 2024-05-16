@@ -4,7 +4,7 @@ import "../../styles/dayStyles/Day1.css";
 export default function Day1() {
     return (
         // blue box container
-        <div className="day1-container">
+        <div className="day-container container-color1">
 
             {/* 100 */}
             <div className="numbers">

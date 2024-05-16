@@ -24,7 +24,7 @@ export default function Day2({ onClick }) {
     
     return (
         // green box container
-        <div className="day2-container">
+        <div className="day-container container-color2">
             
             {/* hamburger menu */}
             <div className="day2-hamburger static-hamburger" onClick={onClick}>

@@ -1,34 +1,27 @@
 /* Day 1 Styles */
 
-/* blue box container, numbers, centered text */
-.day1-container, .numbers, .center {
+/* numbers, centered text */
+.numbers, .center {
 	display: flex;
 }
 
-.day1-container, .center {
+/* centered text */
+.center {
 	align-items: center;
 	justify-content: center;
 }
 
-/* blue box container, flat of 1, both 0's */
+/* flat of 1, both 0's */
 .one-flag, .one-stem, .circle, .circle-two {
 	position: relative;
 }
 
 /* blue box container */
-.day1-container {
-	flex-direction: column;
-	z-index: 1;
-	left: 50%;
-	width: 100%;
-	height: 25em;
-	margin: 1.25em -12.5em;
-	border-radius: 5px;
-	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
-	overflow: hidden;
+.container-color1 {
 	background-image: linear-gradient(to bottom left, #4DC0C8, #4343A2);
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+}
+.day-container {
+	flex-direction: column;
 }
 
 /* numbers container */
@@ -46,7 +39,6 @@
 .one-flag, .one-stem, .circle, .circle-two {
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 }
-
 .one-stem, .circle, .circle-two {
 	margin-bottom: 0.5em;
 }
@@ -59,7 +51,6 @@
 	height: 2.5em;
 	transform: rotate(50deg);
 }
-
 .one-stem {
 	left: 1em;
 	z-index: 4;
@@ -72,12 +63,10 @@
 	left: 0.625em;
 	z-index: 3;
 }
-
 .circle-two {
 	z-index: 2;
 	left: -0.313em;
 }
-
 .circle, .circle-two {
 	border: 1.6em solid white;
 	height: 3.75em;
@@ -93,20 +82,15 @@
 	font-weight: bold;
 	line-height: .75;
 }
-
 .days {
 	font-size: 6em;
 }
-
 .css-challenge {
 	font-size: 1.8em;
 }
 
 /* tablet styling */
 @media (max-width: 945px) {
-	.day1-container {
-		height: 16em;
-	}
 	.one-flag {
 		width: .8em;
 		height: 1.75em;
@@ -130,10 +114,6 @@
 
 /* mobile styling */
 @media (max-width: 600px) {
-	.day1-container {
-		margin: .25em -11em;
-		height: 18em;
-	}
 	.one-flag {
 		width: 1em;
 		height: 2em;
