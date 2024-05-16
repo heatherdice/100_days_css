@@ -27,7 +27,7 @@ export default function Hamburger({ onClick }) {
 
     return (
         <>
-            <div className="hamburger menu" onClick={onClick}>
+            <div className="hamburger menu" onClick={onClick} onTouchStart={onClick}>
                 <div className="top-line" />
                 <div className="middle-line" />
                 <div className="bottom-line" />
