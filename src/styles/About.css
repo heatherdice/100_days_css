@@ -1,5 +1,4 @@
 .about-title {
-    /* text-align: center; */
     font-size: 2em;
     padding-top: 5em;
     margin-bottom: 0;
@@ -28,13 +27,21 @@
     margin: 0 4em;
 }
 
-@media (max-width: 900px) {
+/* tablet styling */
+@media (max-width: 945px) {
     .about-info {
         text-align: center;
         width: 90vw;
-        /* margin: 1em; */
     }
     .about {
         flex-direction: column;
+        padding-top: 0;
+    }
+}
+
+/* mobile styling */
+@media (max-width: 600px) {
+    .about-title {
+        font-size: 1.5em;
     }
 }
