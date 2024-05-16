@@ -23,11 +23,11 @@ export default function Hamburger({ onClick }) {
             menu.removeEventListener("click", handleClick);
             menu.removeEventListener("touchstart", handleClick);
         };
-    }, []);
+    }, [onClick]);
 
     return (
         <>
-            <div className="hamburger menu" onClick={onClick} onTouchStart={onClick}>
+            <div className="hamburger menu">
                 <div className="top-line" />
                 <div className="middle-line" />
                 <div className="bottom-line" />
