@@ -15,8 +15,8 @@
     overflow: hidden;
     z-index: 2;
     position: relative;
-    height: 180px;
-    width: 180px;
+    height: 11.25em;
+    width: 11.25em;
     animation: fade-in-out 5s ease-in-out infinite;
     animation-fill-mode: forwards;
 }
@@ -37,11 +37,11 @@
 .sun {
     position: absolute;
     z-index: 3;
-    top: 10px;
-    left: 70px;
+    top: 0.625em;
+    left: 4.375em;
     border-radius: 50%;
-    height: 35px;
-    width: 35px;
+    height: 2em;
+    width: 2em;
     background: #FEEF01;
     transform-origin: 50% 400%;
     animation: sun-orbit 5s ease-in-out infinite;
@@ -51,8 +51,8 @@
 .pyramid {
     position: absolute;
     bottom: 0;
-    height: 60px;
-    width: 115px;
+    height: 3.75em;
+    width: 7em;
     background-image: 
         linear-gradient(to bottom right, transparent 50%, #F4F4F4 0), linear-gradient(to top right, #E1DFDF 50%, transparent 0);
     background-size: 50% 100%;
