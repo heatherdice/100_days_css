@@ -16,14 +16,14 @@ export default function Days() {
                         <Day1 />
                     </div>
                     <div className="grid-blocks">
-                        <h3 className="day-heading">Day 2</h3>
-                        <Day2 />
+                    <h3 className="day-heading">Day 3</h3>
+                        <Day3 />
                     </div>
                 </div>
                 <div className="grid-columns">
                     <div className="grid-blocks">
-                        <h3 className="day-heading">Day 3</h3>
-                        <Day3 />
+                    <h3 className="day-heading">Day 2</h3>
+                        <Day2 />
                     </div>
                     <div className="grid-blocks">
                         <h3 className="day-heading">Day 4</h3>

@@ -52,8 +52,8 @@
 /* translateY reponsitions element vertically along 2D plane */
 @keyframes top-hamburger-to-x2 {
 	0% { transform: none; }
-	30% { transform: translateY(1.625em); }
-	100% { transform: translateY(1.625em) rotate(45deg); }
+	30% { transform: translateY(.75em); }
+	100% { transform: translateY(.75em) rotate(45deg); }
 }
 @keyframes middle-hamburger-to-x2 {
 	0% { transform: scale(1); }
@@ -61,14 +61,14 @@
 }
 @keyframes bottom-hamburger-to-x2 {
 	0% { transform: none; }
-	30% { transform: translateY(-1.625em); }
-	100% { transform: translateY(-1.625em) rotate(135deg); }
+	30% { transform: translateY(-.75em); }
+	100% { transform: translateY(-.75em) rotate(135deg); }
 }
 
 /* animation from the X shape to the hamburger menu, line by line */
 @keyframes top-x-to-hamburger2 {
-	0% {transform: translateY(1.625em) rotate(45deg); }
-	50% {transform: translateY(1.625em); }
+	0% {transform: translateY(.75em) rotate(45deg); }
+	50% {transform: translateY(.75em); }
 	100% { transform: none; }
 }
 @keyframes middle-x-to-hamburger2 {
@@ -76,8 +76,8 @@
 	100% { transform: scale(1); }
 }
 @keyframes bottom-x-to-hamburger2 {
-	0% { transform: translateY(-1.625em) rotate(135deg); }
-	50% { transform: translateY(-1.625em); }
+	0% { transform: translateY(-.75em) rotate(135deg); }
+	50% { transform: translateY(-.75em); }
 	100% { transform: none; }
 }
 
