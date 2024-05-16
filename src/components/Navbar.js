@@ -110,7 +110,7 @@ export default function Navbar() {
                 {screenType === 'desktop' ? (
                     <ul className="desktop-nav">
                         {navLinks.map((navbar) =>
-                            <li key={navbar.title}>
+                            <li key={navbar.title} className="desktop-navbar-links">
                                 <a to={navbar.link}>
                                     {navbar.title}
                                 </a>
