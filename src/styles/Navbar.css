@@ -37,7 +37,7 @@ li {
     padding: 0 1em;
 }
 
-// mobile styling
+/* mobile styling */
 @media (max-width: 600px) {
     .css-logo-navbar {
         padding: .25em;

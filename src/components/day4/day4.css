@@ -40,7 +40,7 @@
 	z-index: 4;
 	height: 30px;
 	width: 30px;
-	animation: grow-shrink-1 2s infinite alternate cubic-bezier(.21,.98,.6,.99); // specific numbers copied from source code greater accuracy & efficiency
+	animation: grow-shrink-1 2s infinite alternate cubic-bezier(.21,.98,.6,.99); /* specific numbers copied from source code greater accuracy & efficiency */
 }
 
 /* medium circle, including animation */
