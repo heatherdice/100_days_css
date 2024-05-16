@@ -5,7 +5,7 @@ export default function Day4() {
     return (
         <>
             {/* red box container */}
-            <div class="day4-container">
+            <div class="day-container container-color">
 
                 {/* circle animations */}
                 <div class="outer-circle">
