@@ -9,14 +9,15 @@ export default function Hamburger({ onClick }) {
         const menu = document.querySelector(".hamburger");
 
         // change shape from hamburger to x or vice versa
-        const handleClick = () => {
+        const handleClick = (event) => {
+            event.preventDefault;
             menu.classList.remove("menu");
             menu.classList.toggle("animation-to-x");
         };
 
         // add event listener when component mounts
         menu.addEventListener("click", handleClick);
-        menu.addEventListener("touchstart", handleClick);
+        menu.addEventListener("touchstart", handleClick, { passive: false });
 
         // remove event listener when component unmounts
         return () => {
