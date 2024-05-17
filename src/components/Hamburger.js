@@ -17,18 +17,18 @@ export default function Hamburger({ onClick }) {
 
         // add event listener when component mounts
         menu.addEventListener("click", handleClick);
-        menu.addEventListener("touchstart", handleClick, { passive: false });
+        menu.addEventListener("touchend", handleClick, { passive: false });
 
         // remove event listener when component unmounts
         return () => {
             menu.removeEventListener("click", handleClick);
-            menu.removeEventListener("touchstart", handleClick);
+            menu.removeEventListener("touchend", handleClick);
         };
     }, [onClick]);
 
     return (
         <>
-            <div className="hamburger menu" onClick={onClick} onTouchStart={onClick}>
+            <div className="hamburger menu" onClick={onClick} onTouchEnd={onClick}>
                 <div className="top-line" />
                 <div className="middle-line" />
                 <div className="bottom-line" />
