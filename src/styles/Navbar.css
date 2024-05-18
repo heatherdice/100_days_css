@@ -9,7 +9,7 @@
 
 /* overall navbar */
 .navbar {
-    width: 100vw;
+    width: 100%;
     position: fixed;
     background-color: #FFFFFF;
     border-bottom: 1px solid #D3D3D3;
