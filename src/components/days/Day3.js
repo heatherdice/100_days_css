@@ -8,9 +8,9 @@ export default function Day3() {
             <div class="day-container container-color3">
             
                 {/* circle containing image */}
-                <div class="day3-circle">
-                    <div class="sun"></div>
-                    <div class="pyramid"></div>
+                <div className="day3-circle">
+                    <div className="sun"></div>
+                    <div className="pyramid"></div>
                 </div>
             </div>
         </>
