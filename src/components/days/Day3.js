@@ -5,7 +5,7 @@ export default function Day3() {
     return (
         <>
             {/* black box container */}
-            <div class="day-container container-color3">
+            <div className="day-container container-color3">
             
                 {/* circle containing image */}
                 <div className="day3-circle">
