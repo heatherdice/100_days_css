@@ -5,12 +5,12 @@ export default function Day4() {
     return (
         <>
             {/* red box container */}
-            <div class="day-container container-color">
+            <div className="day-container container-color">
 
                 {/* circle animations */}
-                <div class="outer-circle">
-                    <div class="middle-circle">
-                        <div class="inner-circle" />
+                <div className="outer-circle">
+                    <div className="middle-circle">
+                        <div className="inner-circle" />
                     </div>
                 </div>
             </div>
