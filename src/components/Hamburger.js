@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Hamburger.css";
-import Dropdown from "./Dropdown";
 
 export default function Hamburger({ onClick }) {
     // toggle classes for animations on hamburger click
