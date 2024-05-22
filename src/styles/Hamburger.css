@@ -25,6 +25,13 @@
 
 /* animation attributes */
 /* select elements w/ hamburger class but not menu class */
+.hamburger:not(.menu) .top-line,
+.hamburger:not(.menu) .middle-line,
+.hamburger:not(.menu) .bottom-line {
+    /* animation: uses @keyframes animation, specifies duration, ease-in starts slowly then increase speed of animation */
+    animation: none;
+}
+/* select elements w/ hamburger class but not menu class */
 .hamburger:not(.menu) {
 	/* animation: uses @keyframes animation, specifies duration, ease-in starts slowly then increase speed of animation */
 	.top-line { animation: top-x-to-hamburger 0.6s ease-in forwards; }
