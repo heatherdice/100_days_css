@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
+import _ from "lodash";
 // import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 import cssLogo from "../assets/images/cssLogo.ico";
@@ -6,37 +7,42 @@ import Hamburger from "./Hamburger";
 import Dropdown from "./Dropdown";
 
 export default function Navbar() {
-    // determine current screen size, set to variable name
+    // determine screen size on load, set to variable name
     const [screenType, setScreenType] = useState(window.innerWidth <= 600 ? 'mobile' : 'desktop');
 
-    // mobile menu open state, initial value set to false
+    // mobile menu open state, initial value set to closed
     const [dropdownOpen, setDropdownOpen] = useState("closed");
-    console.log("Initial state: ", dropdownOpen);
 
-    // determine whether screen is mobile or desktop view
+    // delay handleResize function until 300ms after last resize event, preventing constant function calls
+    const handleResize = useCallback(_.debounce(() => {
+        // determine screen type upon resizing
+        setScreenType(window.innerWidth <= 600 ? 'mobile' : 'desktop');
+        // test
+        console.log(screenType);
+
+        // close dropdown on resize
+        if(dropdownOpen != "closed") {
+            setDropdownOpen("closed");
+        }
+    }, 300), [screenType, dropdownOpen]); // ensure latest state values are used
+
+    // run eventListeners when handleResize is called
     useEffect(() => {
-        const handleResize= () => {
-            setScreenType(window.innerWidth <= 600 ? 'mobile' : 'desktop');
-
-            // close dropdown on resize
-            if(dropdownOpen != "closed") {
-                setDropdownOpen("closed");
-            }
-        };
-
         window.addEventListener('resize', handleResize);
         
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    }, []);
+    }, [handleResize]);
     
     // open/close mobile menu
     const toggleDropdown = () => {
         if(dropdownOpen === "closed") {
             setDropdownOpen("open");
+            console.log("Dropdown state: ", dropdownOpen);
         } else {
             setDropdownOpen("closed");
+            console.log("Dropdown state: ", dropdownOpen);
         }
 
         // test
@@ -88,11 +94,14 @@ export default function Navbar() {
                         )}
                     </ul>
                 ) : (
+                    // triggers toggleDropdown function onCLick
                     <Hamburger onClick={toggleDropdown} />
                 )}
             </nav>
-            {toggleDropdown && (
-                <div className={`dropdown ${dropdownOpen === "closed" ? '' : 'animation'}`}>
+            {/* when dropdown is open, render component */}
+            {dropdownOpen === "open" && (
+                // if dropdown is closed, add class close-dropdown. otherwise, add class open-dropdown
+                <div className={`dropdown ${dropdownOpen === "closed" ? 'close-dropdown' : 'open-dropdown'}`}>
                     <Dropdown navLinks={navLinks} />
                 </div>
             )}

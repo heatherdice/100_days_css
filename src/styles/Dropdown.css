@@ -61,13 +61,13 @@
 }
 
 /* animation calls */
-.dropdown.animation {
+.dropdown.open-dropdown {
     display: block;
     animation-name: slideDown;
     margin-top: 4em;
 }
 
-.dropdown:not(.animation) {
+.dropdown.close-dropdown {
     display: block;
     animation-name: slideUp;
     margin-top: 0;
