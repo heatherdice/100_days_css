@@ -37,16 +37,7 @@ export default function Navbar() {
     
     // open/close mobile menu
     const toggleDropdown = () => {
-        if(dropdownOpen === "closed") {
-            setDropdownOpen("open");
-            console.log("Dropdown state: ", dropdownOpen);
-        } else {
-            setDropdownOpen("closed");
-            console.log("Dropdown state: ", dropdownOpen);
-        }
-
-        // test
-        console.log("Dropdown state: ", dropdownOpen);
+        setDropdownOpen(prevState => prevState === "closed" ? "open" : "closed");
     };
 
     const navLinks = [
@@ -100,10 +91,7 @@ export default function Navbar() {
             </nav>
             {/* when dropdown is open, render component */}
             {dropdownOpen === "open" && (
-                // if dropdown is closed, add class close-dropdown. otherwise, add class open-dropdown
-                <div className={`dropdown ${dropdownOpen === "closed" ? 'close-dropdown' : 'open-dropdown'}`}>
-                    <Dropdown navLinks={navLinks} />
-                </div>
+                <Dropdown navLinks={navLinks} isOpen={dropdownOpen} />
             )}
         </>
     )
