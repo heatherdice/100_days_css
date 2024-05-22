@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../styles/Hamburger.css";
 
 export default function Hamburger({ onClick }) {
+    // state variables determining whether or not menu is open
     const [isOpen, setIsOpen] = useState(false);
 
     // change shape from hamburger to x or vice versa
