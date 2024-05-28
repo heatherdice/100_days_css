@@ -37,18 +37,52 @@
 /* select elements w/ day2-hamburger class but not static-hamburger class */
 .day2-hamburger:not(.static-hamburger) {
 	/* animation: uses @keyframes animation, specifies duration, ease-in starts slowly then increase speed of animation */
-	.day2-top-line { animation: top-x-to-hamburger2 0.6s ease-in forwards; }
-	.day2-middle-line { animation: middle-x-to-hamburger2 0.6s ease-in forwards; }
-	.day2-bottom-line { animation: bottom-x-to-hamburger2 0.6s ease-in forwards; }
+	.day2-top-line { animation: top-x-to-hamburger-desktop 0.6s ease-in forwards; }
+	.day2-middle-line { animation: middle-x-to-hamburger-desktop 0.6s ease-in forwards; }
+	.day2-bottom-line { animation: bottom-x-to-hamburger-desktop 0.6s ease-in forwards; }
 }
 /* ease-in-out starts slow, speeds up, ends slow */
 .day2-hamburger.animate-X {
-	.day2-top-line { animation: top-hamburger-to-x2 0.6s ease-in-out forwards; }
-	.day2-middle-line { animation: middle-hamburger-to-x2 0.6s ease-in-out forwards; }
-	.day2-bottom-line { animation: bottom-hamburger-to-x2 0.6s ease-in-out forwards; }
+	.day2-top-line { animation: top-hamburger-to-x-desktop 0.6s ease-in-out forwards; }
+	.day2-middle-line { animation: middle-hamburger-to-x-desktop 0.6s ease-in-out forwards; }
+	.day2-bottom-line { animation: bottom-hamburger-to-x-desktop 0.6s ease-in-out forwards; }
 }
 
-/* animation from the hamburger menu to the X shape, line by line */
+/* animation from the hamburger menu to the X shape, line by line, for desktop */
+/* translateY reponsitions element vertically along 2D plane */
+@keyframes top-hamburger-to-x-desktop {
+	0% { transform: none; }
+	30% { transform: translateY(.75em); }
+	100% { transform: translateY(.75em) rotate(45deg); }
+}
+@keyframes middle-hamburger-to-x-desktop {
+	0% { transform: scale(1); }
+	100% { transform: scale(0); }
+}
+@keyframes bottom-hamburger-to-x-desktop {
+	0% { transform: none; }
+	30% { transform: translateY(-.75em); }
+	100% { transform: translateY(-.75em) rotate(135deg); }
+}
+
+/* animation from the X shape to the hamburger menu, line by line */
+@keyframes top-x-to-hamburger-desktop {
+	0% {transform: translateY(.75em) rotate(45deg); }
+	50% {transform: translateY(.75em); }
+	100% { transform: none; }
+}
+@keyframes middle-x-to-hamburger-desktop {
+	0% { transform: scale(0); }
+	100% { transform: scale(1); }
+}
+@keyframes bottom-x-to-hamburger-desktop {
+	0% { transform: translateY(-.75em) rotate(135deg); }
+	50% { transform: translateY(-.75em); }
+	100% { transform: none; }
+}
+
+
+/* animation from the hamburger menu to the X shape, line by line, for tablet & smaller */
 /* translateY reponsitions element vertically along 2D plane */
 @keyframes top-hamburger-to-x2 {
 	0% { transform: none; }
@@ -90,5 +124,18 @@
 		width: 3em;
 		height: 0.25em;
 	}
-	
+	/* select elements w/ day2-hamburger class but not static-hamburger class */
+	.day2-hamburger:not(.static-hamburger) {
+		/* animation: uses @keyframes animation, specifies duration, ease-in starts slowly then increase speed of animation */
+		.day2-top-line { animation: top-x-to-hamburger2 0.6s ease-in forwards; }
+		.day2-middle-line { animation: middle-x-to-hamburger2 0.6s ease-in forwards; }
+		.day2-bottom-line { animation: bottom-x-to-hamburger2 0.6s ease-in forwards; }
+	}
+	/* ease-in-out starts slow, speeds up, ends slow */
+	.day2-hamburger.animate-X {
+		.day2-top-line { animation: top-hamburger-to-x2 0.6s ease-in-out forwards; }
+		.day2-middle-line { animation: middle-hamburger-to-x2 0.6s ease-in-out forwards; }
+		.day2-bottom-line { animation: bottom-hamburger-to-x2 0.6s ease-in-out forwards; }
+	}
+
 }
