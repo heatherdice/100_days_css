@@ -79,5 +79,17 @@
 
 /* tablet styling */
 @media (max-width: 945px) {
-    
+    .day3-circle {
+        height: 7em;
+        width: 7em;
+    }
+    .sun {
+        height: 1em;
+        width: 1em;
+    }
+    .pyramid {
+        height: 2.75em;
+        width: 5em;  
+        transform: translate(-50%, -86%);  
+    }
 }
