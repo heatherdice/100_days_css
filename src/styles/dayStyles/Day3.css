@@ -77,6 +77,13 @@
     100% { transform: rotate(75deg); };
 }
 
+/* sunrise/sunset animation - smaller screens */
+@keyframes sun-orbit-tablet {
+    0% { transform: rotate(-80deg); };
+    50% { transform: rotate(-28deg); }
+    100% { transform: rotate(50deg); };
+}
+
 /* tablet styling */
 @media (max-width: 945px) {
     .day3-circle {
@@ -84,11 +91,16 @@
         width: 7em;
     }
     .sun {
-        height: 1em;
-        width: 1em;
+        top: 0.5em;
+        left: 3em;
+        height: 1.25em;
+        width: 1.25em;
+        animation: sun-orbit-tablet 5s ease-in-out infinite;
+        transform-origin: 50% 600%;
+
     }
     .pyramid {
-        height: 2.75em;
+        height: 2.5em;
         width: 5em;  
         transform: translate(-50%, -86%);  
     }
