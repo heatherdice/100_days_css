@@ -1,5 +1,5 @@
 * {
-	font-family: 'Open Sans', Helvetica, sans-serif;
+	font-family: 'Open Sans', Helvetica, sans-serif !important;
 }
 
 /* green box container */
@@ -10,7 +10,7 @@
 /* card for chart */
 .chart-container {
 	padding: 8px;
-	z-index: 3;
+	z-index: 4;
 	position: relative;
 	width: 275px;
 	height: 200px;
@@ -27,22 +27,22 @@
 }
 
 /* headings in orange section */
-h2, h4 {
+.chart-container h2, .chart-container h4 {
 	margin: 0;
 }
 
-h2 {
+.chart-container h2 {
 	font-size: 15px;
 	font-weight: 400;
 }
 
-h4, .key {
+.chart-container h4, .key {
 	font-size: 12px;
 	font-weight: 8;
 }
 
 /* alignment for header text */
-.top-row, .bottom-row {
+.chart-top-row, .chart-bottom-row {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;

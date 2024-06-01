@@ -34,16 +34,16 @@ export default function Days() {
                         </div>
                     </div>
 
-                    {/* <div className="grid-rows">
+                    <div className="grid-rows">
                         <div className="grid-blocks">
                             <h3 className="day-heading">Day 5</h3>
                             <Day5 />
                         </div>
                         <div className="grid-blocks">
                             <h3 className="day-heading">Day 6</h3>
-                            <Day6 />
+                            {/* <Day6 /> */}
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </>
