@@ -1,0 +1,155 @@
+/* general styling */
+* {
+    font-family: "Open Sans", Helvetica, sans-serif !important;
+    color: #786450 !important;
+}
+.card, .left-column, .circle-container, .outer-circle, .inner-circle, .under-photo, .right-column, .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+.right-column, .left-column, .under-photo, .row {
+    flex-direction: column;
+}
+
+.circle-container, .outer-circle, .inner-circle, img, .under-photo {
+    position: absolute;
+}
+
+/* tan box container */
+/* .container {
+	z-index: 0;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	margin: 20px -200px;
+	overflow: hidden;
+	background-image: linear-gradient(to bottom left, #CD8050, #ECB96A);
+} */
+
+/* card with all other info */
+.card {
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+
+/* left & right column in card */
+.left-column, .right-column {
+    z-index: 2;
+}
+
+/* left column: profile picture, buttons */
+.left-column {
+    width: 60%;
+}
+
+/* right column: posts, likes, follows */
+.right-column {
+    width: 40%;
+    background: #F5E7DF;
+}
+
+/* positioning profile image */
+.circle-container {
+    top: 110px;
+}
+
+/* circles around profile image */
+.outer-circle, .inner-circle {
+    border: 1px solid;
+    border-radius: 50%;
+    transition: transform 1.5s ease-in-out;
+}
+.outer-circle {
+    width: 82px;
+    height: 82px;
+    border-color: #786450 transparent #786450 #786450;
+    z-index: 3;
+}
+.inner-circle {
+    width: 76px;
+    height: 76px;
+    border-color: #786450 #786450 #786450 transparent;
+    z-index: 4;
+}
+
+/* circle animations */
+.circle-container:hover .outer-circle {
+    transform: rotate(360deg);
+}
+.circle-container:hover .inner-circle {
+    transform: rotate(-360deg);
+}
+
+/* profile photo */
+img {
+    display: block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    filter: sepia(20%);
+    z-index: 5;
+}
+
+/* section under photo: name, title, & buttons */
+.under-photo {
+    top: 150px;
+}
+.name {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 20px;
+    z-index: 5;
+}
+.title {
+    margin-bottom: 30px;
+}
+button {
+    width: 120px;
+    height: 30px;
+    background-color: #FFFFFF;
+    border: solid 1px #786450;
+    border-radius: 15px;
+    padding: 3px;
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+button:hover {
+    cursor: pointer;
+    background-color: #786450;
+    color: #FFFFFF;
+}
+
+/* rows within right column */
+.row {
+    width: 120px;
+    height: 100px;
+    text-align: center;
+}
+.row:hover {
+    cursor: pointer;
+    background: #E1CFC2;
+}
+.row:not(:nth-child(3)) {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+/* numbers in right column */
+.numbers {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* categories under numbers in right column */
+.categories, .title {
+    font-size: 11px;
+    font-weight: 100;
+}
