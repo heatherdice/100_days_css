@@ -105,3 +105,19 @@
         transform: translate(-50%, -90%);  
     }
 }
+
+@media (max-width: 600px) {
+    .day3-circle {
+        height: 8em;
+        width: 8em;
+    }
+    .sun {
+        height: 1.4em;
+        width: 1.4em;
+    }
+    .pyramid {
+        height: 3em;
+        width: 5.5em;
+        transform: translate(-50%, -90%);
+    }
+}
