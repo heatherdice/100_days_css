@@ -4,6 +4,7 @@ import Day1 from "./days/Day1";
 import Day2 from "./days/Day2";
 import Day3 from "./days/Day3";
 import Day4 from "./days/Day4";
+import Day5 from "./days/Day5";
 
 export default function Days() {
     return (
@@ -21,6 +22,7 @@ export default function Days() {
                             <Day2 />
                         </div>
                     </div>
+                    
                     <div className="grid-rows">
                         <div className="grid-blocks">
                             <h3 className="day-heading">Day 3</h3>
@@ -31,6 +33,17 @@ export default function Days() {
                             <Day4 />
                         </div>
                     </div>
+
+                    {/* <div className="grid-rows">
+                        <div className="grid-blocks">
+                            <h3 className="day-heading">Day 5</h3>
+                            <Day5 />
+                        </div>
+                        <div className="grid-blocks">
+                            <h3 className="day-heading">Day 6</h3>
+                            <Day6 />
+                        </div>
+                    </div> */}
                 </div>
             </div>
         </>

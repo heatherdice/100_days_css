@@ -1,0 +1,79 @@
+* {
+	font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+/* green box container */
+.container-color5 {
+	background: #42A7A1;
+}
+
+/* card for chart */
+.chart-container {
+	padding: 8px;
+	z-index: 3;
+	position: relative;
+	width: 275px;
+	height: 200px;
+	border-radius: 5px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	background: linear-gradient(to top, #FFFFFF 0%, #FFFFFF 70%, #F1BA64 70%, #F1BA64 100%);
+}
+
+/* top orange section */
+.chart-header {
+	color: #FFFFFF;
+	background: #F1BA64;
+	padding: 8px 0;
+}
+
+/* headings in orange section */
+h2, h4 {
+	margin: 0;
+}
+
+h2 {
+	font-size: 15px;
+	font-weight: 400;
+}
+
+h4, .key {
+	font-size: 12px;
+	font-weight: 8;
+}
+
+/* alignment for header text */
+.top-row, .bottom-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.key {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	text: #808080;
+	padding: 8px;
+}
+
+.key-red, .key-blue {
+	/* align-self: stretch;
+	width: auto; */
+	outline: none;
+	flex-grow: 1;
+	height: 1px;
+	max-width: 5px;
+	margin: 0;
+	padding: 0;
+	border-radius: 3px;
+}
+
+.key-red {
+	/* border: 2px solid #FA7373; */
+	background-color: #FA7373;
+}
+
+.key-blue {
+	/* border: 2px solid #7BA2FF; */
+	background-color: #7BA2FF;
+}
