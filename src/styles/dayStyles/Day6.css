@@ -1,38 +1,27 @@
 /* general styling */
-* {
-    font-family: "Open Sans", Helvetica, sans-serif !important;
-    color: #786450 !important;
-}
-.card, .left-column, .circle-container, .outer-circle, .inner-circle, .under-photo, .right-column, .row {
+.info-card, .left-column, .circle-container, .outer-photo-circle, .inner-photo-circle, .under-photo, .right-column, .row {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.card {
-	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
-    border-radius: 5px;
-}
 .right-column, .left-column, .under-photo, .row {
     flex-direction: column;
 }
-
-.circle-container, .outer-circle, .inner-circle, img, .under-photo {
+.circle-container, .outer-photo-circle, .inner-photo-circle, .profile-photo, .under-photo {
     position: absolute;
 }
 
 /* tan box container */
-/* .container {
-	z-index: 0;
-	left: 50%;
-	width: 400px;
-	height: 400px;
-	margin: 20px -200px;
-	overflow: hidden;
+.container-color6 {
 	background-image: linear-gradient(to bottom left, #CD8050, #ECB96A);
-} */
+}
 
 /* card with all other info */
-.card {
+.info-card {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    color: #786450;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    border-radius: 5px;
     z-index: 1;
     width: 300px;
     height: 300px;
@@ -62,18 +51,18 @@
 }
 
 /* circles around profile image */
-.outer-circle, .inner-circle {
+.outer-photo-circle, .inner-photo-circle {
     border: 1px solid;
     border-radius: 50%;
     transition: transform 1.5s ease-in-out;
 }
-.outer-circle {
+.outer-photo-circle {
     width: 82px;
     height: 82px;
     border-color: #786450 transparent #786450 #786450;
     z-index: 3;
 }
-.inner-circle {
+.inner-photo-circle {
     width: 76px;
     height: 76px;
     border-color: #786450 #786450 #786450 transparent;
@@ -81,15 +70,15 @@
 }
 
 /* circle animations */
-.circle-container:hover .outer-circle {
+.circle-container:hover .outer-photo-circle {
     transform: rotate(360deg);
 }
-.circle-container:hover .inner-circle {
+.circle-container:hover .inner-photo-circle {
     transform: rotate(-360deg);
 }
 
 /* profile photo */
-img {
+.profile-photo {
     display: block;
     height: 70px;
     width: 70px;
