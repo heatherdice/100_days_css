@@ -1,5 +1,4 @@
 * {
-	font-family: 'Open Sans', Helvetica, sans-serif !important;
 }
 
 /* green box container */
@@ -9,6 +8,7 @@
 
 /* card for chart */
 .chart-container {
+    font-family: 'Open Sans', Helvetica, sans-serif !important;
 	padding: 8px;
 	z-index: 4;
 	position: relative;
@@ -27,16 +27,16 @@
 }
 
 /* headings in orange section */
-.chart-container h2, .chart-container h4 {
+.chart-large-text, .chart-small-text, .chart-top-row, .chart-bottom-row {
 	margin: 0;
 }
 
-.chart-container h2 {
+.chart-large-text {
 	font-size: 15px;
 	font-weight: 400;
 }
 
-.chart-container h4, .key {
+.chart-small-text, .key {
 	font-size: 12px;
 	font-weight: 8;
 }
