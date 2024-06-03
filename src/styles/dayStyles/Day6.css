@@ -47,7 +47,7 @@
 
 /* positioning profile image */
 .circle-container {
-    top: 6.875em;
+    top: 8em;
 }
 
 /* circles around profile image */
@@ -89,7 +89,7 @@
 
 /* section under photo: name, title, & buttons */
 .under-photo {
-    top: 9.375em;
+    top: 10em;
 }
 .name {
     font-size: 0.938em;
@@ -98,7 +98,7 @@
     z-index: 5;
 }
 .title {
-    margin-bottom: 3.75em;
+    margin-bottom: 2.75em;
 }
 .follow-msg-btns {
     width: 9em;
@@ -121,7 +121,7 @@
 /* rows within right column */
 .row {
     width: 7.5em;
-    height: 6.25em;
+    height: 6em;
     text-align: center;
 }
 .row:hover {
@@ -154,16 +154,60 @@
         top: 5em;
     }
     .outer-photo-circle {
-        width: 4em;
-        height: 4em;
+        width: 3.5em;
+        height: 3.5em;
     }
     .inner-photo-circle {
-        width: 3.75em;
-        height: 3.75em;
+        width: 3.25em;
+        height: 3.25em;
     }
     .profile-photo {
-        height: 3.5em;
-        width: 3.5em;
+        height: 3em;
+        width: 3em;
     }
-    
+    .under-photo {
+        top: 6.25em;
+    }
+    .name {
+        font-size: 0.75em;
+        font-weight: 550;
+    }
+    .title {
+        margin-bottom: 2em;
+        font-size: 0.5em;
+    }
+    .follow-msg-btns {
+        width: 9.25em;
+        height: 2.5em;
+        padding: 0.188em;
+        margin: 0.25em;
+        font-size: 0.5em;
+        font-weight: 550;
+    }
+    .row {
+        width: 4.75em;
+        height: 4em;    
+    }
+    .numbers {
+        font-size: 0.8em;
+        font-weight: 550;
+    }
+    .categories {
+        font-size: 0.5em;
+    }
+}
+
+/* mobile styling */
+@media (max-width: 600px) {
+    .info-card {
+        height: 14em;
+        width: 14em;
+    }
+    .title {
+        margin-bottom: 4em;
+    }
+    .row {
+        width: 5.5em;
+        height: 4.6em;
+    }
 }
