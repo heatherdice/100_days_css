@@ -144,3 +144,26 @@
     font-weight: 100;
 }
 
+/* tablet styling */
+@media (max-width: 945px) {
+    .info-card {
+        width: 12em;
+        height: 12em;
+    }  
+    .circle-container {
+        top: 5em;
+    }
+    .outer-photo-circle {
+        width: 4em;
+        height: 4em;
+    }
+    .inner-photo-circle {
+        width: 3.75em;
+        height: 3.75em;
+    }
+    .profile-photo {
+        height: 3.5em;
+        width: 3.5em;
+    }
+    
+}
