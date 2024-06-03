@@ -100,10 +100,11 @@
 .title {
     margin-bottom: 30px;
 }
-button {
+.follow-msg-btns {
     width: 120px;
     height: 30px;
     background-color: #FFFFFF;
+    color: #786450;
     border: solid 1px #786450;
     border-radius: 15px;
     padding: 3px;
@@ -111,7 +112,7 @@ button {
     font-size: 12px;
     font-weight: 600;
 }
-button:hover {
+.follow-msg-btns:hover {
     cursor: pointer;
     background-color: #786450;
     color: #FFFFFF;

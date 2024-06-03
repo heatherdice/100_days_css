@@ -24,8 +24,8 @@ export default function Day6() {
                         <span class="title">Frontend Web Developer</span>
 
                         {/* buttons */}
-                        <button>Follow</button>
-                        <button>Message</button>
+                        <button className="follow-msg-btns">Follow</button>
+                        <button className="follow-msg-btns">Message</button>
                     </div>
 
                 </div>
