@@ -106,6 +106,7 @@
     }
 }
 
+/* mobile styling */
 @media (max-width: 600px) {
     .day3-circle {
         height: 8em;
