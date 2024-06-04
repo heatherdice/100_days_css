@@ -79,7 +79,6 @@
 
 @media (max-width: 945px) {
 	.chart-container {
-		padding: 0.5em;		
 		width: 10em;
 		height: 7.25em;
 	}
@@ -100,5 +99,29 @@
 	}
 	.view-purchase {
 		margin-top: 12em;
+	}
+}
+
+/* mobile styling */
+@media (max-width: 600px) {
+	.chart-container {
+		width: 12em;
+		height: 9em;
+	}
+	/* .chart-header {
+		padding: 0.1em 0;
+	} */
+	.chart-large-text {
+		font-size: 0.75em;
+	}
+	.chart-small-text, .key {
+		font-size: 0.65em;
+	}
+	.key-red, .key-blue {
+		max-width: 1em;
+		margin: 1.65em 0.75em 0 1em;
+	}
+	.view-purchase {
+		margin-top: 2em;
 	}
 }
