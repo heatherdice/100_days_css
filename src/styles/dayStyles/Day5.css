@@ -77,6 +77,20 @@
 	margin-top: 1.5em;
 }
 
+.red-line-container {
+	height: 5em;
+	width: 16.25em;
+	position: absolute;
+	padding: 1em 1em 0 0.5em;
+}
+
+.red-line {
+	fill: none;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke: #FA7373;
+}
+
 @media (max-width: 945px) {
 	.chart-container {
 		width: 10em;
@@ -108,9 +122,6 @@
 		width: 12em;
 		height: 9em;
 	}
-	/* .chart-header {
-		padding: 0.1em 0;
-	} */
 	.chart-large-text {
 		font-size: 0.75em;
 	}

@@ -26,6 +26,11 @@ export default function Day5() {
                     <hr className="key-blue" />
                     <p className="chart-small-text view-purchase">Purchases</p>
                 </div>
+
+                {/* chart */}
+                <svg className="red-line-container">
+                    <polyline points="9,46 50,12 90,23 130,11 171,38 211,48 251,19" className="red-line" />
+                </svg>
             </div>
         </div>
     )
