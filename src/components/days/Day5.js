@@ -28,9 +28,12 @@ export default function Day5() {
                 </div>
 
                 {/* chart */}
-                <svg className="red-line-container">
-                    <polyline points="9,46 50,12 90,23 130,11 171,38 211,48 251,19" className="red-line" />
-                </svg>
+                <div className="chart-lines">
+                    <svg>
+                        <polyline points="9,46 50,12 90,23 130,11 171,38 211,48 251,19" className="red-line" />
+                        <polyline points="9,61 50,50 90,65 130,55 171,61 211,74 251,64" className="blue-line" />
+                    </svg>
+                </div>
             </div>
         </div>
     )

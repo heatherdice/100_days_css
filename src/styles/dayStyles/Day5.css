@@ -77,18 +77,25 @@
 	margin-top: 1.5em;
 }
 
-.red-line-container {
+.chart-lines {
 	height: 5em;
 	width: 16.25em;
 	position: absolute;
 	padding: 1em 1em 0 0.5em;
 }
 
-.red-line {
+.red-line, .blue-line {
 	fill: none;
 	stroke-width: 2;
 	stroke-linecap: round;
+}
+
+.red-line {
 	stroke: #FA7373;
+}
+
+.blue-line {
+	stroke: #7BA2FF;
 }
 
 @media (max-width: 945px) {
