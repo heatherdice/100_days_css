@@ -39,6 +39,7 @@
     width: 25em;
 }
 
+/* standard styling for all project containers */
 .day-container {
     z-index: 1;
     width: 100%;

@@ -80,7 +80,25 @@
 @media (max-width: 945px) {
 	.chart-container {
 		padding: 0.5em;		
-		width: 17.25em;
-		height: 12.5em;
+		width: 10em;
+		height: 7.25em;
+	}
+	.chart-header {
+		padding: 0.1em 0;
+	}
+	.chart-large-text {
+		font-size: 0.5em;
+		font-weight: 600;
+	}
+	.chart-small-text, .key {
+		font-size: 0.25em;
+		font-weight: 8;
+	}
+	.key-red, .key-blue {
+		max-width: 1.75em;
+		margin: 4em 1.5em 0 3.5em;
+	}
+	.view-purchase {
+		margin-top: 12em;
 	}
 }
