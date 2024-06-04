@@ -22,9 +22,9 @@ export default function Day5() {
                 {/* chart key */}
                 <div className="key">
                     <hr className="key-red" />
-                    <p className="chart-small-text">Views</p>
+                    <p className="chart-small-text view-purchase">Views</p>
                     <hr className="key-blue" />
-                    <p className="chart-small-text">Purchases</p>
+                    <p className="chart-small-text view-purchase">Purchases</p>
                 </div>
             </div>
         </div>
