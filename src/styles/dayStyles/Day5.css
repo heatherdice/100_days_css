@@ -98,6 +98,11 @@
 	stroke: #7BA2FF;
 }
 
+svg {
+	width: 100%;
+	height: auto;
+}
+
 @media (max-width: 945px) {
 	.chart-container {
 		width: 10em;
@@ -120,6 +125,11 @@
 	}
 	.view-purchase {
 		margin-top: 12em;
+	}
+	.chart-lines {
+		height: 3em;
+		width: 10em;
+		padding: 0.5em 0.5em 0 0em;
 	}
 }
 
