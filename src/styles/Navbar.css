@@ -41,6 +41,14 @@
 .desktop-navbar-links {
     cursor: pointer;
     padding: 0 1em;
+    text-decoration: underline 0.08em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms
+}
+
+.desktop-navbar-links:hover {
+    text-decoration-color: #2A86E3;
+    color: #2A86E3;
+    
 }
 
 /* mobile styling */
