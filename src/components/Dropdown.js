@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "../styles/Dropdown.css";
 
 export default function Dropdown({ navLinks, isOpen }) {
@@ -7,9 +8,9 @@ export default function Dropdown({ navLinks, isOpen }) {
             <ul className="dropdown-links">
                 {navLinks.map((link, index) => (
                     <li key={index} className="link-items">
-                        <a to={link.link}>
+                        <Link to={link.link} smooth={true} duration={500}>
                             {link.title}
-                        </a>
+                        </Link>
                     </li>
                 ))}
             </ul>
