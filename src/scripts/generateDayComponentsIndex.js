@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 // construct absolute path to days dir; __dirname = dir name of current module where script is located
-const componentsDir = path.join(__dirname, '../src/components/days');
+const componentsDir = path.join(__dirname, '../components/dayComponents');
 // construct absolute path to index.js file being generated w/in days dir
 const indexPath = path.join(componentsDir, 'index.js');
 
@@ -17,10 +17,10 @@ const imports = files.map((file, index) => {
 }).join('\n');
 
 // map over files to create arr of objs where each obj contains a component & a title; join arr items w/ commas & new lines
-const exports = `export default [\n${files.map((file, index) => `    { component: Day${index + 1}, title: "Day ${index + 1}" }`).join(',\n')}\n];`;
+const exportsArray = `export default [\n${files.map((file, index) => `    { component: Day${index + 1}, title: "Day ${index + 1}" }`).join(',\n')}\n];`;
 
-// combine imports & exports into final content string for index.js file
-const content = `${imports}\n\n${exports}\n`;
+// combine imports & exportsArray into final content string for index.js file
+const content = `${imports}\n\n${exportsArray}\n`;
 
 // write content string to index.js file, creating or overwriting it
 fs.writeFileSync(indexPath, content, 'utf8');
