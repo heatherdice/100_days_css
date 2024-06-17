@@ -13,41 +13,41 @@ const itemsPerPage = 10;
 
 export default function Days() {
     const [currentPage, setCurrentPage] = useState(0);
-    const [components, setComponents] = useState([]);
+    // const [components, setComponents] = useState([]);
 
-    useEffect(() => {
-        const importComponents = async () => {
-            const importedComponents = await Promise.all(
-                dayComponents.map(({ component, title }) => {
-                    return import (`./dayComponents/${component}`).then(comp => ({
-                        component: comp.default,
-                        title
-                    }));
-                })
-            );
-            setComponents(importedComponents);
-        };
+    // useEffect(() => {
+    //     const importComponents = async () => {
+    //         const importedComponents = await Promise.all(
+    //             dayComponents.map(({ component, title }) => {
+    //                 return import (`./dayComponents/${component}`).then(comp => ({
+    //                     component: comp.default,
+    //                     title
+    //                 }));
+    //             })
+    //         );
+    //         setComponents(importedComponents);
+    //     };
 
-        importComponents();
-    }, []);
+    //     importComponents();
+    // }, []);
 
     const startIndex = currentPage * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
-    const currentItems = components.slice(startIndex, endIndex);
+    const currentItems = dayComponents.slice(startIndex, endIndex);
 
     return (
         <>
             <h2 className="days-title">Days</h2>
             <div className="page-container">
                 <div className="grid-wrapper">
-                    {currentItems.map(({ component: DayComponent, title }, index) => {
+                    {currentItems.map(({ component: DayComponent, title }, index) => (
                         <div key={index} className="grid-rows">
                             <div className="grid-blocks">
                                 <h3 className="day-heading">{title}</h3>
                                 <DayComponent />
                             </div>
                         </div>
-                    })}
+                    ))}
                 </div>
             </div>
         </>
