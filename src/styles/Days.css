@@ -54,6 +54,15 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+/* tablet & larger */
+@media (min-width: 601px) {
+    .grid-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        gap: 4em;
+    }
+}
+
 /* tablet styling */
 @media (max-width: 945px) {
     .grid-blocks {
