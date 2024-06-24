@@ -6,7 +6,7 @@
 /* card for chart */
 .chart-container {
     font-family: 'Open Sans', Helvetica, sans-serif !important;
-	padding: 0.5em;
+	padding: 0.5em 1em;
 	z-index: 4;
 	position: relative;
 	width: 17.25em;
@@ -78,10 +78,10 @@
 }
 
 .chart-lines {
-	height: 5em;
-	width: 16.25em;
+	height: 12em;
+	width: 22em;
 	position: absolute;
-	padding: 1em 1em 0 0.5em;
+	/* padding: 1em 1em 0 0.5em; */
 }
 
 .red-line, .blue-line {
@@ -100,7 +100,7 @@
 
 svg {
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
 
 @media (max-width: 945px) {
