@@ -36,13 +36,13 @@ export default function Day5() {
 
                     {/* weekdays */}
                     <div className="weekdays">
-                        MON
-                        TUE
-                        WED
-                        THU
-                        FRI
-                        SAT
-                        SUN
+                        <span>MON</span>
+                        <span>TUE</span>
+                        <span>WED</span>
+                        <span>THU</span>
+                        <span>FRI</span>
+                        <span>SAT</span>
+                        <span>SUN</span>
                     </div>
                 </div>
 
