@@ -10,30 +10,35 @@ export default function Day7() {
                     Notifications
                 </div>
 
+                <div className="vertical-line" />
+
                 {/* card content */}
                 <div className="notifications">
-                    <div>
-                        <span clasName="times">9:24am</span>
-                        <br />
-                        <p>
-                            <b>John Walker</b> posted a photo on your wall.
-                        </p>
-                    </div>
 
-                    <div>
-                        <span className="times">8:19am</span>
-                        <br />
-                        <p>
-                            <b>Alice Parker</b> commented on your last post.
-                        </p>
-                    </div>
+                    <div className="notification-text">
+                        <div>
+                            <span className="times">9:24am</span>
+                            <br />
+                            <p>
+                                <b>John Walker</b> posted a photo on your wall.
+                            </p>
+                        </div>
 
-                    <div>
-                        <span className="times">Yesterday</span>
-                        <br />
-                        <p>
-                            <b>Luke Wayne</b> added you as a friend.
-                        </p>
+                        <div>
+                            <span className="times">8:19am</span>
+                            <br />
+                            <p>
+                                <b>Alice Parker</b> commented on your last post.
+                            </p>
+                        </div>
+
+                        <div>
+                            <span className="times">Yesterday</span>
+                            <br />
+                            <p>
+                                <b>Luke Wayne</b> added you as a friend.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

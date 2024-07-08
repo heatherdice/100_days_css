@@ -26,13 +26,27 @@
 }
 
 .notifications {
+    display: flex;
+    flex-direction: row;
     color: #666666;
     font-size: 1em;
     padding: 1.5em;
+
+}
+
+.vertical-line {
+    border-left: 0.15em solid #EBEBEB;
+    height: 100%;
+}
+
+.notification-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.75em;
 }
 
 .times {
-    font-size: 0.7em;
+    font-size: 0.75em;
 }
 
 p {
