@@ -30,19 +30,18 @@
     flex-direction: row;
     color: #666666;
     font-size: 1em;
-    padding: 1.5em;
-
 }
 
 .vertical-line {
     border-left: 0.15em solid #EBEBEB;
     height: 100%;
+    margin-left: 1.75em;
 }
 
 .notification-text {
     display: flex;
     flex-direction: column;
-    padding-left: 0.75em;
+    padding: 1em 1.5em 0.75em 0.75em;
 }
 
 .times {

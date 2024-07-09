@@ -10,10 +10,9 @@ export default function Day7() {
                     Notifications
                 </div>
 
-                <div className="vertical-line" />
-
                 {/* card content */}
                 <div className="notifications">
+                    <div className="vertical-line" />
 
                     <div className="notification-text">
                         <div>
