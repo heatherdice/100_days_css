@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/dayStyles/Day7.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Day7() {
     return (
