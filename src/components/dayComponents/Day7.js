@@ -9,6 +9,8 @@ export default function Day7() {
                 {/* card header */}
                 <div className="day7-card-header">
                     Notifications
+
+                    <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
                 </div>
 
                 {/* card content */}
