@@ -57,7 +57,7 @@
 }
 @keyframes slideUp {
     from {
-        transform: translateY(0);
+        transform: translateY(3em);
         max-height: 200px;
     }
     to {
