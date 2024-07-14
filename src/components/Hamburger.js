@@ -9,6 +9,7 @@ export default function Hamburger({ onClick }) {
     const handleClick = (event) => {
         event.preventDefault();
         setIsOpen(!isOpen);
+        console.log("Hamburger clicked: ", !isOpen);
         if (onClick) onClick(event);
     };
 
