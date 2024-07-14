@@ -13,7 +13,12 @@ export default function Hamburger({ onClick }) {
     };
 
     return (
-        <div className={`hamburger ${isOpen ? 'animation-to-x' : ''}`} onClick={handleClick} onTouchEnd={handleClick}>
+        <div className={`hamburger ${isOpen ? 'animation-to-x' : ''}`} onClick={handleClick} 
+            onTouchEnd={(e) => {
+                e.preventDefault();
+                handleClick(e);
+            }}
+        >
             <div className="top-line" />
             <div className="middle-line" />
             <div className="bottom-line" />
