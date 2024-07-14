@@ -12,7 +12,7 @@ export default function Navbar() {
     const [screenType, setScreenType] = useState(window.innerWidth <= 600 ? 'mobile' : 'desktop');
 
     // mobile menu open state, initial value set to closed
-    const [dropdownOpen, setDropdownOpen] = useState("closed");
+    const [dropdownOpen, setDropdownOpen] = useState(false);
 
     // delay handleResize function until 300ms after last resize event, preventing constant function calls
     const handleResize = useCallback(_.debounce(() => {
@@ -22,8 +22,8 @@ export default function Navbar() {
         console.log(screenType);
 
         // close dropdown on resize
-        if(dropdownOpen != "closed") {
-            setDropdownOpen("closed");
+        if(dropdownOpen) {
+            setDropdownOpen(false);
         }
     }, 300), [screenType, dropdownOpen]); // ensure latest state values are used
 
@@ -38,7 +38,7 @@ export default function Navbar() {
     
     // open/close mobile menu
     const toggleDropdown = () => {
-        setDropdownOpen(prevState => prevState === "closed" ? "open" : "closed");
+        setDropdownOpen(prevState => !prevState);
     };
 
     const navLinks = [
@@ -79,9 +79,7 @@ export default function Navbar() {
                 )}
             </nav>
             {/* when dropdown is open, render component */}
-            {dropdownOpen === "open" && (
                 <Dropdown navLinks={navLinks} isOpen={dropdownOpen} />
-            )}
         </>
     )
 }
