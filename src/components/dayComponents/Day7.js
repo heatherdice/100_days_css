@@ -17,11 +17,11 @@ export default function Day7() {
                 <div className="notifications">
                     <div className="vertical-line" />
 
-                    <div className="notification-text">
+                    <div className="notification-text-container">
                         <div>
                             <span className="times">9:24am</span>
                             <br />
-                            <p>
+                            <p className="individual-notifications">
                                 <b>John Walker</b> posted a photo on your wall.
                             </p>
                         </div>
@@ -29,7 +29,7 @@ export default function Day7() {
                         <div>
                             <span className="times">8:19am</span>
                             <br />
-                            <p>
+                            <p className="individual-notifications">
                                 <b>Alice Parker</b> commented on your last post.
                             </p>
                         </div>
@@ -37,7 +37,7 @@ export default function Day7() {
                         <div>
                             <span className="times">Yesterday</span>
                             <br />
-                            <p>
+                            <p className="individual-notifications">
                                 <b>Luke Wayne</b> added you as a friend.
                             </p>
                         </div>

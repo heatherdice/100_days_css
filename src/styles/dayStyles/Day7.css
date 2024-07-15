@@ -38,7 +38,7 @@
     margin-left: 1.75em;
 }
 
-.notification-text {
+.notification-text-container {
     display: flex;
     flex-direction: column;
     padding: 1em 1.5em 0.75em 0.75em;
@@ -48,7 +48,7 @@
     font-size: 0.75em;
 }
 
-p {
+.individual-notifications {
     margin-top: 0.125em;
 }
 
@@ -56,5 +56,20 @@ p {
     .day7-card {
         height: 12em;
         width: 12em;
+    }
+    .day7-card-header {
+        padding: 0.8em 0;
+    }
+    .notifications {
+        font-size: 0.65em;
+    }
+    .notification-text-container {
+        padding: 0.75em 1.25em 0.25em 0.75em;
+    }
+    .individual-notifications {
+        margin-bottom: 0.8em;
+    }
+    .vertical-line {
+        margin-left: 1.25em;
     }
 }
