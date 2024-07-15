@@ -51,3 +51,10 @@
 p {
     margin-top: 0.125em;
 }
+
+@media (max-width: 945px) {
+    .day7-card {
+        height: 12em;
+        width: 12em;
+    }
+}
