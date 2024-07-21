@@ -41,7 +41,7 @@
 .link-items:hover {
     background-color: #2A86E3;
     color: white;
-    fond-weight: bolder;
+    font-weight: bolder;
 }
 
 /* open/close animations */
