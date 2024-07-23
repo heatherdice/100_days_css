@@ -78,8 +78,7 @@ export default function Navbar() {
                     <Hamburger onClick={toggleDropdown} />
                 )}
             </nav>
-            {/* when dropdown is open, render component */}
-                <Dropdown navLinks={navLinks} isOpen={dropdownOpen} />
+            <Dropdown navLinks={navLinks} isOpen={dropdownOpen} />
         </>
     )
 }
