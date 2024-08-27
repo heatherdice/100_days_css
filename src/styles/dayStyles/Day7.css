@@ -4,7 +4,6 @@
 
 .day7-card, .day7-card-header {
     align-items: center;
-    /* justify-content: center; */
 }
 
 .day7-card, .notification-text-container {
@@ -33,12 +32,15 @@
     background-color: #5F98CC;
     height: 10%;
     border-radius: 2.75px 2.75px 0 0;
+    position: relative;
 }
 
 .menu-icon {
+    position: absolute;
     width: 1.8em;
     height: 1em;
     margin: 0.5em 0.5em 0.5em 1.75em;
+    left: 0;
 }
 
 .menu-top, .menu-bottom, .menu-circle {
@@ -55,17 +57,29 @@
     margin-bottom: 0.5em;
 }
 
+.menu-circle {
+    height: 0.5em;
+    width: 0.5em;
+    border-radius: 4px;
+    top: -0.125em;
+    right: 0;
+    position: absolute;
+}
+
+.day7-title {
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0 auto;
+    padding-left: 6em;
+    padding-right: 2em;
+}
+
 .magnifying-glass {
     color: #B2DAFF;
-    width: 30%;
 }
 
 .magnifying-glass:hover, .menu-icon:hover {
     cursor: pointer;
-}
-
-.magnifying-glass:hover {
-    color: #FFFFFF;
 }
 
 /* ensures child classes are styled when parent class is hovered over */
@@ -73,6 +87,10 @@
 .menu-icon:hover .menu-bottom,
 .menu-icon:hover .menu-circle {
     background: #FFFFFF;
+}
+
+.magnifying-glass:hover {
+    color: #FFFFFF;
 }
 
 .notifications {

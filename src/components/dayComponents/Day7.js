@@ -14,7 +14,8 @@ export default function Day7() {
                         <div className="menu-bottom" />
                         <div className="menu-circle" />
                     </div>
-                    Notifications
+
+                    <span className="day7-title">Notifications</span>
 
                     <FontAwesomeIcon icon={faMagnifyingGlass} className="magnifying-glass" />
                 </div>
