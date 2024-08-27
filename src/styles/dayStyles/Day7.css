@@ -4,7 +4,7 @@
 
 .day7-card, .day7-card-header {
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .day7-card, .notification-text-container {
@@ -16,6 +16,7 @@
 }
 
 .day7-card {
+    justify-content: center;
     font-family: "Open Sans", Helvetica, sans-serif;
     box-shadow: 1px 2px 10px 0 rgba(0,0,0,0.3);
     width: 18.75em;
@@ -25,12 +26,23 @@
 }
 
 .day7-card-header {
+    justify-content: space-between;
     padding: 1em 0;
     width: 100%;
     color: #FFFFFF;
     background-color: #5F98CC;
     height: 10%;
     border-radius: 2.75px 2.75px 0 0;
+}
+
+.magnifying-glass {
+    color: #B2DAFF;
+    width: 30%;
+}
+
+.magnifying-glass:hover {
+    color: #FFFFFF;
+    cursor: pointer;
 }
 
 .notifications {

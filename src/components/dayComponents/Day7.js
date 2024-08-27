@@ -11,7 +11,7 @@ export default function Day7() {
                 <div className="day7-card-header">
                     Notifications
 
-                    <FontAwesomeIcon icon={faMagnifyingGlass} />
+                    <FontAwesomeIcon icon={faMagnifyingGlass} className="magnifying-glass" />
                 </div>
 
                 {/* card content */}
