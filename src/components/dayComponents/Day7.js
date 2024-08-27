@@ -9,6 +9,11 @@ export default function Day7() {
             <div className="day7-card">
                 {/* card header */}
                 <div className="day7-card-header">
+                    <div className="menu-icon">
+                        <div className="menu-top" />
+                        <div className="menu-bottom" />
+                        <div className="menu-circle" />
+                    </div>
                     Notifications
 
                     <FontAwesomeIcon icon={faMagnifyingGlass} className="magnifying-glass" />

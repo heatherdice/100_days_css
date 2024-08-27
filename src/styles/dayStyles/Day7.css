@@ -35,12 +35,32 @@
     border-radius: 2.75px 2.75px 0 0;
 }
 
+.menu-icon {
+    width: 1.8em;
+    height: 1em;
+    margin: 0.5em 0.5em 0.5em 1.75em;
+}
+
+.menu-top, .menu-bottom, .menu-circle {
+    background: #B2DAFF;
+}
+
+.menu-top, .menu-bottom {
+    width: 1.75em;
+    height: 0.188em;
+    border-radius: 3px;
+}
+
+.menu-top {
+    margin-bottom: 0.5em;
+}
+
 .magnifying-glass {
     color: #B2DAFF;
     width: 30%;
 }
 
-.magnifying-glass:hover {
+.magnifying-glass:hover, .menu-icon:hover {
     color: #FFFFFF;
     cursor: pointer;
 }
