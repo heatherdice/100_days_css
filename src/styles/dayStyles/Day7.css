@@ -61,8 +61,18 @@
 }
 
 .magnifying-glass:hover, .menu-icon:hover {
-    color: #FFFFFF;
     cursor: pointer;
+}
+
+.magnifying-glass:hover {
+    color: #FFFFFF;
+}
+
+/* ensures child classes are styled when parent class is hovered over */
+.menu-icon:hover .menu-top, 
+.menu-icon:hover .menu-bottom,
+.menu-icon:hover .menu-circle {
+    background: #FFFFFF;
 }
 
 .notifications {
