@@ -1,32 +1,39 @@
+.day7-card, .day7-card-header, .notifications, .notification-text-container {
+    display: flex;
+}
+
+.day7-card, .day7-card-header {
+    align-items: center;
+    justify-content: center;
+}
+
+.day7-card, .notification-text-container {
+    flex-direction: column;
+}
+
 .container-color7 {
     background-color: #263F57;
 }
 
 .day7-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     font-family: "Open Sans", Helvetica, sans-serif;
-    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    box-shadow: 1px 2px 10px 0 rgba(0,0,0,0.3);
     width: 18.75em;
     height: 18.75em;
     background: #FFFFFF;
-    border-radius: 2px;
+    border-radius: 2.75px;
 }
 
 .day7-card-header {
-    text-align: center;
     padding: 1em 0;
     width: 100%;
     color: #FFFFFF;
     background-color: #5F98CC;
     height: 10%;
-    border-radius: 2px 2px 0 0;
+    border-radius: 2.75px 2.75px 0 0;
 }
 
 .notifications {
-    display: flex;
     flex-direction: row;
     color: #666666;
     font-size: 1em;
@@ -39,8 +46,6 @@
 }
 
 .notification-text-container {
-    display: flex;
-    flex-direction: column;
     padding: 1em 1.5em 0.75em 0.75em;
 }
 
@@ -59,17 +64,19 @@
     }
     .day7-card-header {
         padding: 0.8em 0;
+        font-size: 0.65em;
     }
     .notifications {
         font-size: 0.65em;
     }
     .notification-text-container {
-        padding: 0.75em 1.25em 0.25em 0.75em;
+        padding: 1.25em 1.25em 1.25em 0.75em;
     }
     .individual-notifications {
         margin-bottom: 0.8em;
     }
     .vertical-line {
-        margin-left: 1.25em;
+        border-left: 0.25em solid #EBEBEB;
+        margin-left: 1.2em;
     }
 }
