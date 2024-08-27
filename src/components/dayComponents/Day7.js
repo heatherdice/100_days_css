@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/dayStyles/Day7.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default function Day7() {
     return (
@@ -10,7 +11,7 @@ export default function Day7() {
                 <div className="day7-card-header">
                     Notifications
 
-                    <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
+                    <FontAwesomeIcon icon={faMagnifyingGlass} />
                 </div>
 
                 {/* card content */}
