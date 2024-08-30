@@ -85,8 +85,11 @@
     transition: all .3s ease-in-out;
     top: 0.85em;
 	right: 6em;
+    transform: translateX(15px);
+    opacity: 0;
+    pointer-events: none;
 }
-.search-input .active {
+.active-search-input {
     transform: translateX(0);
     opacity: 1;
     pointer-events: all;

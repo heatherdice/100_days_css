@@ -9,9 +9,13 @@ export default function Day7() {
 
     // toggle search input's active class
     const handleSearchIconClick = () => {
-        if (searchInputRef.current) {
-        searchInputRef.current.classList.toggle('active');
+        if (searchInputRef.current.classList.contains("active")) {
+            console.log("CLOSE SEARCH BAR");
+        } else {
+            console.log("SEARCH BAR VISIBLE");
         }
+
+        searchInputRef.current.classList.toggle("active-search-input");
     };
 
     return (
@@ -32,7 +36,7 @@ export default function Day7() {
                     <span className="day7-title">Notifications</span>
 
                     {/* search bar */}
-                    <input type="text" class="search-input" placeholder="Search ..." />
+                    <input type="text" className="search-input" placeholder="Search ..." ref={searchInputRef} />
 
                     {/* search icon */}
                     <FontAwesomeIcon icon={faMagnifyingGlass} className="magnifying-glass" onClick={handleSearchIconClick} />
