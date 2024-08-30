@@ -1,23 +1,42 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../../styles/dayStyles/Day7.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 export default function Day7() {
+    // create reference for search icon
+    const searchInputRef = useRef(null);
+
+    // toggle search input's active class
+    const handleSearchIconClick = () => {
+        if (searchInputRef.current) {
+        searchInputRef.current.classList.toggle('active');
+        }
+    };
+
     return (
         <div className="day-container container-color7">
             <div className="day7-card">
+
                 {/* card header */}
                 <div className="day7-card-header">
+
+                    {/* menu icon w/ notification dot */}
                     <div className="menu-icon">
                         <div className="menu-top" />
                         <div className="menu-bottom" />
                         <div className="menu-circle" />
                     </div>
 
+                    {/* notifications title */}
                     <span className="day7-title">Notifications</span>
 
-                    <FontAwesomeIcon icon={faMagnifyingGlass} className="magnifying-glass" />
+                    {/* search bar */}
+                    <input type="text" class="search-input" placeholder="Search ..." />
+
+                    {/* search icon */}
+                    <FontAwesomeIcon icon={faMagnifyingGlass} className="magnifying-glass" onClick={handleSearchIconClick} />
+
                 </div>
 
                 {/* card content */}
