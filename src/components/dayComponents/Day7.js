@@ -9,12 +9,6 @@ export default function Day7() {
 
     // toggle search input's active class
     const handleSearchIconClick = () => {
-        if (searchInputRef.current.classList.contains("active")) {
-            console.log("CLOSE SEARCH BAR");
-        } else {
-            console.log("SEARCH BAR VISIBLE");
-        }
-
         searchInputRef.current.classList.toggle("active-search-input");
     };
 
