@@ -158,4 +158,7 @@
         border-left: 0.25em solid #EBEBEB;
         margin-left: 1.2em;
     }
+    .notification-circle {
+        border: 1px solid #5F98CC;
+    }
 }
