@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "../../styles/dayStyles/Day7.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, faGaugeHigh, faUser, faBell, faComments, faGear } from "@fortawesome/free-solid-svg-icons";
 
 export default function Day7() {
     // create reference for search icon
@@ -72,6 +72,32 @@ export default function Day7() {
                             </p>
                         </div>
                     </div>
+                </div>
+
+                {/* notification menu */}
+                <div className="day7-notification-menu">
+                    <ul>
+                        <li>
+                            <FontAwesomeIcon icon={faGaugeHigh} className="side-menu-icons" />
+                            Dashboard
+                        </li>
+                        <li>
+                            <FontAwesomeIcon icon={faUser} className="side-menu-icons" />
+                            Profile
+                        </li>
+                        <li>
+                            <FontAwesomeIcon icon={faBell} className="side-menu-icons" />
+                            Notifications
+                        </li>
+                        <li>
+                            <FontAwesomeIcon icon={faComments} className="side-menu-icons" />
+                            Messages
+                        </li>
+                        <li>
+                            <FontAwesomeIcon icon={faGear} className="side-menu-icons" />
+                            Settings
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
