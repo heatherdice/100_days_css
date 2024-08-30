@@ -101,6 +101,11 @@
     font-size: 1em;
 }
 
+.notification-text-container > div:hover {
+    color: #5F98CC;
+    cursor: pointer;
+}
+
 .vertical-line {
     border-left: 0.15em solid #EBEBEB;
     height: 100%;
@@ -109,6 +114,17 @@
 
 .notification-text-container {
     padding: 1em 1.5em 0.75em 0.75em;
+}
+
+.notification-circle {
+    height: 0.45em;
+    width: 0.45em;
+    border-radius: 8px;
+    margin-left: -1.2em;
+    position: absolute;
+    border: 2px solid #5F98CC;
+    box-shadow: 0 0 0 3px #FFFFFF;
+    background: #FFFFFF;
 }
 
 .times {

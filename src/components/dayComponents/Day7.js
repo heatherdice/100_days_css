@@ -26,6 +26,8 @@ export default function Day7() {
 
                     <div className="notification-text-container">
                         <div>
+                            <div className="notification-circle" />
+
                             <span className="times">9:24am</span>
                             <br />
                             <p className="individual-notifications">
@@ -34,6 +36,8 @@ export default function Day7() {
                         </div>
 
                         <div>
+                            <div className="notification-circle" />
+
                             <span className="times">8:19am</span>
                             <br />
                             <p className="individual-notifications">
@@ -42,6 +46,8 @@ export default function Day7() {
                         </div>
 
                         <div>
+                            <div className="notification-circle" />
+
                             <span className="times">Yesterday</span>
                             <br />
                             <p className="individual-notifications">
