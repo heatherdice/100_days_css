@@ -89,6 +89,10 @@
     opacity: 0;
     pointer-events: none;
 }
+/* removes focus border when clicking */
+.search-input:focus {
+    outline: none;
+}
 .active-search-input {
     transform: translateX(0);
     opacity: 1;
