@@ -24,6 +24,7 @@
     border-radius: 2.75px;
 }
 
+/* card header */
 .day7-card-header {
     justify-content: space-between;
     padding: 1em 0;
@@ -35,6 +36,7 @@
     position: relative;
 }
 
+/* menu icon w/ notifications dot */
 .menu-icon {
     position: absolute;
     width: 1.8em;
@@ -42,21 +44,17 @@
     margin: 0.5em 0.5em 0.5em 1.75em;
     left: 0;
 }
-
 .menu-top, .menu-bottom, .menu-circle {
     background: #B2DAFF;
 }
-
 .menu-top, .menu-bottom {
     width: 1.75em;
     height: 0.188em;
     border-radius: 3px;
 }
-
 .menu-top {
     margin-bottom: 0.5em;
 }
-
 .menu-circle {
     height: 0.45em;
     width: 0.45em;
@@ -67,6 +65,7 @@
     border: 2px solid #5F98CC;
 }
 
+/* notifications title */
 .day7-title {
     font-size: 1em;
     font-weight: 500;
@@ -75,11 +74,29 @@
     padding-right: 2em;
 }
 
+/* search bar */
+.search-input {
+    position: absolute;
+    border-radius: 17px;
+    border: none;
+    width: 13em;
+	height: 2.125em;
+    padding: 0 1em;
+    transition: all .3s ease-in-out;
+    top: 0.85em;
+	right: 6em;
+}
+.search-input .active {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* search icon */
 .magnifying-glass {
     color: #B2DAFF;
     font-size: 1.25em;
 }
-
 .magnifying-glass:hover, .menu-icon:hover {
     cursor: pointer;
 }
@@ -95,6 +112,7 @@
     color: #FFFFFF;
 }
 
+/* white notifications section */
 .notifications {
     flex-direction: row;
     color: #666666;
