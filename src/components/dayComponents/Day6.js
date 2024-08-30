@@ -6,22 +6,22 @@ export default function Day6() {
     return (
         <div className="day-container container-color6">
             {/* info card */}
-            <div class="info-card">
+            <div className="info-card">
                 {/* left column */}
-                <div class="left-column">
+                <div className="left-column">
                     
                     {/* image w/ circle animations */}
-                    <div class="circle-container">
-                        <div class="outer-photo-circle"></div>
-                        <div class="inner-photo-circle"></div>
+                    <div className="circle-container">
+                        <div className="outer-photo-circle"></div>
+                        <div className="inner-photo-circle"></div>
                         <img src={profilePhoto} className="profile-photo" alt="Heather Dice" />
                     </div>
 
                     {/* section under photo */}
-                    <div class="under-photo">
+                    <div className="under-photo">
                         {/* name & title */}
-                        <span class="name">Heather Dice</span>
-                        <span class="title">Frontend Web Developer</span>
+                        <span className="name">Heather Dice</span>
+                        <span className="title">Frontend Web Developer</span>
 
                         {/* buttons */}
                         <button className="follow-msg-btns">Follow</button>
@@ -31,18 +31,18 @@ export default function Day6() {
                 </div>
 
                 {/* right column */}
-                <div class="right-column">
-                    <div class="row">
-                        <span class="numbers">523</span>
-                        <span class="categories">Posts</span>    
+                <div className="right-column">
+                    <div className="row">
+                        <span className="numbers">523</span>
+                        <span className="categories">Posts</span>    
                     </div>
-                    <div class="row">
-                        <span class="numbers">1387</span>
-                        <span class="categories">Likes</span>    
+                    <div className="row">
+                        <span className="numbers">1387</span>
+                        <span className="categories">Likes</span>    
                     </div>
-                    <div class="row">
-                        <span class="numbers">146</span>
-                        <span class="categories">Followers</span>    
+                    <div className="row">
+                        <span className="numbers">146</span>
+                        <span className="categories">Followers</span>    
                     </div>
                 </div>
             </div>
