@@ -1,42 +1,60 @@
-.day7-card, .day7-card-header, .notifications, .notification-text-container {
+/* collective styling */
+.day7-card, .day7-card-header, .notifications, .notification-text-container, .day7-notification-menu ul {
     display: flex;
 }
-
 .day7-card, .day7-card-header {
     align-items: center;
 }
-
-.day7-card, .notification-text-container {
+.day7-card, .notification-text-container, .day7-notification-menu ul {
     flex-direction: column;
 }
+.day7-card, .menu-icon, .menu-circle, .search-input, .notification-circle, .day7-notification-menu {
+    position: absolute;
+}
+/* ensures child classes are styled when parent class is hovered over */
+.day7-card,
+.menu-icon:hover .menu-top, 
+.menu-icon:hover .menu-bottom,
+.menu-icon:hover .menu-circle {
+    background: #FFFFFF;
+}
+.day7-card-header, .day7-notification-menu ul {
+    justify-content: space-between;
+}
+.day7-card-header, .magnifying-glass:hover, .day7-notification-menu li:hover {
+    color: #FFFFFF;
+}
+.day7-title, .notifications {
+    font-size: 1em;
+}
 
+
+/* day 7 container */
 .container-color7 {
     background-color: #263F57;
 }
 
+/* day 7 card */
 .day7-card {
-    position: absolute;
     z-index: 2;
     justify-content: center;
     font-family: "Open Sans", Helvetica, sans-serif;
     box-shadow: 1px 2px 10px 0 rgba(0,0,0,0.3);
     width: 18.75em;
     height: 18.75em;
-    background: #FFFFFF;
     border-radius: 2.75px;
     transition: all .5s ease-in-out;
 }
 
+/* class toggled to show menu */
 .show-menu {
     transform: translate3d(150px,0,0);
 }
 
 /* card header */
 .day7-card-header {
-    justify-content: space-between;
     padding: 1em 0;
     width: 100%;
-    color: #FFFFFF;
     background-color: #5F98CC;
     height: 10%;
     border-radius: 2.75px 2.75px 0 0;
@@ -45,7 +63,6 @@
 
 /* menu icon w/ notifications dot */
 .menu-icon {
-    position: absolute;
     width: 1.8em;
     height: 1em;
     margin: 0.5em 0.5em 0.5em 1.75em;
@@ -68,13 +85,11 @@
     border-radius: 8px;
     top: -0.3em;
     right: 0;
-    position: absolute;
     border: 2px solid #5F98CC;
 }
 
 /* notifications title */
 .day7-title {
-    font-size: 1em;
     font-weight: 500;
     margin: 0 auto;
     padding-left: 6em;
@@ -83,7 +98,6 @@
 
 /* search bar */
 .search-input {
-    position: absolute;
     border-radius: 17px;
     border: none;
     width: 13em;
@@ -111,30 +125,17 @@
     color: #B2DAFF;
     font-size: 1.25em;
 }
-.magnifying-glass:hover, .menu-icon:hover {
+.magnifying-glass:hover, .menu-icon:hover, .notification-text-container > div:hover {
     cursor: pointer;
-}
-
-/* ensures child classes are styled when parent class is hovered over */
-.menu-icon:hover .menu-top, 
-.menu-icon:hover .menu-bottom,
-.menu-icon:hover .menu-circle {
-    background: #FFFFFF;
-}
-
-.magnifying-glass:hover {
-    color: #FFFFFF;
 }
 
 /* white notifications section */
 .notifications {
     flex-direction: row;
     color: #666666;
-    font-size: 1em;
 }
 .notification-text-container > div:hover {
     color: #5F98CC;
-    cursor: pointer;
 }
 .vertical-line {
     border-left: 0.15em solid #EBEBEB;
@@ -149,7 +150,6 @@
     width: 0.45em;
     border-radius: 8px;
     margin-left: -1.2em;
-    position: absolute;
     border: 2px solid #5F98CC;
     box-shadow: 0 0 0 3px #FFFFFF;
     background: #FFFFFF;
@@ -165,7 +165,6 @@
 /* notification menu */
 .day7-notification-menu {
     background: #43627D;
-    position: absolute;
 	width: 10.625em;
 	height: 17em;
 	left: 3em;
@@ -177,9 +176,6 @@
     list-style: none;
     color: #B2DAFF;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     height: 93%;
     margin: 0.5em 0;
 }
@@ -190,9 +186,7 @@
     padding: 0.75em 0;
 }
 .day7-notification-menu li:hover {
-    color: #FFFFFF;
 	background: #385269;
-    cursor: pointer;
 }
 .active-menu {
     box-shadow: 5px 5px 8px 0 rgba(0,0,0,0.2);
@@ -214,9 +208,6 @@
     .search-input {
         width: 18em;
         height: 2.5em;
-        padding: 0 1em;
-        transition: all .3s ease-in-out;
-        top: 0.85em;
         right: 9.5em;
         transform: translateX(20px);
     }
