@@ -211,7 +211,16 @@
         padding: 0.8em 0;
         font-size: 0.65em;
     }
-    .notifications, .day7-notification-menu {
+    .search-input {
+        width: 18em;
+        height: 2.5em;
+        padding: 0 1em;
+        transition: all .3s ease-in-out;
+        top: 0.85em;
+        right: 9.5em;
+        transform: translateX(20px);
+    }
+    .notifications, .search-input, .day7-notification-menu {
         font-size: 0.65em;
     }
     .notification-text-container {
