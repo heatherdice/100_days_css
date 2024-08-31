@@ -27,7 +27,12 @@
 .day7-title, .notifications {
     font-size: 1em;
 }
-
+.magnifying-glass:hover, 
+.menu-icon:hover, 
+.notification-text-container > div:hover, 
+.day7-notification-menu li:hover {
+    cursor: pointer;
+}
 
 /* day 7 container */
 .container-color7 {
@@ -124,9 +129,6 @@
 .magnifying-glass {
     color: #B2DAFF;
     font-size: 1.25em;
-}
-.magnifying-glass:hover, .menu-icon:hover, .notification-text-container > div:hover {
-    cursor: pointer;
 }
 
 /* white notifications section */
