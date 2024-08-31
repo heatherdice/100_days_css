@@ -6,21 +6,31 @@ import { faMagnifyingGlass, faGaugeHigh, faUser, faBell, faComments, faGear } fr
 export default function Day7() {
     // create reference for search icon
     const searchInputRef = useRef(null);
+    const panelRef = useRef(null);
+    const menuRef = useRef(null);
 
     // toggle search input's active class
     const handleSearchIconClick = () => {
         searchInputRef.current.classList.toggle("active-search-input");
     };
 
+    // toggle menu & panel classes
+    const handleMenuIconClick = () => {
+        if (panelRef.current && menuRef.current) {
+            panelRef.current.classList.toggle("show-menu");
+            menuRef.current.classList.toggle("active-menu");
+        }
+    };
+
     return (
         <div className="day-container container-color7">
-            <div className="day7-card">
+            <div className="day7-card" ref={panelRef}>
 
                 {/* card header */}
                 <div className="day7-card-header">
 
                     {/* menu icon w/ notification dot */}
-                    <div className="menu-icon">
+                    <div className="menu-icon" onClick={handleMenuIconClick}>
                         <div className="menu-top" />
                         <div className="menu-bottom" />
                         <div className="menu-circle" />
@@ -73,33 +83,34 @@ export default function Day7() {
                         </div>
                     </div>
                 </div>
-
-                {/* notification menu */}
-                <div className="day7-notification-menu">
-                    <ul>
-                        <li>
-                            <FontAwesomeIcon icon={faGaugeHigh} className="side-menu-icons" />
-                            Dashboard
-                        </li>
-                        <li>
-                            <FontAwesomeIcon icon={faUser} className="side-menu-icons" />
-                            Profile
-                        </li>
-                        <li>
-                            <FontAwesomeIcon icon={faBell} className="side-menu-icons" />
-                            Notifications
-                        </li>
-                        <li>
-                            <FontAwesomeIcon icon={faComments} className="side-menu-icons" />
-                            Messages
-                        </li>
-                        <li>
-                            <FontAwesomeIcon icon={faGear} className="side-menu-icons" />
-                            Settings
-                        </li>
-                    </ul>
-                </div>
             </div>
+
+            {/* notification menu */}
+            <div className="day7-notification-menu" ref={menuRef}>
+                <ul>
+                    <li>
+                        <FontAwesomeIcon icon={faGaugeHigh} className="side-menu-icons" />
+                        Dashboard
+                    </li>
+                    <li>
+                        <FontAwesomeIcon icon={faUser} className="side-menu-icons" />
+                        Profile
+                    </li>
+                    <li>
+                        <FontAwesomeIcon icon={faBell} className="side-menu-icons" />
+                        Notifications
+                    </li>
+                    <li>
+                        <FontAwesomeIcon icon={faComments} className="side-menu-icons" />
+                        Messages
+                    </li>
+                    <li>
+                        <FontAwesomeIcon icon={faGear} className="side-menu-icons" />
+                        Settings
+                    </li>
+                </ul>
+            </div>
+
         </div>
     )
 }
