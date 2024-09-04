@@ -39,6 +39,7 @@ export default function Navbar() {
     // open/close mobile menu
     const toggleDropdown = () => {
         setDropdownOpen(prevState => !prevState);
+        console.log("TOGGLED DROPDOWN");
     };
 
     const navLinks = [
@@ -67,7 +68,11 @@ export default function Navbar() {
                     <ul className="desktop-nav">
                         {navLinks.map((navbar) =>
                             <li key={navbar.title} className="desktop-navbar-links">
-                                <Link to={navbar.link} smooth={true} duration={500}>
+                                <Link 
+                                    to={navbar.link} 
+                                    smooth={true} 
+                                    duration={500}
+                                >
                                     {navbar.title}
                                 </Link>
                             </li>
