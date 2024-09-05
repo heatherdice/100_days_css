@@ -96,7 +96,8 @@ export default function Navbar() {
                         {dropdownOpen ? (
                             <Dropdown 
                                 navLinks={navLinks} 
-                                isOpen={dropdownOpen} linkClick={toggleDropdown}
+                                isOpen={dropdownOpen} 
+                                linkClick={toggleDropdown}
                                 className="open-dropdown" 
                             />
                         ) : (
