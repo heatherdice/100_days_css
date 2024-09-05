@@ -2,10 +2,11 @@
 .dropdown {
     position: fixed;
     right: 0;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 0;
-    z-index: 9;
+    top: -1em;
+    padding-top: 1em;
+    /* display: flex;
+    justify-content: flex-end; */
+    z-index: 1;
     overflow: hidden;
     max-height: 0;
     animation-duration: 3s;
