@@ -79,11 +79,11 @@ export default function Navbar() {
                         )}
                     </ul>
                 ) : (
-                    // triggers toggleDropdown function onCLick
+                    // triggers toggleDropdown function onClick
                     <Hamburger onClick={toggleDropdown} />
                 )}
             </nav>
-            <Dropdown navLinks={navLinks} isOpen={dropdownOpen} />
+            <Dropdown navLinks={navLinks} isOpen={dropdownOpen} linkClick={toggleDropdown} />
         </>
     )
 }
