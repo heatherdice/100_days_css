@@ -62,6 +62,19 @@
     transform: translate(-50%, -98%);
 }
 
+/* shadow shape */
+.shadow {
+    position: absolute;
+    z-index: 3;
+    top: 7.5em;
+    left: -5.5em;
+    background: #00000033;
+    height: 1.25em;
+    width: 22em;
+    transform-origin: 50% 0%;
+    clip-path: polygon(115px 0%, 231px 0%, 80% 100%);
+}
+
 /* fade-in/fade-out animation applied to main circle */
 @keyframes fade-in-out {
     0% { opacity: 0; };
