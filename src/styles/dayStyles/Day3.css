@@ -127,18 +127,18 @@
 /* pyramid shadow animation */
 @keyframes shadow-movement {
     0% { 
-        transform: scaleY(0);
-        clip-path: polygon(7em 0%, 14em 0%, 100% 100%);
-    };
+        transform: scaleY(0); /* squishes shadow to appear to have no height */
+        clip-path: polygon(7.8em 0%, 14.5em 0%, 100% 100%); /* defines visble area of polygon */
+    }
     30% {
         transform: scaleY(1);
-        clip-path: polygon(7em 0%, 14em 0%, 80% 100%);
-    };
-    55% { transform: scaleY(.4);};
-    75% { transform: scaleY(1);};
+        clip-path: polygon(7.8em 0%, 14.5em 0%, 80% 100%);
+    }
+    55% { transform: scaleY(.4); }
+    75% { transform: scaleY(1); }
     100% {
         transform: scaleY(0);
-        clip-path: polygon(7em 0%, 14em 0%, 0% 100%);
+        clip-path: polygon(7.8em 0%, 14.5em 0%, 0% 100%);
     }
 }
 
