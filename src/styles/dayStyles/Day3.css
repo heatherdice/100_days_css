@@ -63,31 +63,6 @@
     animation: pyramid-shade 5s ease-in-out infinite;
 }
 
-/* pyramid shade animation */
-@keyframes pyramid-shade {
-    0% { background-image: 
-            linear-gradient(to bottom right, transparent 50%, #F4F4F4 0), 
-            linear-gradient(to top right, #DDDADA 50%, transparent 0); 
-        }
-    25% { background-image:
-                linear-gradient(to bottom right, transparent 50%, #E9E9E9 0), 
-                linear-gradient(to top right, #E1DFDF 50%, transparent 0); 
-        }
-    50% { background-image:
-            linear-gradient(to bottom right, transparent 50%, #E1DFDF 0), 
-            linear-gradient(to top right, #E9E9E9 50%, transparent 0); 
-        }
-    75% { background-image:
-            linear-gradient(to bottom right, transparent 50%, #E1DFDF 0), 
-            linear-gradient(to top right, #E9E9E9 50%, transparent 0); 
-        }
-    100% { background-image: 
-            linear-gradient(to bottom right, transparent 50%, #DDDADA 0), 
-            linear-gradient(to top right, #F4F4F4 50%, transparent 0); 
-        }
-}
-
-
 /* shadow shape */
 .shadow {
     position: absolute;
@@ -104,10 +79,11 @@
 
 /* fade-in/fade-out animation applied to main circle */
 @keyframes fade-in-out {
-    0% { opacity: 0; };
-    25% { opacity: 1; };
-    50% { opacity: 0.75; };
-    100% { opacity: 0; };
+    0% { opacity: 0; }
+    30% { opacity: 0.75; }
+    50% { opacity: 1; }
+    70% { opacity: 0.75; }
+    100% { opacity: 0; }
 }
 
 /* sunrise/sunset animation */
@@ -122,6 +98,30 @@
     0% { transform: rotate(-80deg); };
     50% { transform: rotate(-28deg); }
     100% { transform: rotate(50deg); };
+}
+
+/* pyramid shade animation */
+@keyframes pyramid-shade {
+    0% { background-image: 
+            linear-gradient(to bottom right, transparent 50%, #F4F4F4 0), 
+            linear-gradient(to top right, #DDDADA 50%, transparent 0); 
+        }
+    25% { background-image:
+                linear-gradient(to bottom right, transparent 50%, #E9E9E9 0), 
+                linear-gradient(to top right, #DDDADA 50%, transparent 0); 
+        }
+    50% { background-image:
+            linear-gradient(to bottom right, transparent 50%, #E1DFDF 0), 
+            linear-gradient(to top right, #E9E9E9 50%, transparent 0); 
+        }
+    75% { background-image:
+            linear-gradient(to bottom right, transparent 50%, #E1DFDF 0), 
+            linear-gradient(to top right, #E9E9E9 50%, transparent 0); 
+        }
+    100% { background-image: 
+            linear-gradient(to bottom right, transparent 50%, #DDDADA 0), 
+            linear-gradient(to top right, #F4F4F4 50%, transparent 0); 
+        }
 }
 
 /* pyramid shadow animation */
