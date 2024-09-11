@@ -108,11 +108,7 @@
         }
     30% { background-image:
                 linear-gradient(to bottom right, transparent 50%, #E9E9E9 0), 
-                linear-gradient(to top right, #DDDADA 50%, transparent 0); 
-        }
-    55% { background-image:
-            linear-gradient(to bottom right, transparent 50%, #E1DFDF 0), 
-            linear-gradient(to top right, #E9E9E9 50%, transparent 0); 
+                linear-gradient(to top right, #E1DFDF 50%, transparent 0); 
         }
     75% { background-image:
             linear-gradient(to bottom right, transparent 50%, #E1DFDF 0), 
