@@ -158,6 +158,11 @@
         width: 5em;  
         transform: translate(-50%, -90%);  
     }
+    .shadow {
+        top: 4.7em;
+        left: -8em;
+        height: 1.5em;
+    }
 }
 
 /* mobile styling */
