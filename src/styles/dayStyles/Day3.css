@@ -138,6 +138,24 @@
     }
 }
 
+/* pyramid shadow animation for smaller screens */
+@keyframes shadow-movement-tablet {
+    0% { 
+        transform: scaleY(0);
+        clip-path: polygon(4em 0%, 9em 0%, 80% 100%);
+    }
+    30% {
+        transform: scaleY(1);
+        clip-path: polygon(4em 0%, 9em 0%, 60% 100%);
+    }
+    55% { transform: scaleY(.4); }
+    75% { transform: scaleY(1); }
+    100% {
+        transform: scaleY(0);
+        clip-path: polygon(4em 0%, 9em 0%, 0% 100%);
+    }
+}
+
 /* tablet styling */
 @media (max-width: 945px) {
     .day3-circle {
@@ -160,8 +178,9 @@
     }
     .shadow {
         top: 4.7em;
-        left: -8em;
+        left: -3em;
         height: 1.5em;
+        animation: shadow-movement-tablet 5s ease-in-out infinite;
     }
 }
 
@@ -179,5 +198,8 @@
         height: 3em;
         width: 5.5em;
         transform: translate(-50%, -90%);
+    }
+    .shadow {
+        top: 5.3em;
     }
 }
