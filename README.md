@@ -10,8 +10,8 @@ While I don't plan to complete projects every day, I do hope to make daily progr
 - [x] Day 3
 - [x] Day 4
 - [ ] Day 5
-    - 3/16 current progress: created background, chart card & header, and began key
-    - 3/16 todo: fix hr in key, begin work on chart
+    - 9/17 current progress: card & header text responsive, SVG started
+    - 9/17 todo: responsive SVG and chart text
 - [x] Day 6
 - [ ] Day 7
     - 4/28 current progress: created background, card, & front-facing text
