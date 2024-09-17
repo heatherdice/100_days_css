@@ -6,9 +6,7 @@ While I don't plan to complete projects every day, I do hope to make daily progr
 
 ## Project Checklist and Progress Notes ##
 - [x] Day 1
-- [ ] Day 2
-    - 5/20 current progress: responsive on tablet, mobile
-    - 5/20 todo: animation accuracy in desktop
+- [x] Day 2
 - [x] Day 3
 - [x] Day 4
 - [ ] Day 5
