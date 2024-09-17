@@ -1,20 +1,26 @@
 /* Day 3 styles */
 
-/* black box container */
-.day-container {
+/* collective styling */
+.day-container, .day3-circle {
     position: relative;
 }
+.day3-circle, .sun {
+    border-radius: 50%;
+}
+.day3-circle::before, .sun, .pyramid, .shadow {
+    position: absolute;
+}
+
+/* black box container */
 .container-color3 {
 	background: #272C34;
 }
 
 /* centered circle in box container */
 .day3-circle {
-    border-radius: 50%;
     background: linear-gradient(to bottom, #7DDFFD 0%, #7DDFFD 66%, #F0DE75 66%, #F0DE75 100%);
     overflow: hidden;
     z-index: 2;
-    position: relative;
     height: 11.25em;
     width: 11.25em;
     animation: fade-in-out 5s ease-in-out infinite;
@@ -25,7 +31,6 @@
 /* ::before inserts something before the selected element */
 .day3-circle::before {
     content: 0;
-    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -35,11 +40,9 @@
 
 /* sun circle */
 .sun {
-    position: absolute;
     z-index: 3;
     top: 0.625em;
     left: 4.375em;
-    border-radius: 50%;
     height: 2em;
     width: 2em;
     background: #FEEF01;
@@ -49,7 +52,6 @@
 
 /* pyramid shape */
 .pyramid {
-    position: absolute;
     bottom: 0;
     height: 3.75em;
     width: 7em;
@@ -65,7 +67,6 @@
 
 /* shadow shape */
 .shadow {
-    position: absolute;
     z-index: 3;
     top: 7.5em;
     left: -5.5em;
@@ -138,7 +139,7 @@
     }
 }
 
-/* pyramid shadow animation for smaller screens */
+/* pyramid shadow animation - smaller screens */
 @keyframes shadow-movement-tablet {
     0% { 
         transform: scaleY(0);

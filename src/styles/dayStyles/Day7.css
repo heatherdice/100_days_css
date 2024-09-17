@@ -1,3 +1,5 @@
+/* Day 7 styles */
+
 /* collective styling */
 .day7-card, .day7-card-header, .notifications, .notification-text-container, .day7-notification-menu ul {
     display: flex;
