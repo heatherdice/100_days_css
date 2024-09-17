@@ -133,15 +133,18 @@
 
 /* white notifications section */
 .notifications {
+    box-sizing: border-box;
     flex-direction: row;
     color: #666666;
+    overflow: hidden;
 }
 .notification-text-container > div:hover {
     color: #5F98CC;
 }
 .vertical-line {
+    box-sizing: border-box;
     border-left: 0.15em solid #EBEBEB;
-    height: 99.5%;
+    max-height: 99.5%;
     margin-left: 1.75em;
 }
 .notification-text-container {
