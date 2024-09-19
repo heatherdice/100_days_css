@@ -6,10 +6,10 @@ export default function Day10() {
         <div className="day-container container-color10">
             
             {/* clock face */}
-            <div className="day10-outer-circle">
-                <div className="clock-face">
-                    <div className="moving-circle">
-                        <div className="dotted-circle">
+            <div className="day10-circles day10-outer-circle">
+                <div className="day10-circles clock-face">
+                    <div className="day10-circles moving-circle">
+                        <div className="day10-circles dotted-circle">
 
                             <div className="date">
                                 MON 15 JAN 2015
