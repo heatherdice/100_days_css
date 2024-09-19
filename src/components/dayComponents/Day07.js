@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
-import "../../styles/dayStyles/Day7.css";
+import "../../styles/dayStyles/Day07.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faGaugeHigh, faUser, faBell, faComments, faGear } from "@fortawesome/free-solid-svg-icons";
 
-export default function Day7() {
+export default function Day07() {
     // create reference for search icon
     const searchInputRef = useRef(null);
     const panelRef = useRef(null);

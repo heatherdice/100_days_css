@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import "../../styles/dayStyles/Day2.css";
+import "../../styles/dayStyles/Day02.css";
 
-export default function Day2({ onClick }) {
+export default function Day02({ onClick }) {
     // toggle classes for animations on hamburger click
     useEffect(() => {
         // select DOM element

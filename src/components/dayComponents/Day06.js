@@ -1,8 +1,8 @@
 import React from "react";
-import "../../styles/dayStyles/Day6.css";
+import "../../styles/dayStyles/Day06.css";
 import profilePhoto from "../../assets/images/profilePhoto.jpeg";
 
-export default function Day6() {
+export default function Day06() {
     return (
         <div className="day-container container-color6">
             {/* info card */}

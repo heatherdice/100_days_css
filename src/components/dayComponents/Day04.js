@@ -1,7 +1,7 @@
 import React from "react";
-import "../../styles/dayStyles/Day4.css";
+import "../../styles/dayStyles/Day04.css";
 
-export default function Day4() {
+export default function Day04() {
     return (
         // red box container
         <div className="day-container container-color4">
