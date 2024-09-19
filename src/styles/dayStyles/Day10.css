@@ -1,9 +1,10 @@
 /* Day 10 styles */
 
-.day-container, .day10-outer-circle {
+.day-container, .day10-outer-circle, .clock-face, .moving-circle, .dotted-circle {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .container-color10 {
@@ -26,4 +27,33 @@
     z-index: 3;
     height: 12em;
     width: 12em;
+}
+
+.moving-circle {
+    border-radius: 50%;
+    height: 11em;
+    width: 11em;
+    border: 2px solid #F85B5B;
+    position: relative;
+    z-index: 4;
+}
+
+.dotted-circle {
+    position: relative;
+    z-index: 5;
+    border-radius: 50%;
+    height: 10em;
+    width: 10em;
+    border: 2px dotted #FFFFFF;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+.date {
+    color: #FFFFFF;
+    font-size: 0.75em;
+}
+
+.time {
+    color: #FFFFFF;
+    font-size: 3em;
 }
