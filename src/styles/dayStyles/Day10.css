@@ -1,5 +1,29 @@
 /* Day 10 styles */
 
+.day-container, .day10-outer-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container-color10 {
     background: #4C4C4C;
+}
+
+.day10-outer-circle {
+    border-radius: 50%;
+    position: relative;
+    background: #3A3A3A;
+    z-index: 2;
+    height: 13em;
+    width: 13em;
+}
+
+.clock-face {
+    background: #242424;
+    border-radius: 50%;
+    position: relative;
+    z-index: 3;
+    height: 12em;
+    width: 12em;
 }
