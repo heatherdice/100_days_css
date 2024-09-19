@@ -6,6 +6,7 @@ import Day5 from '../../components/dayComponents/Day5.js';
 import Day6 from '../../components/dayComponents/Day6.js';
 import Day7 from '../../components/dayComponents/Day7.js';
 import Day8 from '../../components/dayComponents/Day8.js';
+import Day9 from '../../components/dayComponents/Day9.js';
 
 export default [
     { component: Day1, title: "Day 1" },
@@ -15,5 +16,6 @@ export default [
     { component: Day5, title: "Day 5" },
     { component: Day6, title: "Day 6" },
     { component: Day7, title: "Day 7" },
-    { component: Day8, title: "Day 8" }
+    { component: Day8, title: "Day 8" },
+    { component: Day9, title: "Day 9" }
 ];
