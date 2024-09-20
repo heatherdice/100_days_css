@@ -22,14 +22,14 @@ export default function Day10() {
 
                         <div className="health-stats">
                             <div className="health-stats-row">
-                            <span className="heart-rate">
-                                <FontAwesomeIcon 
-                                    icon={faHeart} className="heart"
-                                />
-                                81
-                            </span>
+                                <span className="heart-rate">
+                                    <FontAwesomeIcon 
+                                        icon={faHeart} className="heart"
+                                    />
+                                    81
+                                </span>
 
-                            <span className="kcal"> 1248 KCAL</span>
+                                <span className="kcal"> 1248 KCAL</span>
                             </div>
                         </div>
                     </div>

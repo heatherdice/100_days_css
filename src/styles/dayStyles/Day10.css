@@ -8,7 +8,7 @@
     flex-direction: column;
     font-family: 'Open Sans', Helvetica, sans-serif;
 }
-.date, .health-stats, .heart {
+.date, .health-stats {
     font-size: 0.75em;
 }
 
@@ -56,20 +56,21 @@
     line-height: 1;
 }
 
-/* health stats container */
-.health-stats {
-    display: flex;
-    align-items: center;
-    flex-direction: row !important;
-    gap: 0.5rem;
-}
-
 /* heart rate / kcal row */
 .health-stats-row {
+    display: flex;
     flex-direction: row !important;
 }
 
 /* heart shape */
 .heart {
     color: #F85B5B !important;
+    font-size: 1em;
+    width: 30%;
+    margin-right: 0.5em;
+}
+
+/* kcal */
+.kcal {
+    margin-left: 0.75em;
 }
