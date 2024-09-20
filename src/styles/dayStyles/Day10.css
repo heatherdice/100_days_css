@@ -1,5 +1,6 @@
 /* Day 10 styles */
 
+/* collective styling */
 .day-container, .day10-circles {
     display: flex;
     justify-content: center;
@@ -7,17 +8,23 @@
     flex-direction: column;
     font-family: 'Open Sans', Helvetica, sans-serif;
 }
+.date, .health-stats, .heart {
+    font-size: 0.75em;
+}
 
+/* all circles */
 .day10-circles {
     border-radius: 50%;
     position: relative;
     color: #FFFFFF;
 }
 
+/* black box container */
 .container-color10 {
     background: #4C4C4C;
 }
 
+/* circle background */
 .day10-outer-circle {
     border: 0.438em solid #3A3A3A;
     background: #242424;
@@ -26,6 +33,7 @@
     width: 13em;
 }
 
+/* red moving circle */
 .moving-circle {
     border: 2px solid #F85B5B;
     z-index: 3;
@@ -33,6 +41,7 @@
     width: 12em;
 }
 
+/* dotted line circle */
 .dotted-circle {
     border: 2px dotted #FFFFFF;
     z-index: 4;
@@ -40,16 +49,14 @@
     width: 11em;
 }
 
-.date, .health-stats, .heart {
-    font-size: 0.75em;
-}
-
+/* time on watch */
 .time {
     font-size: 2.5em;
     font-weight: 700;
     line-height: 1;
 }
 
+/* health stats container */
 .health-stats {
     display: flex;
     align-items: center;
@@ -57,10 +64,12 @@
     gap: 0.5rem;
 }
 
+/* heart rate / kcal row */
 .health-stats-row {
     flex-direction: row !important;
 }
 
+/* heart shape */
 .heart {
     color: #F85B5B !important;
 }
