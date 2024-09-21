@@ -43,7 +43,7 @@
 
 /* dotted line circle */
 .dotted-circle {
-    border: 2px dotted #FFFFFF;
+    border: 3px dotted #FFFFFF;
     z-index: 4;
     height: 11em;
     width: 11em;
