@@ -55,6 +55,12 @@
 
 /* tablet view */
 @media (max-width: 945px) {
+    .moon {
+        height: 3em;
+        width: 3em;
+        top: 1.5em;
+        left: 1.75em;
+    }
     .temp {
         font-size: 2em;
     }
