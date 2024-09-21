@@ -28,3 +28,15 @@
     font-weight: lighter;
     margin-left: 0.5em;
 }
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+    font-weight: lighter;
+    margin-left: 3.2em;
+}
+
+.forecast-temps {
+    margin-left: 0.5em;
+    font-weight: bolder;
+}

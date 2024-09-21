@@ -19,6 +19,20 @@ export default function Day09() {
                     <br/>
                     Humidity: 87%
                 </div>
+
+                <div className="forecast">
+                    <div className="forecast-days">
+                        TUE
+                        <br/>
+                        WED
+                    </div>
+
+                    <div className="forecast-temps">
+                        21° / 9°
+                        <br/>
+                        23° / 10°
+                    </div>
+                </div>
             </div>
         </div>
     )
