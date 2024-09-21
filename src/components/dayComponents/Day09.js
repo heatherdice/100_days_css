@@ -13,6 +13,12 @@ export default function Day09() {
             {/* weather stats */}
             <div className="weather-stats">
                 <div className="temp">12°</div>
+
+                <div className="wind-humidity">
+                    Wind: E 7km/h
+                    <br/>
+                    Humidity: 87%
+                </div>
             </div>
         </div>
     )
