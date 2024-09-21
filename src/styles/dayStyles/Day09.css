@@ -75,6 +75,12 @@
 
 /* mobile view */
 @media (max-width: 600px) {
+    .moon {
+        height: 3.25em;
+        width: 3.25em;
+        top: 1.75em;
+        left: 2.5em;
+    }
     .forecast {
         margin-left: 3.5em;
     }
