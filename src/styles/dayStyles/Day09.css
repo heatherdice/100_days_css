@@ -11,14 +11,17 @@
     margin-left: 0.5em;
 }
 
+/* day 9 background color */
 .container-color9 {
     background: #1B2237;
 }
 
+/* top 3/4 w/ weather animation */
 .weather-picture {
     height: 75%;
 }
 
+/* bottom 1/4 w/ weather stats */
 .weather-stats {
     flex-direction: row;
     align-items: center;
@@ -26,20 +29,16 @@
     width: 100%;
     background: #FFFFFF;
 }
-
 .temp {
     font-size: 3em;
 }
-
 .wind-humidity {
     font-size: 1em;
 }
-
 .forecast {
     justify-content: space-between;
     margin-left: 3.2em;
 }
-
 .forecast-temps {
     font-weight: bolder;
 }

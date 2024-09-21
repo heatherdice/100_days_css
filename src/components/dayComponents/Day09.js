@@ -5,12 +5,12 @@ export default function Day09() {
     return (
         <div className="day-container container-color9">
             
-            {/* weather picture */}
+            {/* top 3/4 w/ weather animation */}
             <div className="weather-picture">
 
             </div>
             
-            {/* weather stats */}
+            {/* bottom 1/4 w/ weather stats */}
             <div className="weather-stats">
                 <div className="temp">12°</div>
 
