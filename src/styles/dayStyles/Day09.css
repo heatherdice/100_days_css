@@ -57,3 +57,10 @@
         font-size: 0.75em;
     }
 }
+
+/* mobile view */
+@media (max-width: 600px) {
+    .forecast {
+        margin-left: 3.5em;
+    }
+}
