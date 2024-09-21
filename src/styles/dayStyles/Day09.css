@@ -43,3 +43,17 @@
 .forecast-temps {
     font-weight: bolder;
 }
+
+/* tablet view */
+@media (max-width: 945px) {
+    .temp {
+        font-size: 2em;
+    }
+    .wind-humidity {
+        font-size: 0.75em;
+    }
+    .forecast {
+        margin-left: 1em;
+        font-size: 0.75em;
+    }
+}
