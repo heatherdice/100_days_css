@@ -7,6 +7,9 @@ export default function Day09() {
             
             {/* top 3/4 w/ weather animation */}
             <div className="weather-picture">
+                <div className="moon">
+                    
+                </div>
 
             </div>
             
