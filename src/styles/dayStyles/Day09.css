@@ -3,3 +3,14 @@
 .container-color9 {
     background: #1B2237;
 }
+
+.weather-picture {
+    height: 75%;
+}
+
+.weather-stats {
+    height: 25%;
+    width: 100%;
+    background: #FFFFFF;
+    z-index: 2;
+}
