@@ -12,7 +12,7 @@ export default function Day09() {
             
             {/* weather stats */}
             <div className="weather-stats">
-                These are the weather stats
+                <div className="temp">12°</div>
             </div>
         </div>
     )

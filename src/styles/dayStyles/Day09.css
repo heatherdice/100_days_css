@@ -9,8 +9,16 @@
 }
 
 .weather-stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 25%;
     width: 100%;
     background: #FFFFFF;
-    z-index: 2;
+}
+
+.temp {
+    font-size: 3em;
+    font-weight: lighter;
+    margin-left: 0.5em;
 }
