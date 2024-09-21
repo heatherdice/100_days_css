@@ -1,5 +1,16 @@
 /* Day 9 styles */
 
+/* collective styles */
+.weather-stats, .forecast {
+    display: flex;
+}
+.temp, .wind-humidity, .forecast {
+    font-weight: lighter;
+}
+.temp, .wind-humidity, .forecast-temps {
+    margin-left: 0.5em;
+}
+
 .container-color9 {
     background: #1B2237;
 }
@@ -9,7 +20,6 @@
 }
 
 .weather-stats {
-    display: flex;
     flex-direction: row;
     align-items: center;
     height: 25%;
@@ -19,24 +29,17 @@
 
 .temp {
     font-size: 3em;
-    font-weight: lighter;
-    margin-left: 0.5em;
 }
 
 .wind-humidity {
     font-size: 1em;
-    font-weight: lighter;
-    margin-left: 0.5em;
 }
 
 .forecast {
-    display: flex;
     justify-content: space-between;
-    font-weight: lighter;
     margin-left: 3.2em;
 }
 
 .forecast-temps {
-    margin-left: 0.5em;
     font-weight: bolder;
 }
