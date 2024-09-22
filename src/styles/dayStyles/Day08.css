@@ -3,3 +3,16 @@
 .container-color8 {
     background: #000000;
 }
+
+.ball {
+    position: absolute;
+}
+
+.white-center {
+    position: relative;
+    height: 5em;
+    width: 5em;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    filter: blur(15px);
+}
