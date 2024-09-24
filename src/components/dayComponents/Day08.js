@@ -29,7 +29,7 @@ export default function Day08() {
                     height: '3em',
                     background: '#fff',
                     borderRadius: '50%',
-                    boxShadow: '0 0 15px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.4)',
+                    // boxShadow: '0 0 15px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.4)',
                 }} />
             </div>
         );
@@ -63,7 +63,7 @@ export default function Day08() {
                     height: `${spotsSize}px`,
                     background: '#fff',
                     borderRadius: '50%',
-                    boxShadow: '0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3)',
+                    // boxShadow: '0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3)',
                 }} />
             </div>
         );

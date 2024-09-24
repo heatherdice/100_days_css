@@ -15,7 +15,7 @@
     background-color: #FFFFFF;
     border-radius: 50%;
     /* filter: blur(1px); */
-    mix-blend-mode: lighten;
+    mix-blend-mode: normal;
 }
 
 @keyframes rotate {
