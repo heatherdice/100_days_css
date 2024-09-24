@@ -15,11 +15,11 @@ While I don't plan to complete projects every day, I do hope to make daily progr
 - [x] Day 6
 - [x] Day 7
 - [ ] Day 8
-    - 9/18 current progress: added to site
-    - 9/18 todo: add center circle, read up on animation
+    - 9/24 current progress: animation working
+    - 9/24 todo: get animation to look more like a lava lamp than circular orbs
 - [ ] Day 9
-    - 9/18 current progress: added to site
-    - 9/18 todo: add bottom section for date/time & weather
+    - 9/24 current progress: basic moon shape, bottom section added
+    - 9/24 todo: moon rise animation, spots on moon
 - [ ] Day 10
-    - 9/19 current progress: added initial 2 circles
-    - 9/19 todo: add inner circles, text
+    - 9/24 current progress: static imaging set
+    - 9/24 todo: more space between dots, animation circle & heart
