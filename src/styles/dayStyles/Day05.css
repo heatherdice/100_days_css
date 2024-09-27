@@ -118,18 +118,11 @@
 	padding: 0;
 	margin: 0;
 }
-.weekdays::before,
+/* .weekdays::before,
 .weekdays::after {
     content: '';
     flex: 0 1 auto;
-}
-.weekdays span {
-	flex: 0 1 auto;
-    display: inline-block;
-	text-align: center;
-	padding: 0;
-	margin: 0;
-}
+} */
 
 /* tablet styling */
 @media (max-width: 945px) {
