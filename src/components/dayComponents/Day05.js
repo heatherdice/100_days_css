@@ -1,7 +1,41 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../styles/dayStyles/Day05.css";
 
 export default function Day05() {
+    const [screenType, setScreenType] = useState(getScreenType());
+
+    function getScreenType() {
+        const width = window.innerWidth;
+        return width <= 600
+            ? 'mobile'
+            : width <= 945
+            ? 'tablet'
+            : 'desktop';
+    };
+
+    const handleResize = () => setScreenType(getScreenType());
+
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    const getViewBox = () => {
+        switch (screenType) {
+            case 'mobile' :
+                return "0 10 260 70";
+            case 'tablet' :
+                return "-3 10 265 70";
+            default:
+                return "0 0 260 90"
+        }
+    };
+
+    console.log(screenType);
+
     return (
         // green box container 
         <div className="day-container container-color5">
@@ -29,7 +63,7 @@ export default function Day05() {
 
                 {/* chart */}
                 <div className="chart-lines">
-                    <svg viewBox="0 0 260 90" className="polyline-container" preserveAspectRatio="none">
+                    <svg viewBox={getViewBox()} className="polyline-container" preserveAspectRatio="xMinYMin meet">
                         <polyline points="9,46 50,12 90,23 130,11 171,38 211,48 251,19" className="red-line" />
                         <polyline points="9,61 50,50 90,65 130,55 171,61 211,74 251,64" className="blue-line" />
                     </svg>
