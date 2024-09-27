@@ -28,11 +28,13 @@
 	margin: 0;
 }
 
+/* "weekly report" title */
 .chart-large-text {
 	font-size: 0.9em;
 	font-weight: 600;
 }
 
+/* other text in orange header */
 .chart-small-text, .key {
 	font-size: 0.75em;
 	font-weight: 8;
@@ -45,6 +47,7 @@
 	justify-content: space-between;
 }
 
+/* chart key */
 .key {
 	display: flex;
 	flex-direction: row;
@@ -52,7 +55,6 @@
 	text: #808080;
 	padding: 0.5em;
 }
-
 .key-red, .key-blue {
 	outline: none;
 	flex-grow: 1;
@@ -62,51 +64,48 @@
 	padding: 0;
 	border-radius: 3px;
 }
-
 .key-red {
 	border: 0.5px solid #FA7373;
 	background-color: #FA7373;
 }
-
 .key-blue {
 	border: 0.5px solid #7BA2FF;
 	background-color: #7BA2FF;
 }
 
+/* chart text */
 .view-purchase, .weekdays {
 	color: #606060;
 }
-
 .view-purchase {
 	margin-top: 1.5em;
 }
 
+/* lines on line graph */
 .chart-lines {
 	max-width: 100%;
 	max-height: 100%;
 	position: relative;
 	text-align: center;
 }
-
 .red-line, .blue-line {
 	fill: none;
 	stroke-width: 2;
 	stroke-linecap: round;
 }
-
 .red-line {
 	stroke: #FA7373;
 }
-
 .blue-line {
 	stroke: #7BA2FF;
 }
-
-svg {
+/* svg container for chart lines */
+.polyline-container {
 	width: 100%;
 	max-height: 100%;
 }
 
+/* weekday text */
 .weekdays {
 	display: flex;
 	justify-content: space-between;
@@ -117,13 +116,11 @@ svg {
 	padding: 0;
 	margin: 0;
 }
-
 .weekdays::before,
 .weekdays::after {
     content: '';
     flex: 0 1 auto;
 }
-
 .weekdays span {
 	flex: 0 1 auto;
     display: inline-block;
@@ -132,6 +129,7 @@ svg {
 	margin: 0;
 }
 
+/* tablet styling */
 @media (max-width: 945px) {
 	.chart-container {
 		width: 10em;
