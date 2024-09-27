@@ -10,8 +10,8 @@ While I don't plan to complete projects every day, I do hope to make daily progr
 - [x] Day 3
 - [x] Day 4
 - [ ] Day 5
-    - 9/17 current progress: card & header text responsive, SVG started
-    - 9/17 todo: responsive SVG and chart text
+    - 9/27 current progress: responsive SVG and chart text
+    - 9/27 todo: add points and popup stats
 - [x] Day 6
 - [x] Day 7
 - [ ] Day 8
