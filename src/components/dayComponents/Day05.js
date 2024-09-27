@@ -29,7 +29,7 @@ export default function Day05() {
 
                 {/* chart */}
                 <div className="chart-lines">
-                    <svg viewBox="10 0 300 80" className="polyline-container">
+                    <svg viewBox="0 0 260 80" className="polyline-container" preserveAspectRatio="none">
                         <polyline points="9,46 50,12 90,23 130,11 171,38 211,48 251,19" className="red-line" />
                         <polyline points="9,61 50,50 90,65 130,55 171,61 211,74 251,64" className="blue-line" />
                     </svg>
