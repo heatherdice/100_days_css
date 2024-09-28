@@ -34,7 +34,41 @@ export default function Day05() {
         }
     };
 
-    console.log(screenType);
+    const redPointsData = [
+        { x: 9, y: 46, value: 458 },
+        { x: 50, y: 12, value: 812 },
+        { x: 90, y: 23, value: 746 },
+        { x: 130, y: 11, value: 877 },
+        { x: 171, y: 38, value: 517 },
+        { x: 211, y: 48, value: 434 },
+        { x: 251, y: 19, value: 458 },
+    ];
+
+    const bluePointsData = [
+        { x: 9, y: 61, value: 26 },
+        { x: 50, y: 50, value: 41 },
+        { x: 90, y: 65, value: 22 },
+        { x: 130, y: 55, value: 36 },
+        { x: 171, y: 61, value: 25 },
+        { x: 211, y: 74, value: 13 },
+        { x: 251, y: 64, value: 20 },
+    ];
+
+    const renderPoints = (points) => 
+        points.map((point, index) => (
+            <foreignObject
+                key={index}
+                x={point.x - 3} // center point horizontally
+                y={point.y - 30} // position popup above the point
+                width="30"
+                height="30"
+            >
+                <div className="point">
+                    <div className="popup-bubble">{point.value}</div>
+                </div>
+            </foreignObject>
+        ));
+    
 
     return (
         // green box container 
@@ -64,83 +98,22 @@ export default function Day05() {
                 {/* chart */}
                 <div className="chart-lines">
                     <svg viewBox={getViewBox()} className="polyline-container" preserveAspectRatio="xMinYMin meet">
-                        <polyline points="9,46 50,12 90,23 130,11 171,38 211,48 251,19" className="red-line" />
-                        <div className="points">
-                            <div className="point-1">
-                                <div className="popup-bubble">
-                                    458
-                                </div>
-                            </div>
-                            <div className="point-2">
-                                <div className="popup-bubble">
-                                    812
-                                </div>
-                            </div>
-                            <div className="point-3">
-                                <div className="popup-bubble">
-                                    746
-                                </div>
-                            </div>
-                            <div className="point-4">
-                                <div className="popup-bubble">
-                                    877
-                                </div>
-                            </div>
-                            <div className="point-5">
-                                <div className="popup-bubble">
-                                    517
-                                </div>
-                            </div>
-                            <div className="point-6">
-                                <div className="popup-bubble">
-                                    434
-                                </div>
-                            </div>
-                            <div className="point-7">
-                                <div className="popup-bubble">
-                                    458
-                                </div>
-                            </div>
 
-                        </div>
+                        {/* red line */}
+                        <polyline points="9,46 50,12 90,23 130,11 171,38 211,48 251,19" className="red-line" />
+
+                        {/* red points */}
+                        <g className="points">
+                            {renderPoints(redPointsData)}
+                        </g>
+
+                        {/* blue line */}
                         <polyline points="9,61 50,50 90,65 130,55 171,61 211,74 251,64" className="blue-line" />
-                        <div className="points">
-                        <div className="point-1">
-                                <div className="popup-bubble">
-                                    26
-                                </div>
-                            </div>
-                            <div className="point-2">
-                                <div className="popup-bubble">
-                                    41
-                                </div>
-                            </div>
-                            <div className="point-3">
-                                <div className="popup-bubble">
-                                    22
-                                </div>
-                            </div>
-                            <div className="point-4">
-                                <div className="popup-bubble">
-                                    36
-                                </div>
-                            </div>
-                            <div className="point-5">
-                                <div className="popup-bubble">
-                                    25
-                                </div>
-                            </div>
-                            <div className="point-6">
-                                <div className="popup-bubble">
-                                    13
-                                </div>
-                            </div>
-                            <div className="point-7">
-                                <div className="popup-bubble">
-                                    20
-                                </div>
-                            </div>
-                        </div>
+                        
+                        {/* blue points */}
+                        <g className="points">
+                            {renderPoints(bluePointsData)}
+                        </g>
                     </svg>
 
                     {/* weekdays */}

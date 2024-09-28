@@ -107,6 +107,38 @@
 	max-width: 100%; */
 }
 
+/* popup bubbles w/ data */
+.popup-bubble {
+	position: absolute;
+	font-weight: 600;
+	font-size: 0.7em;
+	color: #FFFFFF;
+	padding: 0.5em 0.375em;
+	border-radius: 3px;
+	visibility: hidden;
+	opacity: 0;
+	transition: transform 0.4s ease-out 0s, opacity 0.4s ease-out 0s;
+}
+.popup-bubble::after {
+	position: absolute;
+	display: block;
+	content: '';
+	height: 0.375em;
+	width: 0.375em;
+}
+.points {
+	position: absolute;
+	width: 0.375em;
+	height: 0.375em;
+	border-radius: 3px;
+	cursor: pointer;
+	z-index: 10;
+}
+.point:hover .popup-bubble {
+	visibility: visible;
+	opacity: 1;
+}
+
 /* weekday text */
 .weekdays {
 	display: flex;
