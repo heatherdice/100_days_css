@@ -65,7 +65,82 @@ export default function Day05() {
                 <div className="chart-lines">
                     <svg viewBox={getViewBox()} className="polyline-container" preserveAspectRatio="xMinYMin meet">
                         <polyline points="9,46 50,12 90,23 130,11 171,38 211,48 251,19" className="red-line" />
+                        <div className="points">
+                            <div className="point-1">
+                                <div className="popup-bubble">
+                                    458
+                                </div>
+                            </div>
+                            <div className="point-2">
+                                <div className="popup-bubble">
+                                    812
+                                </div>
+                            </div>
+                            <div className="point-3">
+                                <div className="popup-bubble">
+                                    746
+                                </div>
+                            </div>
+                            <div className="point-4">
+                                <div className="popup-bubble">
+                                    877
+                                </div>
+                            </div>
+                            <div className="point-5">
+                                <div className="popup-bubble">
+                                    517
+                                </div>
+                            </div>
+                            <div className="point-6">
+                                <div className="popup-bubble">
+                                    434
+                                </div>
+                            </div>
+                            <div className="point-7">
+                                <div className="popup-bubble">
+                                    458
+                                </div>
+                            </div>
+
+                        </div>
                         <polyline points="9,61 50,50 90,65 130,55 171,61 211,74 251,64" className="blue-line" />
+                        <div className="points">
+                        <div className="point-1">
+                                <div className="popup-bubble">
+                                    26
+                                </div>
+                            </div>
+                            <div className="point-2">
+                                <div className="popup-bubble">
+                                    41
+                                </div>
+                            </div>
+                            <div className="point-3">
+                                <div className="popup-bubble">
+                                    22
+                                </div>
+                            </div>
+                            <div className="point-4">
+                                <div className="popup-bubble">
+                                    36
+                                </div>
+                            </div>
+                            <div className="point-5">
+                                <div className="popup-bubble">
+                                    25
+                                </div>
+                            </div>
+                            <div className="point-6">
+                                <div className="popup-bubble">
+                                    13
+                                </div>
+                            </div>
+                            <div className="point-7">
+                                <div className="popup-bubble">
+                                    20
+                                </div>
+                            </div>
+                        </div>
                     </svg>
 
                     {/* weekdays */}
