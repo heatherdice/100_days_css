@@ -45,13 +45,13 @@ export default function Day05() {
     ];
 
     const bluePointsData = [
-        { x: 9, y: 61, value: 26 },
-        { x: 50, y: 50, value: 41 },
-        { x: 90, y: 65, value: 22 },
-        { x: 130, y: 55, value: 36 },
-        { x: 171, y: 61, value: 25 },
-        { x: 211, y: 74, value: 13 },
-        { x: 251, y: 64, value: 20 },
+        { x: 9, y: 88, value: 26 },
+        { x: 50, y: 78, value: 41 },
+        { x: 90, y: 92, value: 22 },
+        { x: 130, y: 82, value: 36 },
+        { x: 171, y: 88, value: 25 },
+        { x: 211, y: 101, value: 13 },
+        { x: 251, y: 91, value: 20 },
     ];
 
     const renderPoints = (points, colorClass) => 
