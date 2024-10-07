@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import "../../styles/dayStyles/Day05.css";
 
 export default function Day05() {
+    // set state for screen size
     const [screenType, setScreenType] = useState(getScreenType());
 
+    // determine screen type based on window width
     function getScreenType() {
         const width = window.innerWidth;
         return width <= 600
@@ -13,8 +15,10 @@ export default function Day05() {
             : 'desktop';
     };
 
+    // update screen type when window is resized
     const handleResize = () => setScreenType(getScreenType());
 
+    // add & remmove event listener for resizing
     useEffect(() => {
         window.addEventListener('resize', handleResize);
 
@@ -23,6 +27,7 @@ export default function Day05() {
         };
     }, []);
 
+    // return appropriate svg viewbox based on screen size
     const getViewBox = () => {
         switch (screenType) {
             case 'mobile' :
@@ -34,6 +39,7 @@ export default function Day05() {
         }
     };
 
+    // points positioning in line graph
     const redPointsData = [
         { x: 9, y: 73, value: 458 },
         { x: 51, y: 39, value: 812 },
@@ -43,7 +49,6 @@ export default function Day05() {
         { x: 211, y: 74, value: 434 },
         { x: 251, y: 45, value: 458 },
     ];
-
     const bluePointsData = [
         { x: 9, y: 88, value: 26 },
         { x: 50, y: 78, value: 41 },
@@ -54,6 +59,7 @@ export default function Day05() {
         { x: 251, y: 91, value: 20 },
     ];
 
+    // render points on line graph
     const renderPoints = (points, colorClass) => 
         points.map((point, index) => (
             <foreignObject
