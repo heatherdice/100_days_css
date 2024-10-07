@@ -129,8 +129,8 @@
 } */
 .points {
 	position: relative;
-	width: 1em;
-	height: 1em;
+	width: 0.375em;
+	height: 0.375em;
 	border-radius: 50%;
 	cursor: pointer;
 	z-index: 10;
