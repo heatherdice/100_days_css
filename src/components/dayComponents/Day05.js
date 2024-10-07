@@ -35,13 +35,13 @@ export default function Day05() {
     };
 
     const redPointsData = [
-        { x: 9, y: 46, value: 458 },
-        { x: 50, y: 12, value: 812 },
-        { x: 90, y: 23, value: 746 },
-        { x: 130, y: 11, value: 877 },
-        { x: 171, y: 38, value: 517 },
-        { x: 211, y: 48, value: 434 },
-        { x: 251, y: 19, value: 458 },
+        { x: 9, y: 73, value: 458 },
+        { x: 51, y: 39, value: 812 },
+        { x: 90, y: 50, value: 746 },
+        { x: 130, y: 38, value: 877 },
+        { x: 171, y: 64, value: 517 },
+        { x: 211, y: 74, value: 434 },
+        { x: 251, y: 45, value: 458 },
     ];
 
     const bluePointsData = [
