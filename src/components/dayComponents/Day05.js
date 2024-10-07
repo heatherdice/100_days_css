@@ -55,10 +55,11 @@ export default function Day05() {
         { x: 251, y: 91, value: 20, color: 'blue' },
     ];
 
-    // weekdays below data points
-    const weekdays = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
-    const renderWeekdays = () =>
-        weekdays.map((day, index) => <span key={index}>{day}</span>);
+    // chart lines
+    const chartLines = [
+        { points: "9,46 50,12 90,23 130,11 171,38 211,48 251,19", className: "red-line" },
+        { points: "9,61 50,50 90,65 130,55 171,61 211,74 251,64", className: "blue-line" },
+    ];
 
     // render points on line graph
     const renderPoints = () => 
@@ -74,8 +75,19 @@ export default function Day05() {
                     <div className="popup-bubble">{point.value}</div>
                 </div>
             </foreignObject>
-        ));
-    
+    ));
+
+    // render lines
+    const renderLines = () =>
+        chartLines.map((line, index) => (
+            <polyline key={index} points={line.points} className={line.className} />
+        )
+    );
+
+    // weekdays below data points
+    const weekdays = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
+    const renderWeekdays = () =>
+        weekdays.map((day, index) => <span key={index}>{day}</span>);    
 
     return (
         // green box container 
@@ -104,31 +116,15 @@ export default function Day05() {
 
                 {/* chart */}
                 <div className="chart-lines">
+                    {/* lines & data points */}
                     <svg viewBox={getViewBox()} className="polyline-container" preserveAspectRatio="xMinYMin meet">
-
-                        {/* red line */}
-                        <polyline points="9,46 50,12 90,23 130,11 171,38 211,48 251,19" className="red-line" />
-
-                        {/* red points */}
-                        <g className="red-points">
-                            {renderPoints()}
-                        </g>
-
-                        {/* blue line */}
-                        <polyline points="9,61 50,50 90,65 130,55 171,61 211,74 251,64" className="blue-line" />
-                        
-                        {/* blue points */}
-                        <g className="blue-points">
-                            {renderPoints()}
-                        </g>
+                        {renderLines()}
+                        <g>{renderPoints()}</g>
                     </svg>
 
                     {/* weekdays */}
-                    <div className="weekdays">
-                        {renderWeekdays()}
-                    </div>
+                    <div className="weekdays">{renderWeekdays()}</div>
                 </div>
-
             </div>
         </div>
     )
