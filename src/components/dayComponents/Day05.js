@@ -57,6 +57,11 @@ export default function Day05() {
         { x: 251, y: 91, value: 20, color: 'blue' },
     ];
 
+    // weekdays below data points
+    const weekdays = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
+    const renderWeekdays = () =>
+        weekdays.map((day, index) => <span key={index}>{day}</span>);
+
     // render points on line graph
     const renderPoints = () => 
         pointsData.map((point, index) => (
@@ -122,13 +127,7 @@ export default function Day05() {
 
                     {/* weekdays */}
                     <div className="weekdays">
-                        <span>MON</span>
-                        <span>TUE</span>
-                        <span>WED</span>
-                        <span>THU</span>
-                        <span>FRI</span>
-                        <span>SAT</span>
-                        <span>SUN</span>
+                        {renderWeekdays()}
                     </div>
                 </div>
 
