@@ -27,17 +27,15 @@ export default function Day05() {
         };
     }, []);
 
-    // return appropriate svg viewbox based on screen size
-    const getViewBox = () => {
-        switch (screenType) {
-            case 'mobile' :
-                return "0 10 260 70";
-            case 'tablet' :
-                return "-3 10 265 70";
-            default:
-                return "0 0 260 90"
-        }
+    // svg viewbox positioning for each screen size
+    const viewBoxes = {
+        mobile: "0 10 260 70",
+        tablet: "-3 10 265 70",
+        desktop: "0 0 260 90",
     };
+
+    // return appropriate svg viewbox based on screen size
+    const getViewBox = () => viewBoxes[screenType] || viewBoxes.desktop;
 
     // points positioning in line graph
     const pointsData = [
