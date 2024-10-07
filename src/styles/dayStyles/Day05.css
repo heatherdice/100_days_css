@@ -84,7 +84,6 @@
 /* lines on line graph */
 .chart-lines {
 	width: 100%;
-	/* height: auto; */
 	position: relative;
 }
 .red-line, .blue-line {
@@ -103,8 +102,22 @@
 	display: block;
 	width: 100%;
 	height: auto;
-	/* max-height: 100%;
-	max-width: 100%; */
+}
+
+/* data points */
+.points {
+	position: relative;
+	width: 0.375em;
+	height: 0.375em;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 10;
+}
+.red {
+	background-color: #FA7373;
+}
+.blue {
+	background-color: #7BA2FF;
 }
 
 /* popup bubbles w/ data */
@@ -119,27 +132,6 @@
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity 0.4s ease-out;
-}
-/* .popup-bubble::after {
-	position: absolute;
-	display: block;
-	content: '';
-	height: 0.375em;
-	width: 0.375em;
-} */
-.points {
-	position: relative;
-	width: 0.375em;
-	height: 0.375em;
-	border-radius: 50%;
-	cursor: pointer;
-	z-index: 10;
-}
-.red {
-	background-color: #FA7373;
-}
-.blue {
-	background-color: #7BA2FF;
 }
 .points:hover .popup-bubble {
 	visibility: visible;
