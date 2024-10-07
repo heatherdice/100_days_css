@@ -54,7 +54,7 @@ export default function Day05() {
         { x: 251, y: 64, value: 20 },
     ];
 
-    const renderPoints = (points) => 
+    const renderPoints = (points, colorClass) => 
         points.map((point, index) => (
             <foreignObject
                 key={index}
@@ -63,7 +63,7 @@ export default function Day05() {
                 width="30"
                 height="30"
             >
-                <div className="point">
+                <div className={`points ${colorClass}`}>
                     <div className="popup-bubble">{point.value}</div>
                 </div>
             </foreignObject>
@@ -103,16 +103,16 @@ export default function Day05() {
                         <polyline points="9,46 50,12 90,23 130,11 171,38 211,48 251,19" className="red-line" />
 
                         {/* red points */}
-                        <g className="points">
-                            {renderPoints(redPointsData)}
+                        <g className="red-points">
+                            {renderPoints(redPointsData, "red")}
                         </g>
 
                         {/* blue line */}
                         <polyline points="9,61 50,50 90,65 130,55 171,61 211,74 251,64" className="blue-line" />
                         
                         {/* blue points */}
-                        <g className="points">
-                            {renderPoints(bluePointsData)}
+                        <g className="blue-points">
+                            {renderPoints(bluePointsData, "blue")}
                         </g>
                     </svg>
 
