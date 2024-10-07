@@ -40,28 +40,26 @@ export default function Day05() {
     };
 
     // points positioning in line graph
-    const redPointsData = [
-        { x: 9, y: 73, value: 458 },
-        { x: 51, y: 39, value: 812 },
-        { x: 90, y: 50, value: 746 },
-        { x: 130, y: 38, value: 877 },
-        { x: 171, y: 64, value: 517 },
-        { x: 211, y: 74, value: 434 },
-        { x: 251, y: 45, value: 458 },
-    ];
-    const bluePointsData = [
-        { x: 9, y: 88, value: 26 },
-        { x: 50, y: 78, value: 41 },
-        { x: 90, y: 92, value: 22 },
-        { x: 130, y: 82, value: 36 },
-        { x: 171, y: 88, value: 25 },
-        { x: 211, y: 101, value: 13 },
-        { x: 251, y: 91, value: 20 },
+    const pointsData = [
+        { x: 9, y: 73, value: 458, color: 'red' },
+        { x: 51, y: 39, value: 812, color: 'red' },
+        { x: 90, y: 50, value: 746, color: 'red' },
+        { x: 130, y: 38, value: 877, color: 'red' },
+        { x: 171, y: 64, value: 517, color: 'red' },
+        { x: 211, y: 74, value: 434, color: 'red' },
+        { x: 251, y: 45, value: 458, color: 'red' },
+        { x: 9, y: 88, value: 26, color: 'blue' },
+        { x: 50, y: 78, value: 41, color: 'blue' },
+        { x: 90, y: 92, value: 22, color: 'blue' },
+        { x: 130, y: 82, value: 36, color: 'blue' },
+        { x: 171, y: 88, value: 25, color: 'blue' },
+        { x: 211, y: 101, value: 13, color: 'blue' },
+        { x: 251, y: 91, value: 20, color: 'blue' },
     ];
 
     // render points on line graph
-    const renderPoints = (points, colorClass) => 
-        points.map((point, index) => (
+    const renderPoints = () => 
+        pointsData.map((point, index) => (
             <foreignObject
                 key={index}
                 x={point.x - 3} // center point horizontally
@@ -69,7 +67,7 @@ export default function Day05() {
                 width="30"
                 height="30"
             >
-                <div className={`points ${colorClass}`}>
+                <div className={`points ${point.color}`}>
                     <div className="popup-bubble">{point.value}</div>
                 </div>
             </foreignObject>
@@ -110,7 +108,7 @@ export default function Day05() {
 
                         {/* red points */}
                         <g className="red-points">
-                            {renderPoints(redPointsData, "red")}
+                            {renderPoints()}
                         </g>
 
                         {/* blue line */}
@@ -118,7 +116,7 @@ export default function Day05() {
                         
                         {/* blue points */}
                         <g className="blue-points">
-                            {renderPoints(bluePointsData, "blue")}
+                            {renderPoints()}
                         </g>
                     </svg>
 
