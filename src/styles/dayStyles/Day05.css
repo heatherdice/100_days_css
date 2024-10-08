@@ -115,6 +115,7 @@
 	border-radius: 50%;
 	cursor: pointer;
 	z-index: 4;
+	overflow: visible;
 }
 .red, .red-pointer {
 	background-color: #FA7373;
@@ -123,13 +124,12 @@
 	background-color: #7BA2FF;
 }
 
-/* popup bubbles w/ data */
+/* popup bubbles w/ data - seem to be positioned right but aren't showing */
 .popup-bubble {
 	position: absolute;
 	z-index: 5;
-	top: 120%;
-	left: 50%;
-	transform: tralate3d(-50%, 10px, 0);
+	top: -120%;
+	right: -10%;
 	font-weight: 600;
 	font-size: 0.7em;
 	color: #FFFFFF;
@@ -142,7 +142,7 @@
 	white-space: nowrap;
 	pointer-events: none;
 }
-/* triangle shape under popup square (not showing) */
+/* triangle shape under popup square */
 .popup-bubble::after {
 	position: absolute;
 	display: block;
