@@ -133,12 +133,12 @@
 	font-weight: 600;
 	font-size: 0.7em;
 	color: #FFFFFF;
-	line-height: 11px;
+	line-height: 0.7em;
 	padding: 0.5em 0.375em;
 	border-radius: 3px;
 	visibility: hidden;
 	opacity: 0;
-	transition: opacity 0.4s ease-out;
+	transition: transform 0.4s ease-out 0s, opacity 0.4s ease-out 0s;
 	white-space: nowrap;
 	pointer-events: none;
 }
@@ -159,6 +159,7 @@
 .points:hover .popup-bubble {
 	visibility: visible;
 	opacity: 1;
+	transform: translate3d(0, -50%, 0);
 }
 
 /* weekday text */
