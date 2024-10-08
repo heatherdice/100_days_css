@@ -61,8 +61,8 @@ export default function Day05() {
                 key={index}
                 x={point.x - 3} // center point horizontally
                 y={point.y - 30} // center the point vertically
-                width="30"
-                height="30"
+                width="80"
+                height="80"
             >
                 <div className={`points ${point.color}`}>
                     <div className={`popup-bubble ${point.color}`}>{point.value}</div>

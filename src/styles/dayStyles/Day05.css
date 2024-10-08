@@ -85,11 +85,13 @@
 .chart-lines {
 	width: 100%;
 	position: relative;
+	overflow: visible;
 }
 .red-line, .blue-line {
 	fill: none;
 	stroke-width: 2;
 	stroke-linecap: round;
+	z-index: 4;
 }
 .red-line {
 	stroke: #FA7373;
@@ -102,6 +104,7 @@
 	display: block;
 	width: 100%;
 	height: auto;
+	overflow: visible;
 }
 
 /* data points */
@@ -111,9 +114,9 @@
 	height: 0.375em;
 	border-radius: 50%;
 	cursor: pointer;
-	z-index: 10;
+	z-index: 4;
 }
-.red {
+.red, .red-pointer {
 	background-color: #FA7373;
 }
 .blue {
@@ -123,14 +126,35 @@
 /* popup bubbles w/ data */
 .popup-bubble {
 	position: absolute;
+	z-index: 5;
+	top: 120%;
+	left: 50%;
+	transform: tralate3d(-50%, 10px, 0);
 	font-weight: 600;
 	font-size: 0.7em;
 	color: #FFFFFF;
+	line-height: 11px;
 	padding: 0.5em 0.375em;
 	border-radius: 3px;
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity 0.4s ease-out;
+	white-space: nowrap;
+	pointer-events: none;
+}
+/* triangle shape under popup square (not showing) */
+.popup-bubble::after {
+	position: absolute;
+	display: block;
+	content: '';
+	height: 0.75em;
+	width: 0.75em;
+	left: 50%;
+	margin-left: -0.3em;
+	bottom: -0.35em;
+	transform: rotate(45deg);
+	background-color: inherit;
+	z-index: 5;
 }
 .points:hover .popup-bubble {
 	visibility: visible;
