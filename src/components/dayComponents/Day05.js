@@ -54,28 +54,27 @@ export default function Day05() {
         { x: 211, y: 101, value: 13, color: 'blue' },
         { x: 251, y: 91, value: 20, color: 'blue' },
     ];
-
-    // chart lines
-    const chartLines = [
-        { points: "9,46 50,12 90,23 130,11 171,38 211,48 251,19", className: "red-line" },
-        { points: "9,61 50,50 90,65 130,55 171,61 211,74 251,64", className: "blue-line" },
-    ];
-
     // render points on line graph
     const renderPoints = () => 
         pointsData.map((point, index) => (
             <foreignObject
                 key={index}
                 x={point.x - 3} // center point horizontally
-                y={point.y - 30} // position popup above the point
+                y={point.y - 30} // center the point vertically
                 width="30"
                 height="30"
             >
                 <div className={`points ${point.color}`}>
-                    <div className="popup-bubble">{point.value}</div>
+                    <div className={`popup-bubble ${point.color}`}>{point.value}</div>
                 </div>
             </foreignObject>
     ));
+
+    // chart lines
+    const chartLines = [
+        { points: "9,46 50,12 90,23 130,11 171,38 211,48 251,19", className: "red-line" },
+        { points: "9,61 50,50 90,65 130,55 171,61 211,74 251,64", className: "blue-line" },
+    ];
 
     // render lines
     const renderLines = () =>
