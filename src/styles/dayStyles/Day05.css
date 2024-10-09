@@ -1,3 +1,49 @@
+/* Day 5 Styling */
+
+/* collective styling */
+.chart-top-row, .chart-bottom-row, .key, .weekdays {
+	display: flex;
+	justify-content: space-between;
+}
+.chart-top-row, .chart-bottom-row, .key {
+	flex-direction: row;
+}
+.chart-container, .chart-lines, .points {
+	position: relative;
+}
+.chart-header, .popup-bubble {
+	color: #FFFFFF;
+}
+.chart-large-text, .chart-small-text, .chart-top-row, .chart-bottom-row {
+	margin: 0;
+}
+.chart-large-text, .popup-bubble {
+	font-weight: 600;
+}
+.chart-small-text, .key, .weekdays {
+	font-size: 0.75em;
+}
+.chart-small-text, .key {
+	font-weight: 8;
+}
+.key-red, .key-blue {
+	outline: none;
+	flex-grow: 1;
+	height: 0.1em;
+	max-width: 0.8em;
+	margin: 1.5em 0.5em 0 1.5em;
+	padding: 0;
+	border-radius: 3px;
+}
+.view-purchase, .weekdays {
+	color: #606060;
+}
+.red-line, .blue-line {
+	fill: none;
+	stroke-width: 2;
+	stroke-linecap: round;
+}
+
 /* green box container */
 .container-color5 {
 	background: #42A7A1;
@@ -8,7 +54,6 @@
     font-family: 'Open Sans', Helvetica, sans-serif !important;
 	padding: 0.5em 1em;
 	z-index: 4;
-	position: relative;
 	width: 17.25em;
 	height: 12.5em;
 	border-radius: 5px;
@@ -18,51 +63,20 @@
 
 /* top orange section */
 .chart-header {
-	color: #FFFFFF;
 	background: #F1BA64;
 	padding: 0.5em 0;
-}
-
-/* headings in orange section */
-.chart-large-text, .chart-small-text, .chart-top-row, .chart-bottom-row {
-	margin: 0;
 }
 
 /* "weekly report" title */
 .chart-large-text {
 	font-size: 0.9em;
-	font-weight: 600;
-}
-
-/* other text in orange header */
-.chart-small-text, .key {
-	font-size: 0.75em;
-	font-weight: 8;
-}
-
-/* alignment for header text */
-.chart-top-row, .chart-bottom-row {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 }
 
 /* chart key */
 .key {
-	display: flex;
-	flex-direction: row;
 	justify-content: flex-end;
 	text: #808080;
 	padding: 0.5em;
-}
-.key-red, .key-blue {
-	outline: none;
-	flex-grow: 1;
-	height: 0.1em;
-	max-width: 0.8em;
-	margin: 1.5em 0.5em 0 1.5em;
-	padding: 0;
-	border-radius: 3px;
 }
 .key-red {
 	border: 0.5px solid #FA7373;
@@ -74,9 +88,6 @@
 }
 
 /* chart text */
-.view-purchase, .weekdays {
-	color: #606060;
-}
 .view-purchase {
 	margin-top: 1.5em;
 }
@@ -84,14 +95,7 @@
 /* lines on line graph */
 .chart-lines {
 	width: 100%;
-	position: relative;
 	overflow: visible;
-}
-.red-line, .blue-line {
-	fill: none;
-	stroke-width: 2;
-	stroke-linecap: round;
-	z-index: 4;
 }
 .red-line {
 	stroke: #FA7373;
@@ -109,12 +113,10 @@
 
 /* data points */
 .points {
-	position: relative;
 	width: 0.375em;
 	height: 0.375em;
 	border-radius: 50%;
 	cursor: pointer;
-	z-index: 4;
 	overflow: visible;
 }
 .red, .red-pointer {
@@ -130,9 +132,7 @@
 	z-index: 5;
 	top: -120%;
 	right: -10%;
-	font-weight: 600;
 	font-size: 0.7em;
-	color: #FFFFFF;
 	line-height: 0.7em;
 	padding: 0.5em 0.375em;
 	border-radius: 3px;
@@ -164,12 +164,9 @@
 
 /* weekday text */
 .weekdays {
-	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	width: 100%;
 	text-align: center;
-	font-size: 0.75em;
 	padding: 0;
 	margin: 0;
 }
