@@ -37,7 +37,7 @@ export default function Day05() {
     // return appropriate svg viewbox based on screen size
     const getViewBox = () => viewBoxes[screenType] || viewBoxes.desktop;
 
-    // points positioning in line graph
+    // points positioning in line graph, value & color assignment
     const pointsData = [
         { x: 9, y: 73, value: 458, color: 'red' },
         { x: 51, y: 39, value: 812, color: 'red' },
@@ -54,6 +54,7 @@ export default function Day05() {
         { x: 211, y: 101, value: 13, color: 'blue' },
         { x: 251, y: 91, value: 20, color: 'blue' },
     ];
+
     // render points on line graph
     const renderPoints = () => 
         pointsData.map((point, index) => (
@@ -70,13 +71,13 @@ export default function Day05() {
             </foreignObject>
     ));
 
-    // chart lines
+    // className & positioning of chart lines
     const chartLines = [
         { points: "9,46 50,12 90,23 130,11 171,38 211,48 251,19", className: "red-line" },
         { points: "9,61 50,50 90,65 130,55 171,61 211,74 251,64", className: "blue-line" },
     ];
 
-    // render lines
+    // render chart lines
     const renderLines = () =>
         chartLines.map((line, index) => (
             <polyline key={index} points={line.points} className={line.className} />
@@ -86,13 +87,17 @@ export default function Day05() {
     // weekdays below data points
     const weekdays = ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"];
     const renderWeekdays = () =>
-        weekdays.map((day, index) => <span key={index}>{day}</span>);    
+        weekdays.map((day, index) => 
+            <span key={index}>{day}</span>
+        );    
 
     return (
         // green box container 
         <div className="day-container container-color5">
 
+            {/* card for chart */}
             <div className="chart-container">
+                
                 {/* chart header */}
                 <div className="chart-header">
                     <p className="chart-top-row">
