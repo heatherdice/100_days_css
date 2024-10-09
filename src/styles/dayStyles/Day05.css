@@ -14,7 +14,7 @@
 .chart-header, .popup-bubble {
 	color: #FFFFFF;
 }
-.chart-large-text, .chart-small-text, .chart-top-row, .chart-bottom-row {
+.chart-large-text, .chart-small-text, .chart-top-row, .chart-bottom-row, .weekdays {
 	margin: 0;
 }
 .chart-large-text, .popup-bubble {
@@ -32,8 +32,10 @@
 	height: 0.1em;
 	max-width: 0.8em;
 	margin: 1.5em 0.5em 0 1.5em;
-	padding: 0;
 	border-radius: 3px;
+}
+.key-red, .key-blue, .weekdays {
+	padding: 0;
 }
 .view-purchase, .weekdays {
 	color: #606060;
@@ -42,6 +44,12 @@
 	fill: none;
 	stroke-width: 2;
 	stroke-linecap: round;
+}
+.chart-lines, .polyline-container, .weekdays {
+	width: 100%;
+}
+.chart-lines, .polyline-container, .points {
+	overflow: visible;
 }
 
 /* green box container */
@@ -93,10 +101,6 @@
 }
 
 /* lines on line graph */
-.chart-lines {
-	width: 100%;
-	overflow: visible;
-}
 .red-line {
 	stroke: #FA7373;
 }
@@ -106,9 +110,7 @@
 /* svg container for chart lines */
 .polyline-container {
 	display: block;
-	width: 100%;
 	height: auto;
-	overflow: visible;
 }
 
 /* data points */
@@ -117,7 +119,6 @@
 	height: 0.375em;
 	border-radius: 50%;
 	cursor: pointer;
-	overflow: visible;
 }
 .red, .red-pointer {
 	background-color: #FA7373;
@@ -165,10 +166,7 @@
 /* weekday text */
 .weekdays {
 	align-items: center;
-	width: 100%;
 	text-align: center;
-	padding: 0;
-	margin: 0;
 }
 
 /* tablet styling */
