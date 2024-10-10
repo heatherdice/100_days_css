@@ -114,13 +114,23 @@
 }
 
 /* data points */
+.points-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
 .points {
 	width: 0.375em;
 	height: 0.375em;
 	border-radius: 50%;
 	cursor: pointer;
+	z-index: 10;
 }
-.red, .red-pointer {
+.red {
 	background-color: #FA7373;
 }
 .blue {
@@ -130,9 +140,8 @@
 /* popup bubbles w/ data - seem to be positioned right but aren't showing */
 .popup-bubble {
 	position: absolute;
-	z-index: 5;
-	top: -120%;
-	right: -10%;
+	bottom: 120%;
+	left: -20%;
 	font-size: 0.7em;
 	line-height: 0.7em;
 	padding: 0.5em 0.375em;
