@@ -39,20 +39,20 @@ export default function Day05() {
 
     // points positioning in line graph, value & color assignment
     const pointsData = [
-        { x: 9, y: 45, value: 458, color: 'red' },
-        { x: 51, y: 13, value: 812, color: 'red' },
-        { x: 90, y: 23, value: 746, color: 'red' },
-        { x: 130, y: 12, value: 877, color: 'red' },
-        { x: 171, y: 38, value: 517, color: 'red' },
-        { x: 211, y: 48, value: 434, color: 'red' },
-        { x: 251, y: 19, value: 458, color: 'red' },
-        { x: 9, y: 61, value: 26, color: 'blue' },
-        { x: 50, y: 51, value: 41, color: 'blue' },
-        { x: 90, y: 64, value: 22, color: 'blue' },
-        { x: 130, y: 55, value: 36, color: 'blue' },
-        { x: 171, y: 61, value: 25, color: 'blue' },
-        { x: 211, y: 73, value: 13, color: 'blue' },
-        { x: 251, y: 64, value: 20, color: 'blue' },
+        { x: 9, y: 33, value: 458, color: 'red' },
+        { x: 51, y: 1, value: 812, color: 'red' },
+        { x: 90, y: 11, value: 746, color: 'red' },
+        { x: 130, y: 0, value: 877, color: 'red' },
+        { x: 171, y: 26, value: 517, color: 'red' },
+        { x: 211, y: 36, value: 434, color: 'red' },
+        { x: 251, y: 7, value: 458, color: 'red' },
+        { x: 9, y: 49, value: 26, color: 'blue' },
+        { x: 50, y: 38, value: 41, color: 'blue' },
+        { x: 90, y: 52, value: 22, color: 'blue' },
+        { x: 130, y: 43, value: 36, color: 'blue' },
+        { x: 171, y: 49, value: 25, color: 'blue' },
+        { x: 211, y: 62, value: 13, color: 'blue' },
+        { x: 251, y: 52, value: 20, color: 'blue' },
     ];
 
     // render points on line graph
