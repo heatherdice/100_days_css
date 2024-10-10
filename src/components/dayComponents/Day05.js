@@ -64,6 +64,7 @@ export default function Day05() {
                 y={point.y - 15} // center the point vertically
                 width="30"
                 height="30"
+                style={{overflow: "visible"}}
             >
                 <div className="points-container">
                     <div className={`points ${point.color}`}>
