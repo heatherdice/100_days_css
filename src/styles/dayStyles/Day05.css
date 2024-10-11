@@ -124,6 +124,7 @@
 	height: 100%;
 	padding-bottom: 0.25em;
 	overflow: visible;
+	pointer-events: all;
 }
 .points {
 	width: 0.375em;
@@ -131,6 +132,7 @@
 	border-radius: 50%;
 	cursor: pointer;
 	z-index: 10;
+	pointer-events: all;
 }
 .red {
 	background-color: #FA7373;
@@ -142,7 +144,7 @@
 /* popup bubbles w/ data - seem to be positioned right but aren't showing */
 .popup-bubble {
 	position: absolute;
-	bottom: 100%;
+	bottom: 0.3em;
 	left: -190%;
 	font-size: 0.7em;
 	line-height: 0.7em;
@@ -152,7 +154,6 @@
 	opacity: 0;
 	transition: transform 0.4s ease-out 0s, opacity 0.4s ease-out 0s;
 	white-space: nowrap;
-	pointer-events: none;
 }
 /* triangle shape under popup square */
 .popup-bubble::after {
@@ -163,15 +164,17 @@
 	width: 0.75em;
 	left: 50%;
 	margin-left: -0.3em;
-	bottom: -0.35em;
+	bottom: -0.3em;
 	transform: rotate(45deg);
 	background-color: inherit;
-	z-index: 5;
 }
 .points:hover .popup-bubble {
 	visibility: visible;
 	opacity: 1;
 	transform: translate3d(0, -50%, 0);
+}
+.points:not(:hover) .popup-bubble {
+	display: none;
 }
 
 /* weekday text */

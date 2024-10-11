@@ -39,20 +39,20 @@ export default function Day05() {
 
     // points positioning in line graph, value & color assignment
     const pointsData = [
-        { x: 9, y: 33, value: 458, color: 'red' },
-        { x: 51, y: 1, value: 812, color: 'red' },
-        { x: 90, y: 11, value: 746, color: 'red' },
-        { x: 130, y: 0, value: 877, color: 'red' },
-        { x: 171, y: 26, value: 517, color: 'red' },
-        { x: 211, y: 36, value: 434, color: 'red' },
-        { x: 251, y: 7, value: 458, color: 'red' },
-        { x: 9, y: 49, value: 26, color: 'blue' },
-        { x: 50, y: 38, value: 41, color: 'blue' },
-        { x: 90, y: 52, value: 22, color: 'blue' },
-        { x: 130, y: 43, value: 36, color: 'blue' },
-        { x: 171, y: 49, value: 25, color: 'blue' },
-        { x: 211, y: 62, value: 13, color: 'blue' },
-        { x: 251, y: 52, value: 20, color: 'blue' },
+        { x: 21, y: 52, value: 458, color: 'red' },
+        { x: 61, y: 21, value: 812, color: 'red' },
+        { x: 101, y: 31, value: 746, color: 'red' },
+        { x: 141, y: 20, value: 877, color: 'red' },
+        { x: 182, y: 46, value: 517, color: 'red' },
+        { x: 222, y: 56, value: 434, color: 'red' },
+        { x: 262, y: 27, value: 458, color: 'red' },
+        { x: 21, y: 68, value: 26, color: 'blue' },
+        { x: 61, y: 59, value: 41, color: 'blue' },
+        { x: 101, y: 72, value: 22, color: 'blue' },
+        { x: 141, y: 63, value: 36, color: 'blue' },
+        { x: 182, y: 69, value: 25, color: 'blue' },
+        { x: 222, y: 82, value: 13, color: 'blue' },
+        { x: 262, y: 72, value: 20, color: 'blue' },
     ];
 
     // render points on line graph
@@ -62,9 +62,9 @@ export default function Day05() {
                 key={index}
                 x={point.x - 15} // center point horizontally
                 y={point.y - 15} // center the point vertically
-                width="30"
-                height="30"
-                style={{overflow: "visible"}}
+                width="10"
+                height="10"
+                style={{ overflow: "visible", pointerEvents: "none" }}
             >
                 <div className="points-container">
                     <div className={`points ${point.color}`}>
