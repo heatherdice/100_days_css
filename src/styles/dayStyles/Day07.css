@@ -20,9 +20,6 @@
 .menu-icon:hover .menu-circle {
     background: #FFFFFF;
 }
-.day7-card-header, .day7-notification-menu ul {
-    justify-content: space-between;
-}
 .day7-card-header, .magnifying-glass:hover, .day7-notification-menu li:hover {
     color: #FFFFFF;
 }
@@ -66,6 +63,7 @@
     height: 10%;
     border-radius: 2.75px 2.75px 0 0;
     position: relative;
+    justify-content: center;
 }
 
 /* menu icon w/ notifications dot */
@@ -98,9 +96,9 @@
 /* notifications title */
 .day7-title {
     font-weight: 500;
-    margin: 0 auto;
-    padding-left: 6em;
-    padding-right: 2em;
+    /* margin: 0 1em; */
+    padding-left: 5.75em;
+    padding-right: 3em;
 }
 
 /* search bar */
@@ -131,6 +129,7 @@
 .magnifying-glass {
     color: #B2DAFF;
     font-size: 1.25em;
+    margin: 0.5em 1.75em 0.5em 0.5em
 }
 
 /* white notifications section */
@@ -180,6 +179,7 @@
 	transform: translate3d(20px,0,0);
 }
 .day7-notification-menu ul {
+    justify-content: space-between;
     list-style: none;
     color: #B2DAFF;
     padding: 0;
