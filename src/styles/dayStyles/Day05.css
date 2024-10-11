@@ -156,7 +156,7 @@
 	white-space: nowrap;
 }
 /* triangle shape under popup square */
-.popup-bubble::after {
+.popup-bubble::before {
 	position: absolute;
 	display: block;
 	content: '';
@@ -167,6 +167,7 @@
 	bottom: -0.3em;
 	transform: rotate(45deg);
 	background-color: inherit;
+	z-index: -1;
 }
 .points:hover .popup-bubble {
 	visibility: visible;
