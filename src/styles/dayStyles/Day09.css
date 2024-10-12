@@ -29,6 +29,7 @@
     left: 3.4em;
     background-color: #F5EDBD;
     box-shadow: 0 0 10px 0 #F6EDBD;
+    animation: rise 1s ease-out;
 }
 
 /* bottom 1/4 w/ weather stats */
@@ -51,6 +52,11 @@
 }
 .forecast-temps {
     font-weight: bolder;
+}
+
+@keyframes rise {
+    from {transform: translate(-20px, 200px);}
+    to {transform: translate(0,0)};
 }
 
 /* tablet view */
