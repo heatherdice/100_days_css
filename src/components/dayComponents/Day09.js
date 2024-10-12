@@ -3,9 +3,20 @@ import "../../styles/dayStyles/Day09.css";
 
 export default function Day09() {
     // generate crater & raindrop divs
-    const craters = Array.from({ length: 11 }, (_, i) => (
-        <div key={`crater-${i + 1}`} className={`crater-${i + 1}`} />
-    ));
+    const craters = Array.from({ length: 11 }, (_, i) => {
+        const size = (Math.random() * 0.4 + 0.2).toFixed(2);
+        const top = (Math.random() * 80 + 10).toFixed(1);
+        const left = (Math.random() * 80 + 10).toFixed(1);
+
+        const style = {
+            width: `${size}em`,
+            height: `${size}em`,
+            top: `${top}%`,
+            left: `${left}%`,
+        };
+
+        return <div key={`crater-${i + 1}`} className="crater" style={style} />
+    });
 
     return (
         <div className="day-container container-color9">
