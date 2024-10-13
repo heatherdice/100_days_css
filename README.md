@@ -16,8 +16,8 @@ While I don't plan to complete projects every day, I do hope to make daily progr
     - 9/24 current progress: animation working
     - 9/24 todo: get animation to look more like a lava lamp than circular orbs
 - [ ] Day 9
-    - 9/24 current progress: basic moon shape, bottom section added
-    - 9/24 todo: moon rise animation, spots on moon
+    - 10/13 current progress: basic moon shape, bottom section added, spots on moon, moon rise animation
+    - 10/13 todo: hills, rain drops
 - [ ] Day 10
     - 9/24 current progress: static imaging set
     - 9/24 todo: more space between dots, animation circle & heart
