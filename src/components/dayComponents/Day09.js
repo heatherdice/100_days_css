@@ -42,6 +42,14 @@ export default function Day09() {
                     {craters}
                 </div>
 
+                <div className="hills-container">
+                    <div className="all-hills bg-hills hill-bg-1" />
+                    <div className="all-hills bg-hills hill-bg-2" />
+                    <div className="all-hills fg-hills hill-fg-1" />
+                    <div className="all-hills fg-hills hill-fg-2" />
+                    <div className="all-hills fg-hills hill-fg-3" />
+                </div>
+
             </div>
             
             {/* bottom 1/4 w/ weather stats */}
