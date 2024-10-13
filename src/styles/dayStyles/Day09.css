@@ -31,8 +31,10 @@
     left: 3.4em;
     background-color: #F6EDBD;
     box-shadow: 0 0 10px 0 #F6EDBD;
-    animation: rise 1s ease-out;
     overflow: hidden;
+}
+.moon.animate {
+    animation: rise 1.25s ease-out;
 }
 .crater {
     position: absolute;

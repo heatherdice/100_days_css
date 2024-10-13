@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/dayStyles/Day09.css";
+import { useInView } from "react-intersection-observer";
 
 export default function Day09() {
+    // use intersection-observer api to trigger animations on render
+    const { ref, inView } = useInView({
+        triggerOnce: false,
+        threshold: 0.2
+    });
+    const [animate, setAnimate] = useState(false);
+    React.useEffect(() => {
+        // toggle to reset animation
+        if (inView) {
+            setAnimate(false);
+            requestAnimationFrame(() => setAnimate(true));
+        }
+    }, [inView])
+
     // generate crater & raindrop divs
     const craters = Array.from({ length: 11 }, (_, i) => {
         const size = (Math.random() * 0.4 + 0.2).toFixed(2);
@@ -19,11 +34,11 @@ export default function Day09() {
     });
 
     return (
-        <div className="day-container container-color9">
+        <div ref={ref} className="day-container container-color9">
             
             {/* top 3/4 w/ weather animation */}
             <div className="weather-picture">
-                <div className="moon">
+                <div className={`moon ${animate ? ' animate' : ''}`}>
                     {craters}
                 </div>
 
