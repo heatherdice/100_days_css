@@ -12,9 +12,7 @@ While I don't plan to complete projects every day, I do hope to make daily progr
 - [x] Day 5
 - [x] Day 6
 - [x] Day 7
-- [ ] Day 8
-    - 9/24 current progress: animation working
-    - 9/24 todo: get animation to look more like a lava lamp than circular orbs
+- [x] Day 8
 - [ ] Day 9
     - 10/13 current progress: moon animation, hills
     - 10/13 todo: rain drops
