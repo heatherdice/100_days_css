@@ -19,7 +19,7 @@ export default function Day09() {
         }
     }, [inView])
 
-    // generate crater & raindrop divs
+    // generate crater divs with randomized styling for width, height, top, and left attributes
     const craters = Array.from({ length: 11 }, (_, i) => {
         const size = (Math.random() * 0.4 + 0.2).toFixed(2);
         const top = (Math.random() * 80 + 10).toFixed(1);
@@ -35,24 +35,34 @@ export default function Day09() {
         return <div key={`crater-${i + 1}`} className="crater" style={style} />
     });
 
-    // rain generation
+    // rain generation with established number of columns and size names
     const columns = 10;
     const sizes = ["big", "medium", "small"];
 
+    // durations for the animation for each size of raindrops
     const baseDurations = {
         big: 0.7,
         medium: 1.3,
         small: 1.9
     };
 
+    // generate raindrop elemens for each column, flatten into arr for React rendering
+    // Array.from({ length: columns }) -> creates arr w/ columns number of elements
+    // .flatMap() -> map over arr & flatten to non-nested arr
+    // (_, columnIndex) -> ("I don't care about this value", index of the column)
+    // sizes.map((size) => ...) -> produce 3 sizes (big, medium, small) per column
+    // without this process, would create a nested arr, which React doesn't like
     const raindrops = animate
         ? Array.from({ length: columns }).flatMap((_, columnIndex) => sizes.map((size) => {
+            // set horizontal position of each raindrop, creates even spacing
             const left = -20 + columnIndex * 38;
 
+            // set duration starting at baseline duration, add up to 0.2s of variation so rain starts at different times rather than all at once
             const duration = 
                 baseDurations[size] + Math.random() * 0.2;
             const delay = Math.random() * 2;
 
+            // render
             return (
                 <div
                     key={`drop-${columnIndex}-${size}-${Math.random()}`}

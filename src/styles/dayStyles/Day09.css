@@ -95,7 +95,6 @@
     animation-iteration-count: infinite;
     animation-fill-mode: both;
     background: #7FC1F9;
-    /* animation: drop var(--duration) linear var(--delay) infinite; */
 }
 .drop::before,
 .drop::after {
