@@ -86,10 +86,43 @@
 /* raindrops */
 .drop {
     position: absolute;
+    bottom: 5.625em;
+    z-index: 20;
     border-radius: 50%;
+    transform-origin: 50% 100%;
+    animation-name: drop;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
     background: #7FC1F9;
-    animation: drop var(--duration) linear var(--delay) infinite;
+    /* animation: drop var(--duration) linear var(--delay) infinite; */
 }
+.drop::before,
+.drop::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: #7FC1F9;
+}
+.drop.big {
+    width: 0.5em;
+    height: 0.5em;
+}
+.drop.big::before {
+    top: -0.125em;
+    left: 0.063em;
+    width: 0.375em;
+    height: 0.375em;
+    border-radius: 0.188em;
+}
+.drop.big::after {
+    top: 0.313em;
+    left: 0.125em;
+    width: 0.25em;
+    height: 0.625em;
+    border-radius: 50%;
+}
+
 
 /* raindrop animation */
 @keyframes drop {
