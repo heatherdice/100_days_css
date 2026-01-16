@@ -83,6 +83,27 @@
     left: 18.25em;
 }
 
+/* raindrops */
+.drop {
+    position: absolute;
+    border-radius: 50%;
+    background: #7FC1F9;
+    animation: drop var(--duration) linear var(--delay) infinite;
+}
+
+/* raindrop animation */
+@keyframes drop {
+    0% {
+        transform: translate3d(2.5em, -20em, 0) scaleX(1) scaleY(1) rotate(17deg);
+    }
+    85% {
+        transform: translate3d(0, 0, 0) scaleX(1) scaleY(1) rotate(17deg);
+    }
+    100% {
+        transform: translate3d(0, 0, 0) scaleX(3) scaleY(0) rotate(0deg)
+    }
+}
+
 /* bottom 1/4 w/ weather stats */
 .weather-stats {
     flex-direction: row;
