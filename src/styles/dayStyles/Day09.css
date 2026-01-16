@@ -116,7 +116,7 @@
     border-radius: 0.188em;
 }
 .drop.big::after {
-    top: 0.313em;
+    top: -0.313em;
     left: 0.125em;
     width: 0.25em;
     height: 0.625em;
@@ -128,17 +128,36 @@
     opacity: 0.6;
 }
 .drop.medium::before {
-    top: 0.125em;
+    top: -0.125em;
     left: 0.063em;
     width: 0.25em;
     height: 0.25em;
     border-radius: 0.125em;
 }
 .drop.medium::after {
-    top: 0.25em;
+    top: -0.25em;
     left: 0.125em;
     width: 0.125em;
     height: 0.375em;
+    border-radius: 50%;
+}
+.drop.small {
+    width: 0.25em;
+    height: 0.25em;
+    opacity: 0.3;
+}
+.drop.small::before {
+    top: -0.25em;
+    left: 0.063em;
+    width: 0.125em;
+    height: 0.125em;
+    border-radius: 0.063em;
+}
+.drop.small::after {
+    top: -0.188em;
+    left: 0.063em;
+    width: 0.125em;
+    height: 0.25em;
     border-radius: 50%;
 }
 
