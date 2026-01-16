@@ -122,7 +122,25 @@
     height: 0.625em;
     border-radius: 50%;
 }
-
+.drop.medium {
+    width: 0.375em;
+    height: 0.375em;
+    opacity: 0.6;
+}
+.drop.medium::before {
+    top: 0.125em;
+    left: 0.063em;
+    width: 0.25em;
+    height: 0.25em;
+    border-radius: 0.125em;
+}
+.drop.medium::after {
+    top: 0.25em;
+    left: 0.125em;
+    width: 0.125em;
+    height: 0.375em;
+    border-radius: 50%;
+}
 
 /* raindrop animation */
 @keyframes drop {
