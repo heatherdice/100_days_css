@@ -210,6 +210,9 @@
         top: 1.5em;
         left: 1.75em;
     }
+    .drop {
+        bottom: 3.9em;
+    }
     .temp {
         font-size: 2em;
     }
