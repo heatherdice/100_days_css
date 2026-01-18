@@ -47,15 +47,15 @@ export default function Day09() {
     };
 
     // generate raindrop elemens for each column, flatten into arr for React rendering
-    // Array.from({ length: columns }) -> creates arr w/ columns number of elements
+    // Array.from({ length: columns }) -> creates arr w/ columns number of elements (in this case, arr w/ 10 elements)
     // .flatMap() -> map over arr & flatten to non-nested arr
     // (_, columnIndex) -> ("I don't care about this value", index of the column)
-    // sizes.map((size) => ...) -> produce 3 sizes (big, medium, small) per column
+    // sizes.map((size) => ...) -> produce 3 sizes of raindrop (big, medium, small) per column
     // without this process, would create a nested arr, which React doesn't like
     const raindrops = animate
         ? Array.from({ length: columns }).flatMap((_, columnIndex) => sizes.map((size) => {
             // set horizontal position of each raindrop, creates even spacing
-            const left = -20 + columnIndex * 38;
+            const left = -15 + columnIndex * 39;
 
             // set duration starting at baseline duration, add up to 0.2s of variation so rain starts at different times rather than all at once
             const duration = 
