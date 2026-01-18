@@ -19,6 +19,7 @@
 /* top 3/4 w/ weather animation */
 .weather-picture {
     height: 75%;
+    overflow: hidden;
 }
 
 /* moon */
@@ -86,7 +87,7 @@
 /* raindrops */
 .drop {
     position: absolute;
-    bottom: 5.625em;
+    bottom: 6.25em;
     z-index: 20;
     border-radius: 50%;
     transform-origin: 50% 100%;
@@ -163,7 +164,7 @@
 /* raindrop animation */
 @keyframes drop {
     0% {
-        transform: translate3d(2.5em, -20em, 0) scaleX(1) scaleY(1) rotate(17deg);
+        transform: translate3d(3em, -20em, 0) scaleX(1) scaleY(1) rotate(17deg);
     }
     85% {
         transform: translate3d(0, 0, 0) scaleX(1) scaleY(1) rotate(17deg);
