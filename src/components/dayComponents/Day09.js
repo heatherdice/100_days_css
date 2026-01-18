@@ -90,12 +90,10 @@ export default function Day09() {
                 </div>
 
                 {/* raindrops */}
-                <div>
-                    {raindrops}
-                </div>
+                {raindrops}
 
                 {/* hills */}
-                <div className="hills-container">
+                <div>
                     <div className="all-hills bg-hills hill-bg-1" />
                     <div className="all-hills bg-hills hill-bg-2" />
                     <div className="all-hills fg-hills hill-fg-1" />
