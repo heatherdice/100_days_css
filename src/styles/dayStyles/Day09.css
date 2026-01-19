@@ -46,44 +46,6 @@
     box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* hills */
-.all-hills {
-    position: absolute;
-    z-index: 2;
-    width: 21em;
-    height: 17.5em;
-    border-radius: 50%;
-
-}
-.bg-hills {
-    background: #26314F;
-}
-.fg-hills {
-    background: #303C5D;
-}
-.hill-bg-1 {
-    top: 12.5em;
-    left: -3.5em;
-    border-radius: 50%;
-}
-.hill-bg-2 {
-    top: 12.3em;
-    left: 11em;
-}
-.hill-fg-1 {
-    top: 15.5em;
-    left: -8.5em;
-}
-.hill-fg-2 {
-    top: 13.8em;
-    left: 4em;
-}
-.hill-fg-3 {
-    background: #303C5D;
-    top: 15.5em;
-    left: 18.25em;
-}
-
 /* raindrops */
 .drop {
     position: absolute;
@@ -174,6 +136,41 @@
     }
 }
 
+/* hills */
+.all-hills {
+    position: absolute;
+    z-index: 2;
+    width: 21em;
+    height: 17.5em;
+    border-radius: 50%;
+}
+.bg-hills {
+    background: #26314F;
+}
+.fg-hills {
+    background: #303C5D;
+}
+.hill-bg-1 {
+    top: 12.5em;
+    left: -3.5em;
+}
+.hill-bg-2 {
+    top: 12.3em;
+    left: 11em;
+}
+.hill-fg-1 {
+    top: 15.5em;
+    left: -8.5em;
+}
+.hill-fg-2 {
+    top: 13.8em;
+    left: 4em;
+}
+.hill-fg-3 {
+    top: 15.5em;
+    left: 18.25em;
+}
+
 /* bottom 1/4 w/ weather stats */
 .weather-stats {
     flex-direction: row;
@@ -212,6 +209,30 @@
     }
     .drop {
         bottom: 3.9em;
+    }
+    .all-hills {
+        width: 14.2em;
+        height: 11.7em;
+    }
+    .hill-bg-1 {
+        top: 8em;
+        left: -2.5em;
+    }
+    .hill-bg-2 {
+        top: 7.7em;
+        left: 7.8em;
+    }
+    .hill-fg-1 {
+        top: 9em;
+        left: -6em;
+    }
+    .hill-fg-2 {
+        top: 8.8em;
+        left: 2.8em;
+    }
+    .hill-fg-3 {
+        top: 10em;
+        left: 9.5em;
     }
     .temp {
         font-size: 2em;
