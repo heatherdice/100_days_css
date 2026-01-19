@@ -254,6 +254,10 @@
         top: 1.75em;
         left: 2.5em;
     }
+    .drop {
+        bottom: 4.4em;
+    }
+
     .forecast {
         margin-left: 3.5em;
     }
