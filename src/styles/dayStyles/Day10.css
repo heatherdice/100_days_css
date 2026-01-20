@@ -1,4 +1,9 @@
 /* Day 10 styles */
+@property --angle {
+    syntax: "<angle";
+    initial-value: 0deg;
+    inherits: false;
+}
 
 /* collective styling */
 .day-container, .day10-circles {
@@ -35,10 +40,27 @@
 
 /* red moving circle */
 .moving-circle {
-    border: 2px solid #F85B5B;
+    position: relative;
     z-index: 3;
     height: 12em;
     width: 12em;
+    border-radius: 50%;
+}
+.moving-circle::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+
+    background: conic-gradient(
+        #F85B5B var(--angle),
+        transparent 0deg
+    );
+
+    -webkit-mask: radial-gradient(circle, transparent 80%, black 81%);
+    mask: radial-gradient(circle, transparent 80%, black 81%);
+
+    animation: rotate-circle 5s linear infinite;
 }
 
 /* dotted line circle */
@@ -83,5 +105,15 @@
     }
     100% {
         transform: scale(1.25);
+    }
+}
+
+/* moving red circle animation */
+@keyframes rotate-circle {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
     }
 }
