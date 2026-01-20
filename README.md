@@ -15,5 +15,5 @@ While I don't plan to complete projects every day, I do hope to make daily progr
 - [x] Day 8
 - [x] Day 9
 - [ ] Day 10
-    - 9/24 current progress: static imaging set
-    - 9/24 todo: more space between dots, animation circle & heart
+    - 1/20 current progress: beating heart animation
+    - 1/20 todo: more space between dots, animation circle
