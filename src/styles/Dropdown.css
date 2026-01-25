@@ -2,11 +2,9 @@
 .dropdown {
     position: fixed;
     right: 0;
-    top: -1em;
-    padding-top: 1em;
-    /* display: flex;
-    justify-content: flex-end; */
-    z-index: 1;
+    top: 0;
+    padding-top: 0;
+    z-index: 5;
     overflow: hidden;
     max-height: 0;
     animation-duration: 3s;
@@ -45,6 +43,19 @@
     font-weight: bolder;
 }
 
+/* animation calls */
+.dropdown.open-dropdown {
+    display: block;
+    animation-name: slideDown;
+    margin-top: 4em;
+}
+
+.dropdown.close-dropdown {
+    display: block;
+    animation-name: slideUp;
+    margin-top: 4em;
+}
+
 /* open/close animations */
 @keyframes slideDown {
     from {
@@ -65,17 +76,4 @@
         transform: translateY(-8em);
         max-height: 0;
     }
-}
-
-/* animation calls */
-.dropdown.open-dropdown {
-    display: block;
-    animation-name: slideDown;
-    margin-top: 4em;
-}
-
-.dropdown.close-dropdown {
-    display: block;
-    animation-name: slideUp;
-    margin-top: 0;
 }
