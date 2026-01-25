@@ -11,36 +11,15 @@ export default function Navbar() {
     // determine screen size on load, set to variable name
     const [screenType, setScreenType] = useState(window.innerWidth <= 600 ? 'mobile' : 'desktop');
 
-    // mobile menu open state, initial value set to closed
+    // mobile menu open states, initial values set to closed
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const [hasInteracted, setHasInteracted] = useState(false);
 
-    // // delay handleResize function until 300ms after last resize event, preventing constant function calls
-    // const handleResize = useCallback(_.debounce(() => {
-    //     // determine screen type upon resizing
-    //     setScreenType(window.innerWidth <= 600 ? 'mobile' : 'desktop');
-    //     // test
-    //     console.log(screenType);
-
-    //     // close dropdown on resize
-    //     if(dropdownOpen) {
-    //         setDropdownOpen(false);
-    //     }
-    // }, 300), [screenType, dropdownOpen]); // ensure latest state values are used
-
-    // // run eventListeners when handleResize is called
-    // useEffect(() => {
-    //     window.addEventListener('resize', handleResize);
-        
-    //     return () => {
-    //         window.removeEventListener('resize', handleResize);
-    //     };
-    // }, [handleResize]);
-    
-    // // open/close mobile menu
-    // const toggleDropdown = () => {
-    //     setDropdownOpen(prevState => !prevState);
-    //     console.log("TOGGLED DROPDOWN");
-    // };
+    // dropdown toggle function
+    const toggleDropdown = () => {
+        setHasInteracted(true);
+        setDropdownOpen(!dropdownOpen);
+    }
 
     const handleResize = () => {
         const newScreenType = window.innerWidth <= 600 ? 'mobile' : 'desktop';
@@ -55,11 +34,6 @@ export default function Navbar() {
             window.removeEventListener('resize', handleResize);
         };
     }, [handleResize]);
-
-    const toggleDropdown = () => {
-        setDropdownOpen(!dropdownOpen);
-    }
-
 
     const navLinks = [
         {link:'about', title: 'About'},
@@ -97,13 +71,15 @@ export default function Navbar() {
                             <Dropdown 
                                 navLinks={navLinks} 
                                 isOpen={dropdownOpen} 
+                                hasInteracted={hasInteracted}
                                 linkClick={toggleDropdown}
                                 className="open-dropdown" 
                             />
                         ) : (
                             <Dropdown 
                                 navLinks={navLinks} 
-                                isOpen={dropdownOpen} 
+                                isOpen={dropdownOpen}
+                                hasInteracted={hasInteracted}
                                 linkClick={toggleDropdown}
                                 className="close-dropdown" 
                             />
