@@ -2,7 +2,7 @@
 .dropdown {
     position: fixed;
     right: 0;
-    top: 0;
+    top: 4em;
     padding-top: 0;
     z-index: 5;
     overflow: hidden;
@@ -47,33 +47,31 @@
 .dropdown.open-dropdown {
     display: block;
     animation-name: slideDown;
-    margin-top: 4em;
 }
 
 .dropdown.close-dropdown {
     display: block;
     animation-name: slideUp;
-    margin-top: 4em;
 }
 
 /* open/close animations */
 @keyframes slideDown {
     from {
-        transform: translateY(-8em);
+        transform: translateY(0);
         max-height: 0;
     }
     to {
-        transform: translateY(0);
+        transform: translateY(1);
         max-height: 200px;
     }
 }
 @keyframes slideUp {
     from {
-        transform: translateY(3em);
+        transform: translateY(1);
         max-height: 200px;
     }
     to {
-        transform: translateY(-8em);
+        transform: translateY(0);
         max-height: 0;
     }
 }

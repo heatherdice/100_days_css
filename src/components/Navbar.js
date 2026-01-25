@@ -66,27 +66,18 @@ export default function Navbar() {
                     // triggers toggleDropdown function onClick
                     <>
                         <Hamburger onClick={toggleDropdown} />
-
-                        {dropdownOpen ? (
-                            <Dropdown 
-                                navLinks={navLinks} 
-                                isOpen={dropdownOpen} 
-                                hasInteracted={hasInteracted}
-                                linkClick={toggleDropdown}
-                                className="open-dropdown" 
-                            />
-                        ) : (
-                            <Dropdown 
-                                navLinks={navLinks} 
-                                isOpen={dropdownOpen}
-                                hasInteracted={hasInteracted}
-                                linkClick={toggleDropdown}
-                                className="close-dropdown" 
-                            />
-                        )}
                     </>
                 )}
             </nav>
+
+            {screenType === 'mobile' && (
+                <Dropdown 
+                    navLinks={navLinks} 
+                    isOpen={dropdownOpen}
+                    hasInteracted={hasInteracted}
+                    linkClick={toggleDropdown}
+                />
+            )}
         </>
     )
 }
