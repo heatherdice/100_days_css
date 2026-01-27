@@ -1,7 +1,6 @@
 import React, { useState, useLayoutEffect, useEffect, useCallback } from "react";
 import _ from "lodash";
 import { Link } from 'react-scroll';
-// import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 import cssLogo from "../assets/images/cssLogo.ico";
 import Hamburger from "./Hamburger";
