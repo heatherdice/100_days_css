@@ -27,7 +27,7 @@
 * 2s: duration of the animation
 * infinite: animation repeats infinitely
 * alternate: animation alternates direction each cycle
-* cubic-bezier(.21,.98,.6,.99): timing function of the animation; rate of animation's change of spee during animation cycle
+* cubic-bezier(.21,.98,.6,.99): timing function of the animation; rate of animation's change of speed during animation cycle
 * specific numbers for cubic-bezier copied from source code greater accuracy & efficiency */
 .inner-circle {
 	z-index: 4;
