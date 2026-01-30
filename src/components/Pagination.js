@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/Pagination.css";
 
 export default function Pagination({ totalItems, itemsPerPage = 10 }) {
     const [currentPage, setCurrentPage] = useState(1);
@@ -25,7 +26,7 @@ export default function Pagination({ totalItems, itemsPerPage = 10 }) {
     };
 
     return (
-        <nav aria-label="Pagination" style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+        <nav aria-label="Pagination" className="pag-container">
             <button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}>
                 Prev
             </button>

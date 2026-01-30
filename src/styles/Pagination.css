@@ -1,0 +1,5 @@
+.pag-container {
+    display: flex;
+    alignItems: center;
+    gap: 8px;
+}
