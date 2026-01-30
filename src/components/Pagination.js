@@ -27,7 +27,10 @@ export default function Pagination({ totalItems, itemsPerPage = 10 }) {
 
     return (
         <nav aria-label="Pagination" className="pag-container">
-            <button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}>
+            <button 
+                onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}
+                className = "pg-btn"
+            >
                 Prev
             </button>
 
@@ -37,12 +40,16 @@ export default function Pagination({ totalItems, itemsPerPage = 10 }) {
                     onClick={() => handlePageChange(page)}
                     aria-current={page === currentPage ? "page" : undefined}
                     style={{ fontWeight: page === currentPage ? "bold" : "normal" }}
+                    className = "pg-btn"
                 >
                 {page}
                 </button>
             ))}
 
-            <button onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages}>
+            <button 
+                onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages}
+                className="pg-btn"
+            >
                 Next
             </button>
         </nav>
