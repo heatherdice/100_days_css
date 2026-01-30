@@ -5,7 +5,6 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Days from "./components/Days";
-import Pagination from "./components/Pagination";
 
 export default function App() {
     // set initial alert state to true
@@ -30,10 +29,6 @@ export default function App() {
 
             <Element name="days">
                 <Days />
-            </Element>
-
-            <Element name="pagination">
-                <Pagination />
             </Element>
 
             <Element name="learn-more">

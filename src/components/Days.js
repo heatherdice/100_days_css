@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../styles/Days.css";
-import dayComponents from './dayComponents';
+import dayComponents from "./dayComponents";
+import Pagination from "./Pagination";
 
 const itemsPerPage = 10;
 
@@ -25,6 +26,13 @@ export default function Days() {
                         </div>
                     ))}
                 </div>
+
+                <Pagination
+                    totalItems={dayComponents.length}
+                    itemsPerPage={itemsPerPage}
+                    currentPage={currentPage}
+                    onPageChange={setCurrentPage}
+                />
             </div>
         </>
     )
