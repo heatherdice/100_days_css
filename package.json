@@ -6,7 +6,8 @@
   "scripts": {
     "generate": "node src/scripts/generateDayComponentsIndex.js",
     "prestart": "node src/scripts/generateDayComponentsIndex.js",
-    "start": "node src/scripts/generateDayComponentsIndex.js & react-scripts start",
+    "start": "react-scripts start",
+    "watch": "concurrently \"node src/scripts/generateDayComponentsIndex.js\" \"react-scripts start\"",
     "test": "react-scripts test",
     "build": "react-scripts build",
     "eject": "react-scripts eject",

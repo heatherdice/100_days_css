@@ -35,13 +35,4 @@ console.log("files: ", files);
 // run once immediately on start
 generateIndex();
 
-// watch directory for any changes
-fs.watch(componentsDir, (eventType, filename) => {
-    if (filename && filename.startsWith('Day') && filename.endsWith('.js')) {
-        console.log(`Detected change in: ${filename}. Regenerating index...`);
-
-        generateIndex();
-    }
-});
-
 console.log(`Watching for changes in ${componentsDir}...`)
