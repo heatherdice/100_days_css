@@ -4,7 +4,9 @@
   "description": "## Project Summary ## Small CSS projects to practice daily CSS skills. While I don't plan to complete projects every day, I do hope to make daily progress.",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
+    "generate": "node src/scripts/generateDayComponentsIndex.js",
+    "prestart": "node src/scripts/generateDayComponentsIndex.js",
+    "start": "node src/scripts/generateDayComponentsIndex.js & react-scripts start",
     "test": "react-scripts test",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
