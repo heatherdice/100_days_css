@@ -1,4 +1,19 @@
 /* Day 11 styles */
+
+/* yellow background color */
 .container-color11 {
-    background: gray;
+    background: radial-gradient(#EBD8C0, #DCC1A0);
+}
+
+/* shoe container */
+.shoe-container {
+    height: 60%;
+}
+
+/* black "floor" */
+.floor {
+    z-index: 3;
+    height: 40%;
+    width: 100%;
+    background: #000000;
 }
