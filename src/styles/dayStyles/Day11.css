@@ -11,12 +11,16 @@
 }
 
 /* shoe */
+.left-shoe, .right-shoe {
+    position: absolute;
+    top: 4.5em;
+    left: 9.188em;
+    animation: leg-swing 2s ease-in-out infinite;
+}
 .shoe {
     position: absolute;
     width: 9.438em;
     height: 8em;
-    left: 30%;
-    bottom: 40%;
     background: url('https://100dayscss.com/codepen/doc-martens.svg') center center no-repeat;
 	transform-origin: 0 95%;
 }
@@ -27,4 +31,14 @@
     height: 40%;
     width: 100%;
     background: #000000;
+}
+
+/* walking animation */
+@keyframes leg-swing {
+	0%, 100% {
+		transform: rotate(-22deg);
+	}
+	50% {
+		transform: rotate(40deg);
+	}
 }
