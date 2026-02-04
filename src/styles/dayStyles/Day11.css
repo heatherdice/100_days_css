@@ -10,6 +10,17 @@
     height: 60%;
 }
 
+/* shoe */
+.shoe {
+    position: absolute;
+    width: 9.438em;
+    height: 8em;
+    left: 30%;
+    bottom: 40%;
+    background: url('https://100dayscss.com/codepen/doc-martens.svg') center center no-repeat;
+	transform-origin: 0 95%;
+}
+
 /* black "floor" */
 .floor {
     z-index: 3;
