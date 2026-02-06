@@ -17,3 +17,7 @@ While I don't plan to complete projects every day, I do hope to make daily progr
 - [ ] Day 10
     - 1/20 current progress: beating heart animation
     - 1/20 todo: more space between dots, animation circle
+- [x] Day 11
+- [ ] Day 12
+    - 2/5 current progress: just started file
+    - 2/5 todo: yes
