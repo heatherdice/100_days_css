@@ -15,24 +15,32 @@
 /* shoe */
 .left-shoe, .right-shoe {
     position: absolute;
-    top: 4.5em;
-    left: 9.188em;
+    left: 10em;
+    top: 0;
     transform-origin: 50% 0;
+	height: 15.313em;
+    width: 9.438em;
 }
 .right-shoe {
-    z-index: 4;
     animation: leg-swing 2s ease-in-out 1s infinite;
+}
+.right-shoe .shoe {
+    animation: shoe-turn 2s ease-in-out 1s infinite;
 }
 .left-shoe {
     animation: leg-swing 2s ease-in-out infinite;
+}
+.left-shoe .shoe {
+    animation: shoe-turn 2s ease-in-out infinite;
 }
 .shoe {
     position: absolute;
     width: 9.438em;
     height: 8em;
+    left: 0;
+    bottom: 0;
     background: url('https://100dayscss.com/codepen/doc-martens.svg') center center no-repeat;
 	transform-origin: 0 95%;
-    animation: shoe-turn 2s ease-in-out infinite;
 }
 
 /* black "floor" */
