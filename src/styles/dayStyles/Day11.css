@@ -8,6 +8,8 @@
 /* shoe container */
 .shoe-container {
     height: 60%;
+    animation: fade-in .8s ease-out 1s;
+	animation-fill-mode: both;
 }
 
 /* shoe */
@@ -15,6 +17,13 @@
     position: absolute;
     top: 4.5em;
     left: 9.188em;
+    transform-origin: 50% 0;
+}
+.right-shoe {
+    z-index: 4;
+    animation: leg-swing 2s ease-in-out 1s infinite;
+}
+.left-shoe {
     animation: leg-swing 2s ease-in-out infinite;
 }
 .shoe {
@@ -23,6 +32,7 @@
     height: 8em;
     background: url('https://100dayscss.com/codepen/doc-martens.svg') center center no-repeat;
 	transform-origin: 0 95%;
+    animation: shoe-turn 2s ease-in-out infinite;
 }
 
 /* black "floor" */
@@ -40,5 +50,19 @@
 	}
 	50% {
 		transform: rotate(40deg);
+	}
+}
+@keyframes shoe-turn {
+	0%, 100% {
+		transform: rotate(-10deg) translateY(-5px) translateX(10px);
+	}
+	25% {
+		transform: rotate(0deg) translateY(0px) translateX(0);
+	}
+	50% {
+		transform: rotate(10deg) translateY(-10px) translateX(10px);
+	}
+	75% {
+		transform: rotate(0deg) translateY(-30px) translateX(0);
 	}
 }
