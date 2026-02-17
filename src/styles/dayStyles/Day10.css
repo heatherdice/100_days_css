@@ -1,9 +1,4 @@
 /* Day 10 styles */
-@property --angle {
-    syntax: "<angle";
-    initial-value: 0deg;
-    inherits: false;
-}
 
 /* collective styling */
 .day-container, .day10-circles {
@@ -41,34 +36,39 @@
 /* red moving circle */
 .moving-circle {
     position: relative;
-    z-index: 3;
     height: 12em;
     width: 12em;
     border-radius: 50%;
+    isolation: isolate;
 }
-.moving-circle::before {
+.moving-circle::before,
+.moving-circle::after {
     content: "";
     position: absolute;
     inset: 0;
     border-radius: 50%;
-
-    background: conic-gradient(
-        #F85B5B var(--angle),
-        transparent 0deg
-    );
-
-    -webkit-mask: radial-gradient(circle, transparent 80%, black 81%);
-    mask: radial-gradient(circle, transparent 80%, black 81%);
-
-    animation: rotate-circle 5s linear infinite;
+    z-index: 0;
+    border: 0.188em solid red;
+}
+.moving-circle::before {
+    clip: rect(0, 6em, 12em, 0);
+    animation: draw-circle 5s linear infinite;
+    z-index: 2;
+}
+.moving-circle::after {
+    border-color: #242424;
+    clip: rect(0, 6em, 12em, 0);
+    animation: erase-circle 5s linear infinite;
+    z-index: 3;
 }
 
 /* dotted line circle */
 .dotted-circle {
     border: 3px dotted #FFFFFF;
-    z-index: 4;
-    height: 11em;
-    width: 11em;
+    height: 10.5em;
+    width: 10.5em;
+    position: relative;
+    z-index: 1;
 }
 
 /* time on watch */
@@ -109,11 +109,13 @@
 }
 
 /* moving red circle animation */
-@keyframes rotate-circle {
-    from {
-        --angle: 0deg;
-    }
-    to {
-        --angle: 360deg;
-    }
+@keyframes draw-circle {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes erase-circle {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
 }
